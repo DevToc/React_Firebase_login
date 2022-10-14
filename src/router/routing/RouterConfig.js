@@ -21,7 +21,7 @@ import {
   MainLocationPage,
     MainContactWidget
 } from "../../widgets";
-import { OAuth2RedirectHandler } from "../pages";
+import { OAuth2RedirectHandler } from "../pages/godhan-oauth-authentication/OauthPage"
 import { AboutUs } from "../pages/godhan-about-us/AboutUs";
 import { PrivacyPolicyPage } from "../pages/godhan-privacy-policy/PrivacyPolicyPage";
 import { TermsAndConditions } from "../pages/godhan-terms-and-conditions/TermsAndConditions";
