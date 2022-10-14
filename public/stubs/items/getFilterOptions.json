@@ -1,0 +1,47 @@
+{
+    "generalFilters": [
+        {
+            "key": "price-range",
+            "value": [
+                10,
+                100000
+            ]
+        },
+        {
+            "key": "condition",
+            "value": [
+                "New",
+                "Old"
+            ]
+        },
+        {
+            "key": "offeredBy",
+            "value": [
+                "Individual",
+                "Business"
+            ]
+        },
+        {
+            "key": "categories",
+            "value": [
+                "Homes",
+                "Vacation Rentals",
+                "Real-Estate & Space",
+                "Catering and Hospitality"
+            ]
+        }
+    ],
+    "additionalFilters": [
+        {
+            "key": "amenities",
+            "label": "Amenities the house has",
+            "value": [
+                "Swimming pool",
+                "parking space",
+                "A good view", 
+                "Oven",
+                "BBQ Space"
+            ]
+        }
+    ]
+}

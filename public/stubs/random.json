@@ -1,0 +1,31 @@
+{
+    "colors": [
+        {
+            "timestamp": 1180297280,
+            "hex": "dbe2d0",
+            "id": 26288,
+            "tags": [
+                {
+                    "timestamp": 1180297280,
+                    "id": 17056,
+                    "name": "asis"
+                }
+            ]
+        }
+    ],
+    "schemes": [],
+    "schemes_history": {},
+    "success": true,
+    "colors_history": {
+        "dbe2d0": [
+            {
+                "d_count": 0,
+                "id": "17056",
+                "a_count": 1,
+                "name": "asis"
+            }
+        ]
+    },
+    "messages": [],
+    "new_color": "dbe2d0"
+}

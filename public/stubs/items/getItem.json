@@ -1,0 +1,45 @@
+{
+    "productLastUpdatedOn": "20-09-2019T:00.00.00",
+    "userID": 123,
+    "rating": 4,
+    "numberOfView": 3,
+    "productId": 234234,
+    "productName": "Test Product",
+    "productStatus": "Available",
+    "productCondition": "New",
+    "productDescription": "This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.This is a test product status.",
+    "listedPrice": "100",
+    "productImg": [
+        "https://i.pinimg.com/564x/4c/d9/4b/4cd94b68ed98543b5e6564b51f4ed612.jpg",
+        "https://i.pinimg.com/564x/fe/6e/53/fe6e530fe8f95cbf352a7596b51ca64b.jpg",
+        "https://i.pinimg.com/236x/70/bb/2f/70bb2f6b0facd00e4f23e5971433f0e1.jpg"
+    ],
+    "productListedOn": "20-09-2019T:00.00.00",
+    "listedBy": "Selena",
+    "category": "Electronics",
+    "subcategory": "Test subcategory",
+    "listingExpiry": "4 days 5 hours",
+    "uniqueIdentifierUrl": "/test-product-12343143",
+    "listingExpirationIndicator": false,
+    "isFavourite": false,
+    "itemCondition": "new",
+    "itemLocation": {
+        "coordinates": "",
+        "country": "India",
+        "state": "Tamil Nadu",
+        "city": "Coimbatore",
+        "area": "Gandhipuram"
+    },
+    "additionalFeatures": [
+        {
+            "key": "propertyType",
+            "value": "Condo",
+            "label": "Type"
+        },
+        {
+            "key": "noOfBeds",
+            "value": "3+",
+            "label": "Beds"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "creationDate": "2020-12-21T19:15:42.232Z",
+        "currentUser": "123",
+        "from": "123",
+        "id": "123_312123_3",
+        "listedBy": "Ritu",
+        "productTitle": "New Wanted Product product",
+        "room": "123_312123_3",
+        "sellerId": 312123,
+        "title": "New Wanted Product product",
+        "to": 312123
+    },
+    {
+        "creationDate": "2020-12-21T19:15:41.238Z",
+        "currentUser": "123",
+        "from": "123",
+        "id": "123_3123_1",
+        "listedBy": "Kratiiiii",
+        "productTitle": "New Wanted Product product",
+        "room": "123_3123_1",
+        "sellerId": 3123,
+        "title": "New Wanted Product product",
+        "to": 3123
+    }
+]

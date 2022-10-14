@@ -1,0 +1,353 @@
+body {
+  background-color: #fffafa !important;
+  font-family: "Ubuntu", Roboto, '"Helvetica Neue"', Arial, sans-serif !important;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #0e0c0c;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: unset !important;
+  overflow: unset !important;
+}
+
+.c-black {
+  color: black !important;
+}
+
+.view-height {
+  min-height: 60vh;
+}
+
+.errors {
+  color: #cd5c5c;
+}
+
+.listing-category-label {
+  color: #001d48;
+  font-size: 22px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.has-error > input {
+  box-shadow: 1px 1px 1px 1px #cd5c5c !important;
+  outline: 2px solid #cd5c5c !important;
+}
+
+.alert-primary {
+  color: #0078d4 !important;
+  background-color: #cce5ff;
+  border-color: #0078d4 !important;
+  border-left-width: thick !important;
+  border-top-width: thick !important;
+  border-radius: 60px;
+  text-align: -webkit-center;
+}
+
+.red-text {
+}
+
+.message {
+  padding: 0.25rem 1rem;
+  color: #cd5c5c;
+  border-color: #cd5c5c;
+}
+
+.hyperlink {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.dHWFUo * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+html:not(.hydrated) body {
+  display: contents !important;
+}
+
+.MuiIconButton-edgeStart {
+  visibility: hidden;
+}
+
+.body-color {
+  color: #0e0c0c !important;
+}
+
+.use-my-location {
+  color: #2b579a !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  padding: 13px !important;
+  background-color: white !important;
+  border-radius: 0px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #001d48f2;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 17px !important;
+  }
+
+  h4 {
+    font-size: 14px !important;
+  }
+
+  h6 {
+    font-size: 13px !important;
+  }
+
+  .ql-editor ol li:not(.ql-direction-rtl),
+  .ql-editor ul li:not(.ql-direction-rtl) {
+    padding-left: 1.5em;
+    font-size: 12px;
+  }
+
+  body {
+    background-color: #fffafa !important;
+    font-family: Lato !important;
+    font-size: 13px;
+    line-height: 1.43;
+    color: #0e0c0c;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: unset !important;
+    overflow: unset !important;
+  }
+
+  .MuiTab-wrapper {
+    font-size: 13px;
+  }
+
+  .text-limiter {
+    font-size: 13px;
+  }
+
+  b,
+  strong {
+    font-size: 13px;
+  }
+
+  .bvpQcD .category-name {
+    font-size: 12px !important;
+  }
+
+  .MuiTypography-body1 {
+    font-size: 13px !important;
+    font-family: Ubuntu, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5 !important;
+  }
+
+  .MuiBox-root-35 {
+    font-weight: 500;
+  }
+
+  .MuiBox-root-36 {
+    font-weight: 500;
+  }
+
+  /*.MuiInputBase-input {*/
+  /*  font-size: 13px !important;*/
+  /*}*/
+
+  .card-listedPrice-tag {
+    font-size: 15px !important;
+  }
+
+  label {
+    font-size: 12px !important;
+  }
+
+  .makeStyles-listedPriceDisplay-19 {
+    color: #2b579a;
+    font-size: 12px !important;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .makeStyles-actionIcons-17 {
+    display: flex;
+    padding-top: 24px !important;
+    justify-content: flex-end;
+    margin: -15px !important;
+  }
+
+  .hgTxsR .MuiCardHeader-title {
+    color: #2b579a;
+    font-size: 15px !important;
+    font-weight: 750;
+  }
+
+  .MuiSvgIcon-colorPrimary {
+    color: #2b579a;
+    font-size: 22px;
+  }
+
+  .MuiSvgIcon-colorPrimary {
+    color: #2b579a;
+    font-size: medium;
+  }
+
+  /* tree view style */
+  .MuiTreeItem-root {
+    margin: 0;
+    outline: 0;
+    width: 99%;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* notification text style */
+  .MuiMenuItem-root {
+    width: auto;
+    overflow: hidden;
+    font-size: 1rem;
+    box-sizing: border-box;
+    min-height: 48px;
+    font-family: Ubuntu, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 1px;
+    white-space: nowrap;
+    padding-bottom: 1px;
+  }
+}
+
+/* tree view style */
+.MuiTypography-body1 {
+  line-height: 16px !important;
+}
+
+.categories-selection-pop-over
+  .MuiPopover-paper
+  .MuiTreeView-root
+  .MuiCollapse-container
+  .MuiCollapse-wrapper
+  .MuiCollapse-wrapperInner
+  .MuiTreeItem-root
+  .MuiTreeItem-content:hover {
+  background-color: #2b579a;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.clear {
+  text-shadow: 1px 0px #000000;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#root {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f9;
+}
+
+.ribbon-content {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.ribbon {
+  display: flex;
+  justify-content: flex-end;
+  color: #2b579a;
+  padding: 0 5px 3px 2px;
+  height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  border-radius: 5px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: #f0ffff;
+  margin-top: 8px;
+}
+
+.ribbon {
+  background: rgba(43, 87, 154, 0.7);
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+}
+
+.undefined {
+  width: 94vw;
+}
+
+.autocomplete-dropdown-container {
+  box-shadow: 0 2px 2px #2b579a;
+  position: absolute;
+  z-index: 1000;
+  margin-right: 5%;
+  background: white;
+}
+
+.autocomplete-dropdown-container > div {
+  margin-left: 1%;
+}
+
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic {
+  margin-bottom: 2px !important;
+}
+
+h1 {
+  font-size: 17px !important;
+}
+
+.MuiPaper-root.MuiPopover-paper {
+  border: 1px solid gray !important;
+}
+
+.Calendar__monthText,
+.Calendar__yearText,
+.Calendar__yearSelectorText,
+.Calendar__monthSelectorItemText {
+  color: black;
+}
+
+.truncate {
+  word-break: break-word;
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

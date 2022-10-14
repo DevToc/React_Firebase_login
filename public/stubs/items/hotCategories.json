@@ -1,0 +1,83 @@
+[
+    {
+        "id": 25001,
+        "name": "Sofa & Lounges",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://images.pexels.com/photos/276566/pexels-photo-276566.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "parent_id": 25000
+    },
+    {
+        "id": 25002,
+        "name": "Bedding",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://3.bp.blogspot.com/-kl-05yl73dc/W6GLzGC38YI/AAAAAAAAWCo/cVn1WKWRdVY14UQExDooDbvRGP2FCsyvQCEwYBhgL/s15000/43521329695_3dfc4bdd88_z.jpg",
+        "parent_id": 25000
+    },
+    {
+        "id": 26001,
+        "name": "Tractors",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://images.unsplash.com/photo-1531798123643-26d5ab4c264d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+        "parent_id": 26000
+    },
+    {
+        "id": 26009,
+        "name": "Utility Vehicles",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://cdn.pixabay.com/photo/2017/03/22/15/38/bulldozer-2165376_960_720.png",
+        "parent_id": 26000
+    },
+    {
+        "id": 7001,
+        "name": "Apartment",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://3.bp.blogspot.com/-kl-05yl73dc/W6GLzGC38YI/AAAAAAAAWCo/cVn1WKWRdVY14UQExDooDbvRGP2FCsyvQCEwYBhgL/s1600/43521329695_3dfc4bdd88_z.jpg",
+        "parent_id": 7000
+    },
+    {
+        "id": 7002,
+        "name": "House",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://3.bp.blogspot.com/-kl-05yl73dc/W6GLzGC38YI/AAAAAAAAWCo/cVn1WKWRdVY14UQExDooDbvRGP2FCsyvQCEwYBhgL/s1600/43521329695_3dfc4bdd88_z.jpg",
+        "parent_id": 7000
+    },
+    {
+        "id": 9003,
+        "name": "Drums",
+        "hot": true,
+        "children": [],
+        "type": "RENT",
+        "image_url": "https://cdn.pixabay.com/photo/2018/08/22/13/47/lobby-3623669_960_720.jpg",
+        "parent_id": 9000
+    },
+    {
+        "id": 3001,
+        "name": "Car",
+        "hot": true,
+        "children": [
+            {
+                "id": 4000,
+                "name": "Classic Cars",
+                "hot": false,
+                "children": [],
+                "type": "RENT",
+                "parent_id": 3001
+            }
+        ],
+        "type": "RENT",
+        "image_url": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "parent_id": 3000
+    }
+]

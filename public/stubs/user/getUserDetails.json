@@ -1,0 +1,17 @@
+{
+    "id": 1001,
+    "name": "pawanth",
+    "email": "selena@gmail.com",
+    "imageUrl": null,
+    "mobileNumber": null,
+    "address": null,
+    "lastSavedLocation": null,
+    "pinCode": 0,
+    "emailVerified": true,
+    "mobileNumberVerified": false,
+    "profileVerified": false,
+    "otpVerified": true,
+    "provider": "local",
+    "profileCreationDate": "2021-03-09T09:33:24:219Z",
+    "profileLastUpdatedDate": "2021-03-09T09:33:54:988Z"
+}

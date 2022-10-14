@@ -1,0 +1,86 @@
+import styled from "styled-components";
+
+export const otpWidgetStyle = styled.div`
+  .otp-sub-title {
+    font-size: 20px;
+    font-family: Lato;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text-align-center{
+    text-align: center;
+  }
+  .MuiFormControl-marginNormal {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+    display: flex;
+  }
+  .otp-container-box{
+    .mar-2{
+      margin: 5px !important;
+    }
+  }
+  .otp-container {
+    background: #ffffff;
+    border: 2px solid #2b579a;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    height: 366px;
+    max-width: 350px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .margin-subtitle {
+    margin-bottom: 8px;
+  }
+  .otp-input {
+    justify-content: center;
+    display: flex;
+    .MuiInput-root{
+      width: 50%;
+    }
+    input[type="number"] {
+      font-size:17px !important;
+      text-align: center;
+    }
+  }
+  .resend-otp {
+    color: #2b579a;
+    font-size: 20px;
+    font-family: Lato;
+    line-height: 24px;
+  }
+  .confirm-button {
+    margin-top: 25px;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    span {
+      font-size: 18px;
+      font-family: Lato;
+      line-height: 24px;
+    }
+  }
+  .margin-alignment {
+    margin-top: 20px;
+  }
+  .new-user-label {
+    font-size: 18px;
+  }
+  .post-login {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .otp-label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`;

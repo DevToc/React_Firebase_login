@@ -1,0 +1,83 @@
+[
+    {
+        "productID": "1",
+        "productName": "Chair",
+        "productListedOn": "03-01-2021T00:00:00",
+        "productNeededOn": "20-01-2021T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 434234
+    },
+    {
+        "productID": "2",
+        "productName": "Table",
+        "productListedOn": "03-01-2021T00:00:00",
+        "productNeededOn": "20-01-2021T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId":31245
+    },
+    {
+        "productID": "3",
+        "productName": "Wine",
+        "productListedOn": "03-01-2021T00:00:00",
+        "productNeededOn": "25-01-202T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "R Senthil K ",
+        "sellerId": 43212
+    },
+    {
+        "productID": "1",
+        "productName": "Rope",
+        "productListedOn": "03-01-2021T00:00:00",
+        "productNeededOn": "23-01-2021T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 3123
+    },
+    {
+        "productID": "2",
+        "productName": "Mirror",
+        "productListedOn": "02-01-2021T00:00:00",
+        "productNeededOn": "21-01-2021T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 3121232
+    },
+    {
+        "productID": "3",
+        "productName": "Chair-table",
+        "productListedOn": "20-01-2020T00:00:00",
+        "productNeededOn": "20-01-2020T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 312123
+    },
+    {
+        "productID": "1",
+        "productName": "i20 car",
+        "productListedOn": "20-01-2020T00:00:00",
+        "productNeededOn": "20-01-2020T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 3121234
+    },
+    {
+        "productID": "2",
+        "productName": "Hundai i10",
+        "productListedOn": "20-01-2020T00:00:00",
+        "productNeededOn": "20-01-2020T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 31212387
+    },
+    {
+        "productID": "3",
+        "productName": "Software Developer",
+        "productListedOn": "20-01-2020T00:00:00",
+        "productNeededOn": "20-01-2020T00:00:00",
+        "productDescription": "Test product1",
+        "listedBy": "Anurag Pathak",
+        "sellerId": 3121285
+    }
+]

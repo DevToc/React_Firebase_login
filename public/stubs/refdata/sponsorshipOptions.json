@@ -1,0 +1,14 @@
+[
+    {
+        "id": "urgent",
+        "label": "Urgent Ad",
+        "amount": 12,
+        "duration": "7 days"
+    },
+    {
+        "id": "highlight",
+        "label": "Highlight Ad",
+        "amount": 11,
+        "duration": "7 days"
+    }
+]

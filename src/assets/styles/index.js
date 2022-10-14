@@ -1,0 +1,7 @@
+import './common/variables.css'
+import './pages/dashboard.css'
+import './widgets/profile.scss'
+import './widgets/global.scss'
+import './widgets/payment.scss'
+import './widgets/header.scss'
+import './widgets/auth.scss'

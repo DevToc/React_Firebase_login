@@ -1,0 +1,36 @@
+.display-flex{
+    display: flex;
+    width: 100%;
+}
+.display-flex-menu{
+  
+  width: 88%;
+  display: flex;
+}
+.justify-space-between{
+  
+  justify-content:space-between;
+}
+header{
+  
+  border-bottom: solid black 0.5px;
+}
+.arrow-alignment{
+  margin-top: '3px';
+  margin-right: '10px';
+}
+
+.notification-badge{
+  .MuiBadge-badge{
+    background-color: #2b579a ;
+    color: white;
+  }
+}
+.notification-bell-icon{
+  font-size: 34px !important;
+}
+.flag-image{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}

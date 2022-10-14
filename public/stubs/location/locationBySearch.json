@@ -1,0 +1,22 @@
+{
+    "elements per page": 2,
+    "Current page no": 0,
+    "data": [
+        {
+            "id": "16628",
+            "name": "26th & Broadway",
+            "street": "1140 Broadway",
+            "street2": null,
+            "city": "New York",
+            "state": null,
+            "country": null,
+            "zipCode": 0,
+            "location": {
+                "longitude": -73.98901,
+                "latitude": 40.743828
+            }
+        }
+    ],
+    "Total no of pages": 80,
+    "Total no of elements": 159
+}
