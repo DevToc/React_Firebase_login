@@ -15,7 +15,6 @@ install ionic: npm install -g @ionic/cli
 3. npm run resources - to generate android/ios resources
 4. npx cap open android
 5. install android studio and connect your mobile to simulate/install apk directly into ur mobile.
- 6.
 
 # To sync once android ios project created
 1. We have three code bases now, and now we need to push ios and android code bases as well to git.
