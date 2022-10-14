@@ -18,7 +18,7 @@ install ionic: npm install -g @ionic/cli
  6.
 
 # To sync once android ios project created
-1. We have three code bases now and now we need to push ios and android code bases as well to git.
+1. We have three code bases now, and now we need to push ios and android code bases as well to git.
 2. ionic cap sync android/ios : to sync the changes to android/ios
 3. use File->sync gradle in android studio to get changes updated
   
