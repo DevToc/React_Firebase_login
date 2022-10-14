@@ -9,7 +9,7 @@ install ionic: npm install -g @ionic/cli
 4. ionic serve or npm start
 5. open localhost:8100/dashboard in your browser
   
-# To deploy as Andorid/ios
+# To deploy as Android/ios
 1. ionic build
 2. ionic cap add android/iso
 3. npm run resources - to generate android/ios resources
