@@ -14,7 +14,7 @@ export const categorySelectionStyle = styled.div`
 }
 .card:hover{
     border: solid #041735 1.2px;
-    box-shadow: 3px 3px 15px 4px #2b579a, 0 0 0px 0px rgb(40 43 181 / 12%), 0 0 0px 0px rgb(8 23 45 / 94%);
+    box-shadow: 3px 3px 15px 4px #224214, 0 0 0px 0px rgb(40 43 181 / 12%), 0 0 0px 0px rgb(8 23 45 / 94%);
 }
 .listing-options-section{
     display: flex;

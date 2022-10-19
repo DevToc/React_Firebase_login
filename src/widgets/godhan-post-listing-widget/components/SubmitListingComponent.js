@@ -497,8 +497,8 @@ const SubmitListingComponent = ({
                     fontStyle: 'normal',
                     fontWeight: 500,
                     fontSize: '18px',
-                    backgroundColor: '#2b579a',
-                    border: '2px solid #2b579a',
+                    backgroundColor: '#224214',
+                    border: '2px solid #224214',
                     borderRadius: '5px',
                     alignItems: 'center',
                     width: 150

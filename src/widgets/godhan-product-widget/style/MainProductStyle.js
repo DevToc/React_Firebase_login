@@ -105,7 +105,7 @@ p.text-small-with-font-weight{
     font-weight: 600;
     font-size: 20px;
     color: white;
-    background: #2B579A;
+    background: #224214;
 }
 
 .userInfo {
@@ -216,7 +216,7 @@ p.text-small-with-font-weight{
 }
 .MuiCardHeader-title
 {
-    color: #2b579a;
+    color: #224214;
     font-size: 20px;
     font-weight: 750;
 }
@@ -416,7 +416,7 @@ p.text-small-with-font-weight{
     font-size: 14px;
     font-weight: 900;
     line-height: 1.43;
-    color: #2B579A;
+    color: #224214;
     font-style: normal;
     font-feature-settings: normal;
     font-variant: normal;

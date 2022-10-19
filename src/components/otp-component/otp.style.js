@@ -14,7 +14,7 @@ export const otpWidgetStyle = styled.div`
 }
 .otp-container{
     background: #FFFFFF;
-    border: 2px solid #2B579A;
+    border: 2px solid #224214;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     width: 350px;
@@ -45,7 +45,7 @@ export const otpWidgetStyle = styled.div`
     display: flex;
   }
   .resend-otp{
-      color: #2B579A;
+      color: #224214;
       font-size: 20px;
       font-family: Lato;
       line-height: 24px;

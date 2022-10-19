@@ -59,7 +59,7 @@ export const categoryListingStyle = styled.div`
 }
 .set-selected{
     .MuiTreeItem-content{
-        background-color: #2b579a !important;
+        background-color: #224214 !important;
         .MuiSvgIcon-fontSizeInherit{
             color: white;
         }

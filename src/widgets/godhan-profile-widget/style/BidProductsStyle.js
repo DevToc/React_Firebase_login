@@ -28,7 +28,7 @@ export const bidProductsStyle = styled.div`
 
       &.active {
         background-color: white;
-        color: #2b579a;
+        color: #224214;
         border-radius: 30px;
       }
     }

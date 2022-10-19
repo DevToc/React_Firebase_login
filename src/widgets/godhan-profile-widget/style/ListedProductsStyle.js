@@ -13,7 +13,7 @@ export const listedProductsStyle = styled.div`
     display: flex;
     align-items: center;
     padding: 5px 7px;
-    background-color: #2b579a;
+    background-color: #224214;
     border-radius: 5px;
     color: white !important;
     font-size: 15px;

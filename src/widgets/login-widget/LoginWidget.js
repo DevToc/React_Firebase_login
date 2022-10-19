@@ -20,7 +20,6 @@ import {
 import EmailIcon from "@material-ui/icons/Email";
 import { Link, withRouter } from "react-router-dom";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import Select from "../../components/Select/Select";
 
 const LoginComponent = (props) => {
   const {
@@ -189,35 +188,6 @@ const LoginComponent = (props) => {
     setOpenConfirmationPopup(false);
   };
 
-  const handleMobileNumberPrefix = (value) => {
-    handleChange({
-      target: { name: _get(loginForm, "mobileNumberPrefix.name"), value },
-    });
-    if (value === "AU" && globalUtils.getCountryFromLocalStorage() !== "AU") {
-      setFormData({
-        loginForm: {
-          ...loginForm,
-          mobileNumber: {
-            ..._get(loginForm, "mobileNumber"),
-            rules: ["ISNUMBER", "MINLENGTH-9", "MAXLENGTH-10"],
-          },
-        },
-      });
-    }
-    if (globalUtils.getCountryFromLocalStorage() === "AU" && value !== "AU") {
-      setFormData({
-        loginForm: {
-          ...loginForm,
-          mobileNumber: {
-            ..._get(loginForm, "mobileNumber"),
-            rules: ["ISNUMBER", "MINLENGTH-10", "MAXLENGTH-10"],
-          },
-        },
-      });
-    }
-    localStorage.setItem("godhan-location", value);
-  };
-
   return (
     <StyledWidget style={{ paddingBottom: 20 }}>
       <ModalComponent
@@ -276,19 +246,21 @@ const LoginComponent = (props) => {
         style={{ maxHeight: 46 }}
         className="display-flex MuiFormControl-marginNormal"
       >
-        <Select
-          placeholderStyle={{ fontSize: 18, fontWeight: 600 }}
-          style={{ marginRight: 10, height: "100%" }}
-          selectStyle={{ height: "100%" }}
-          value={_get(loginForm, "mobileNumberPrefix.value")}
-          onChange={(value) => {
-            handleMobileNumberPrefix(value);
+        <TextField
+          name={_get(loginForm, "mobileNumberPrefix.name")}
+          className="disabled-view"
+          placeholder={_get(loginForm, "mobileNumberPrefix.placeholder")}
+          variant="outlined"
+          color="primary"
+          style={{ marginTop: 0, height: "100%", marginRight: 10, width: '25%' }}
+          value="+91"
+          defaultValue="+91"
+          InputLabelProps={{
+            shrink: true,
           }}
-          options={[
-            { value: "IN", label: "+91" },
-            { value: "CA", label: "+1" },
-            { value: "AU", label: "+61" },
-          ]}
+          InputProps={{
+            readOnly: true,
+          }}
         />
 
         <TextField

@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     cursor: "pointer",
-    color: "#2b579a",
+    color: "#224214",
     textDecoration: "underline",
     margin: "1rem",
     textAlign: "center",
@@ -207,11 +207,11 @@ export const Search = ({
                   height: 20,
                   marginRight: 20,
                 }}
-                color={isSelected ? "#2B579A" : "#001D48"}
+                color={isSelected ? "#224214" : "#001D48"}
               />
             )}
             <div
-              style={isSelected ? { color: "#2B579A" } : null}
+              style={isSelected ? { color: "#224214" } : null}
               className={classes.itemText}
             >
               {labelText}
@@ -222,7 +222,7 @@ export const Search = ({
                 style={{
                   marginLeft: "auto",
                   width: 17,
-                  color: isSelected ? "#2B579A" : "#001D48",
+                  color: isSelected ? "#224214" : "#001D48",
                 }}
               />
             )}

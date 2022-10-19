@@ -1,5 +1,4 @@
 import React from "react";
-import { FullWidthTabs } from "../component";
 import { makeStyles } from "@material-ui/core";
 import { Slick } from "./Slick";
 import { Link } from "react-router-dom";
@@ -95,7 +94,6 @@ export const HeaderComponent = ({
     isHomePage && (
       <>
         <div
-          // style={{ position: "sticky", zIndex: 5, top: 0 }}
           className="display-flex header"
         >
           <div className="left-pane">
@@ -121,9 +119,7 @@ export const HeaderComponent = ({
                 )}
               </Link>
             </div>
-            <div className="tabs-header">
-              <FullWidthTabs />
-            </div>
+            <Slick />
             <Search
               homeForm={homeForm}
               options={options}
@@ -134,7 +130,7 @@ export const HeaderComponent = ({
           </div>
         </div>
 
-        <Slick />
+
       </>
     )
   );

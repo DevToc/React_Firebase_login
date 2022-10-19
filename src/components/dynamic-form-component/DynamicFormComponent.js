@@ -85,9 +85,9 @@ const useStyles = makeStyles({
 
 const CustomCheckbox = withStyles({
   root: {
-    color: "#2B579A",
+    color: "#224214",
     "&$checked": {
-      color: "#2B579A",
+      color: "#224214",
     },
   },
   checked: {},

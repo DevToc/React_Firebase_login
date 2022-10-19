@@ -147,7 +147,7 @@ export const SlickComponent = ({
             <StyledSlick style={{ marginTop: 6 }} theme={useTheme()}>
                 {hotcategories.length !== 0 && (
                     <div style={{ marginBottom: 6, marginTop: 0 }} className="heading">
-                        Hot Categories
+                        Available Categories
                 </div>
                 )}
                 {!_isEmpty(hotcategories) && (

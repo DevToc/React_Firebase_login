@@ -12,7 +12,7 @@ const IOSSlider = withStyles({
     height: 20,
     width: 20,
     backgroundColor: "#fff",
-    border: "1px solid #2B579A",
+    border: "1px solid #224214",
 
     marginTop: -7,
   },
@@ -28,7 +28,7 @@ const IOSSlider = withStyles({
   },
   track: {
     height: 7,
-    backgroundColor: "#2B579A",
+    backgroundColor: "#224214",
     borderRadius: 30,
   },
   rail: {
@@ -49,7 +49,7 @@ const IOSSliderTransparentLabel = withStyles({
     height: 20,
     width: 20,
     backgroundColor: "#fff",
-    border: "1px solid #2B579A",
+    border: "1px solid #224214",
 
     marginTop: -7,
   },
@@ -65,7 +65,7 @@ const IOSSliderTransparentLabel = withStyles({
   },
   track: {
     height: 7,
-    backgroundColor: "#2B579A",
+    backgroundColor: "#224214",
     borderRadius: 30,
   },
   rail: {

@@ -229,7 +229,7 @@ const ChangePasswordComponent = ({
             fontStyle: 'normal',
             fontWeight: 500,
             fontSize: '18px',
-            border: '2px solid #2b579a',
+            border: '2px solid #224214',
             borderRadius: '5px',
             alignItems: 'center',
             width: 150,
