@@ -2,6 +2,9 @@ body {
     font-family: Lato;
     overflow-x: hidden !important;
 }
+.primary{
+  color: '#224214';
+}
 @media only screen and (min-width: 301px){
   .contact-label{
     .MuiTypography-root{
@@ -160,8 +163,8 @@ body {
         position: absolute;
         border: 4px solid #a9a9a9;
         border-radius: 50% ;
-        border-top: 4px solid #2b579a;
-        //border-radius: 4px solid #2b579a;
+        border-top: 4px solid #224214;
+        //border-radius: 4px solid #224214;
         width: 50px;
         height: 50px;
         -webkit-animation: spin 2s linear infinite;
@@ -198,11 +201,11 @@ body {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #2b579a; 
+    background: #224214; 
   }
 
   .display-link{
-    color: #2b579a;
+    color: #224214;
     cursor: pointer;
   }
   .border-solid-gray{
@@ -210,7 +213,7 @@ body {
   }
 
   a{
-    color: #2B579A;
+    color: #224214;
   }
   .display-flex{
     display: flex;

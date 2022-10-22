@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
   boxChecked: {
     padding: "8px 0 11px 0",
-    backgroundColor: "#2B579A",
+    backgroundColor: "#224214",
     border: "2px solid rgba(43, 87, 154, 0.7)",
     borderRadius: 5,
     textAlign: "center",

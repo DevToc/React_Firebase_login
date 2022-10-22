@@ -14,14 +14,7 @@ import Input from "../../../components/Input-component/InputComponent";
 import TextArea from "../../../components/text-area/TextArea";
 import { BlankLayout } from "../../../components";
 
-// function a11yProps(index) {
-//   return {
-//     id: `full-width-tab-${index}`,
-//     "aria-controls": `full-width-tabpanel-${index}`,
-//   };
-// }
-
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   input: {
     marginLeft: '0px !important'
   },
@@ -49,7 +42,7 @@ const useStyles = makeStyles(() => ({
     color: "white",
     textAlign: "center",
     borderRadius: 5,
-    backgroundColor: "#2B579A",
+    backgroundColor: theme.palette.primary.main,
     padding: "3px",
   },
   divider: {
@@ -265,7 +258,7 @@ const RaiseTicketComponent = (props) => {
                         fontStyle: 'normal',
                         fontWeight: 500,
                         fontSize: '18px',
-                        border: '2px solid #2b579a',
+                        border: '2px solid #224214',
                         borderRadius: '5px',
                         alignItems: 'center',
                         width: 120

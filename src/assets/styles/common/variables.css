@@ -81,7 +81,7 @@ html:not(.hydrated) body {
 }
 
 .use-my-location {
-  color: #2b579a !important;
+  color: #224214 !important;
   font-size: 12px !important;
   font-weight: 900 !important;
   padding: 13px !important;
@@ -184,7 +184,7 @@ h2{
   }
 
   .makeStyles-listedPriceDisplay-19 {
-    color: #2b579a;
+    color: #224214;
     font-size: 12px !important;
     text-align: center;
     font-weight: bold;
@@ -198,18 +198,18 @@ h2{
   }
 
   .hgTxsR .MuiCardHeader-title {
-    color: #2b579a;
+    color: #224214;
     font-size: 15px !important;
     font-weight: 750;
   }
 
   .MuiSvgIcon-colorPrimary {
-    color: #2b579a;
+    color: #224214;
     font-size: 22px;
   }
 
   .MuiSvgIcon-colorPrimary {
-    color: #2b579a;
+    color: #224214;
     font-size: medium;
   }
 
@@ -252,7 +252,7 @@ h2{
   .MuiCollapse-wrapperInner
   .MuiTreeItem-root
   .MuiTreeItem-content:hover {
-  background-color: #2b579a;
+  background-color: #224214;
   color: #ffffff;
 }
 
@@ -287,7 +287,7 @@ a {
 .ribbon {
   display: flex;
   justify-content: flex-end;
-  color: #2b579a;
+  color: #224214;
   padding: 0 5px 3px 2px;
   height: 25px;
   text-align: center;
@@ -313,7 +313,7 @@ a {
 }
 
 .autocomplete-dropdown-container {
-  box-shadow: 0 2px 2px #2b579a;
+  box-shadow: 0 2px 2px #224214;
   position: absolute;
   z-index: 1000;
   margin-right: 5%;

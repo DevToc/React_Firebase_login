@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const mainHomeStyle = styled.div`
 .Mui-selected{
-  background:#2b579a;
+  background:#224214;
   color:#fff;
 }
 .grid{
@@ -260,7 +260,7 @@ export const mainHomeStyle = styled.div`
  .search-button{
     height: 94%;
     width:100%;
-    background: #2b579a;
+    background: #224214;
     color: white;   
     border-radius:4px;
     margin-left: 1px;
@@ -289,7 +289,7 @@ export const mainHomeStyle = styled.div`
 
   .MuiTab-root {
     border: none;
-    border-right: 2px solid #2B579AB2 !important;
+    border-right: 2px solid #224214B2 !important;
     min-height: initial;
     height: 36px;
     padding: 0;
@@ -313,7 +313,7 @@ export const mainHomeStyle = styled.div`
   .MuiAppBar-root {
     border-radius: 6px;
     border-bottom: 0;
-    border: 2px solid #2B579A;
+    border: 2px solid #224214;
     color: #001D48;
   }
 

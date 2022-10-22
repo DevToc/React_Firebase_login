@@ -185,7 +185,7 @@ const RegisterUser = (props) => {
                     label={
                         <span>
                             I agree with all the{" "}
-                            <Link to="/terms-of-use" style={{ color: "#2b579a" }}>terms &amp; conditions</Link>
+                            <Link to="/terms-of-use" className="primary">terms &amp; conditions</Link>
                         </span>
                     }
                 />

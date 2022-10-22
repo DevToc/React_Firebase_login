@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     color: "white",
     textAlign: "center",
     borderRadius: 5,
-    backgroundColor: "#2B579A",
+    backgroundColor: "#224214",
     padding: "3px",
   },
   divider: {

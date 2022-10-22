@@ -42,6 +42,6 @@ export const slickStyle = styled.div`
     text-align: center;
   }
   .slick-prev:before, .slick-next:before{
-    color:#2b579a !important;
+    color:#224214 !important;
   }
 `;

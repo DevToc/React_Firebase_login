@@ -155,7 +155,7 @@ input[name="mobileNumberPrefix"] {
       font-weight: 500;
       font-size: 18px;
       text-decoration-line: underline !important;
-      color: #2b579a;
+      color: #224214;
     }
     .footer-link-wrapper{
       flex-direction: row;
@@ -180,7 +180,7 @@ input[name="mobileNumberPrefix"] {
 
     .input-edit-button {
       font-size: 18px;
-      color: #2b579a;
+      color: #224214;
       text-decoration: underline;
       margin-right: 15px;
     }
@@ -216,9 +216,9 @@ input[name="mobileNumberPrefix"] {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #2b579a;
+    color: #224214;
     background-color: transparent;
-    border: 2px solid #2b579a;
+    border: 2px solid #224214;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -226,7 +226,7 @@ input[name="mobileNumberPrefix"] {
 
   .deleteModal {
     background-color: white;
-    border: 2px solid #2b579a;
+    border: 2px solid #224214;
     border-radius: 5px;
     position: fixed;
     top: calc(50% - 125px);

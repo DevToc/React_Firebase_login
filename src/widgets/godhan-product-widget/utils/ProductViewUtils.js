@@ -46,7 +46,7 @@ export const sellerInformationBody = (product) => (
       ) : (
           <span
             style={{
-              backgroundColor: "#2b579a",
+              backgroundColor: "#224214",
               borderRadius: "50%",
               width: "40px",
               height: "40px",
@@ -93,7 +93,7 @@ export const sellerInformationBody = (product) => (
                         {_get(product, "contactEmail") ? (
                           <a
                             href={`mailto:${_get(product, "contactEmail")}`}
-                            style={{ color: "#2b579a" }}
+                            style={{ color: "#224214" }}
                           >
                             {_get(product, "contactEmail")}
                           </a>
@@ -128,7 +128,7 @@ export const sellerInformationBody = (product) => (
                     >
                       <a
                         href={`tel:${_get(product, "contactNumber")}`}
-                        style={{ color: "#2b579a" }}
+                        style={{ color: "#224214" }}
                       >
                         {_get(product, "contactNumber")
                           ? `${globalUtils.getCountryProperty(

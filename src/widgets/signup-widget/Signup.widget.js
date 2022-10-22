@@ -6,7 +6,6 @@ import {
   signupMapStateToProps,
 } from "./Signup.model";
 import { AuthBanner, Notification, ModalComponent, } from "../../components";
-import Select from "../../components/Select/Select";
 import { TextField, InputAdornment, Button, Divider } from "@material-ui/core";
 import _get from "lodash/get";
 import { updateFormStore, validateField, globalConstants, updateFormProperty, globalUtils } from "../../utils";
@@ -20,7 +19,7 @@ const SignupComponent = (props) => {
     checkUserAvailability,
     history,
     authorizationStatus, createNotification,
-    clearAuthStore, setNotification, setFormData, clearNotification
+    clearAuthStore, setNotification, clearNotification
   } = props;
 
   const [isPopupOpen, setOpenConfirmationPopup] = useState(false);
@@ -29,7 +28,7 @@ const SignupComponent = (props) => {
     clearNotification();
     clearAuthStore();
     updateFormStore({ form: "loginForm", field: 'mobileNumberPrefix', value: localStorage.getItem('godhan-location') || 'CA' });
-    if(globalUtils.isTokenAvailable()){
+    if (globalUtils.isTokenAvailable()) {
       history.push("/")
     }
     // eslint-disable-next-line
@@ -116,7 +115,7 @@ const SignupComponent = (props) => {
   const handleKeyPress = () => { };
 
   const handleSubmit = () => {
-    if(_get(loginForm, 'mobileNumberPrefix.value')){
+    if (_get(loginForm, 'mobileNumberPrefix.value')) {
       localStorage.setItem('godhan-location', _get(loginForm, 'mobileNumberPrefix.value'))
     }
     if (_get(loginForm, 'emailAddress.value') && _get(loginForm, 'mobileNumber.value')) {
@@ -138,36 +137,6 @@ const SignupComponent = (props) => {
   };
 
   const isLoginFormValid = () => false;
-
-  const handleMobileNumberPrefix = (value) => {
-    handleChange({
-      target: { name: _get(loginForm, "mobileNumberPrefix.name"), value },
-    });
-    if(value === 'AU' && globalUtils.getCountryFromLocalStorage() !== 'AU'){
-      setFormData({
-        loginForm: {
-          ...loginForm,
-          mobileNumber: {
-            ..._get(loginForm, 'mobileNumber'),
-            rules: ['ISNUMBER', 'MINLENGTH-9', 'MAXLENGTH-10']
-          }
-        }
-      })
-    }
-    if(globalUtils.getCountryFromLocalStorage() === 'AU' && value !== 'AU'){
-      setFormData({
-        loginForm: {
-          ...loginForm,
-          mobileNumber: {
-            ..._get(loginForm, 'mobileNumber'),
-            rules: ['ISNUMBER', 'MINLENGTH-10', 'MAXLENGTH-10']
-          }
-        }
-      })
-    }
-    localStorage.setItem("godhan-location", value);
-
-  }
 
   return (
     <StyledWidget style={{ paddingBottom: 20 }}>
@@ -217,16 +186,21 @@ const SignupComponent = (props) => {
         Or
       </div>
       <div className="display-flex MuiFormControl-marginNormal">
-        <Select
-          placeholderStyle={{ fontSize: 18, fontWeight: 600 }}
-          style={{ marginRight: 10 }}
-          value={_get(loginForm, "mobileNumberPrefix.value")}
-          onChange={(value) => handleMobileNumberPrefix(value)}
-          options={[
-            { value: "IN", label: "+91" },
-            { value: "CA", label: "+1" },
-            { value: "AU", label: "+61" },
-          ]}
+        <TextField
+          name={_get(loginForm, "mobileNumberPrefix.name")}
+          className="disabled-view"
+          placeholder={_get(loginForm, "mobileNumberPrefix.placeholder")}
+          variant="outlined"
+          color="primary"
+          style={{ marginTop: 0, height: "100%", marginRight: 10, width: '25%' }}
+          value="+91"
+          defaultValue="+91"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          InputProps={{
+            readOnly: true,
+          }}
         />
 
         <TextField

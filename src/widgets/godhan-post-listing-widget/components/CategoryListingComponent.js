@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
   link: {
     cursor: "pointer",
-    color: "#2b579a",
+    color: "#224214",
     textDecoration: "underline",
     margin: "1rem",
     textAlign: "center",

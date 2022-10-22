@@ -34,7 +34,7 @@ import * as configs from "./configs/appsettings.json";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#2b579a",
+      main: "#224214", 
     },
     secondary: {
       main: "#a9a9a9",
@@ -65,9 +65,7 @@ const AppComponent = (props) => {
     fetchUserDetails,
     loginSuccess,
     clearNotification,
-    getRentCategories,
     getSellCategories,
-    getWantedCategories,
     getNotifications,
     loader, sellData, rentData, wantedData
   } = props;
@@ -79,8 +77,8 @@ const AppComponent = (props) => {
       document.body.scrollTop === 0;
     }
     getSellCategories();
-    getRentCategories();
-    getWantedCategories();
+    // getRentCategories();
+    // getWantedCategories();
     if (globalUtils.isTokenAvailable()) {
       getNotifications();
     }
@@ -101,7 +99,7 @@ const AppComponent = (props) => {
   }, []);
 
   useEffect(() => {
-    if (sellData?.id && rentData?.id && wantedData?.id)
+    if (sellData?.id)
       if (!isLoaded) {
         setIsLoaded(true);
       }

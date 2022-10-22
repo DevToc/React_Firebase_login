@@ -10,7 +10,7 @@ import {
   validateField,
   globalUtils,
 } from "../../utils";
-import { Button, Input } from "@material-ui/core";
+import { Button, Input, useTheme } from "@material-ui/core";
 
 const Otp = (props) => {
   const {
@@ -98,7 +98,7 @@ const Otp = (props) => {
   }
 
   return (
-    <StyledWidget>
+    <StyledWidget theme={useTheme()}>
       <AuthBanner
         title={
           globalUtils.getCurrentPage() === "otp-confirmation"

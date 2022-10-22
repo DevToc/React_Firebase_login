@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textBlue: {
     verticalAlign: "top",
-    color: "#2b579a",
+    color: "#224214",
   },
   text: {
     verticalAlign: "top",
@@ -83,10 +83,10 @@ const useStyles = makeStyles((theme) => ({
     width: "500px",
   },
   buttons: {
-    color: "#2b579a",
+    color: "#224214",
     borderRadius: "25px",
     border: "solid 2px",
-    borderColor: "#2b579a",
+    borderColor: "#224214",
     borderBottomColor: "rgb(255, 206, 50)",
     borderRightColor: "rgb(255, 206, 50)",
     "&:hover, &:focus": {

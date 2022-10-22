@@ -25,7 +25,7 @@ export const raiseTicketStyle = styled.div`
       font-weight: 500;
       font-size: 18px;
       text-decoration-line: underline !important;
-      color: #2b579a;
+      color: #224214;
     }
   }
   .tabs-header {
@@ -58,7 +58,7 @@ export const raiseTicketStyle = styled.div`
             }
           }
           .Mui-selected {
-            background: #2b579a;
+            background: #224214;
             border-radius: 5px;
             .MuiTab-wrapper {
               color: white;

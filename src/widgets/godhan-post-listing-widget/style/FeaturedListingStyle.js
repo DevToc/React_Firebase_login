@@ -26,7 +26,7 @@ export const featuredListingStyle = styled.div`
     }
 }
 .color-green{
-    background-color: #2b579a;
+    background-color: #224214;
     .MuiTypography-root{
         color: white !important;
         font-weight: 900;

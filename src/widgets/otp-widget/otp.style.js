@@ -24,7 +24,7 @@ export const otpWidgetStyle = styled.div`
   }
   .otp-container {
     background: #ffffff;
-    border: 2px solid #2b579a;
+    border: 2px solid ${(props) => props.theme.palette.primary.main} !important;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     height: 366px;
@@ -47,7 +47,7 @@ export const otpWidgetStyle = styled.div`
     }
   }
   .resend-otp {
-    color: #2b579a;
+    color: ${(props) => props.theme.palette.primary.main} !important;
     font-size: 20px;
     font-family: Lato;
     line-height: 24px;
