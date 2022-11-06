@@ -39,7 +39,6 @@ const ViewProfileComponent = ({
   const imageInputRef = useRef(null);
 
   const handleSignOutButtonClick = () => {
-    globalUtils.removeToken("godhan-location")
     handleSignOut();
   };
 
@@ -57,7 +56,6 @@ const ViewProfileComponent = ({
         "Select a different country and sign up with a new account to change the country.",
       isSuccessful: true,
       handleClose: () => {
-        localStorage.removeItem("godhan-location");
         handleSignOutButtonClick();
         setTimeout(() => {
           history.push("/launch");

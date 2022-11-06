@@ -5,8 +5,8 @@ import {
   loginMapStateToProps,
   loginMapDispatchToProps,
 } from "./LoginWidget.model";
-import { AuthBanner, Notification, ModalComponent } from "../../components";
-import { TextField, InputAdornment, Button, Divider } from "@material-ui/core";
+import { Notification, ModalComponent } from "../../components";
+import { TextField, InputAdornment, Button } from "@material-ui/core";
 import _get from "lodash/get";
 import _isEmpty from "lodash/isEmpty";
 import { formConstants } from "./LoginWidget.constants";
@@ -18,8 +18,10 @@ import {
   updateFormProperty,
 } from "../../utils";
 import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone"
 import { Link, withRouter } from "react-router-dom";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GoogleIcon from '@material-ui/icons/Mail';
 
 const LoginComponent = (props) => {
   const {
@@ -42,12 +44,7 @@ const LoginComponent = (props) => {
     if (_isEmpty(loginForm) || _isEmpty(signupForm)) {
       setFormData(formConstants);
     }
-    updateFormStore({
-      form: "loginForm",
-      field: "mobileNumberPrefix",
-      value: localStorage.getItem("godhan-location") || "CA",
-    });
-    if(globalUtils.isTokenAvailable()){
+    if (globalUtils.isTokenAvailable()) {
       history.push("/")
     }
     // eslint-disable-next-line
@@ -92,7 +89,7 @@ const LoginComponent = (props) => {
     validateField({ form: "loginForm", field: name, data: value?.trim() });
   };
 
-  const handleKeyPress = () => {};
+  const handleKeyPress = () => { };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -111,12 +108,6 @@ const LoginComponent = (props) => {
         });
       }
       if (_get(loginForm, "mobileNumber.value")) {
-        if (_get(loginForm, "mobileNumberPrefix.value")) {
-          localStorage.setItem(
-            "godhan-location",
-            _get(loginForm, "mobileNumberPrefix.value")
-          );
-        }
         checkUserAvailability({
           mobileNumber: _get(loginForm, "mobileNumber.value"),
           prefix: _get(loginForm, "mobileNumberPrefix.value"),
@@ -197,168 +188,147 @@ const LoginComponent = (props) => {
           _get(loginForm, "emailAddress.value")
             ? "Email Address"
             : "Mobile Number"
-        } will be cleared`}
+          } will be cleared`}
         handleCloseClick={handleCloseClick}
         isCancelAvailable
         handleCancel={handleCancel}
       />
-      <AuthBanner title="Login" />
-      <Notification />
-      <div className="select-title">Select an option to proceed</div>
-      <TextField
-        style={{ marginTop: 15 }}
-        className={_get(loginForm, "mobileNumber.value") && "disabled-view"}
-        name="emailAddress"
-        label=""
-        placeholder="E-Mail"
-        variant="outlined"
-        color="primary"
-        margin="normal"
-        value={_get(loginForm, "emailAddress.value")}
-        defaultValue={_get(loginForm, "emailAddress.value")}
-        onChange={(e) => {
-          handleChange(e);
-        }}
-        onClick={(e) => handleFocus(e)}
-        onKeyPress={handleKeyPress}
-        onBlur={(e) => {
-          handleBlur(e);
-        }}
-        onFocus={() => globalUtils.scrollOnClick("emailAddress")}
-        error={!_get(loginForm, "emailAddress.isValid")}
-        helperText={
-          !_get(loginForm, "emailAddress.isValid") &&
-          _get(loginForm, "emailAddress.errorText")
-        }
-        InputLabelProps={{
-          shrink: true,
-        }}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <EmailIcon />
-            </InputAdornment>
-          ),
-        }}
-      />
-      <div className="select-title or-title">Or</div>
-      <div
-        style={{ maxHeight: 46 }}
-        className="display-flex MuiFormControl-marginNormal"
-      >
-        <TextField
-          name={_get(loginForm, "mobileNumberPrefix.name")}
-          className="disabled-view"
-          placeholder={_get(loginForm, "mobileNumberPrefix.placeholder")}
-          variant="outlined"
-          color="primary"
-          style={{ marginTop: 0, height: "100%", marginRight: 10, width: '25%' }}
-          value="+91"
-          defaultValue="+91"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          InputProps={{
-            readOnly: true,
-          }}
-        />
-
-        <TextField
-          name={_get(loginForm, "mobileNumber.name")}
-          className={_get(loginForm, "emailAddress.value") && "disabled-view"}
-          placeholder="Mobile Number"
-          variant="outlined"
-          color="primary"
-          type="tel"
-          fullWidth
-          style={{ marginTop: 0, height: "100%" }}
-          value={_get(loginForm, "mobileNumber.value")}
-          defaultValue={_get(loginForm, "mobileNumber.value")}
-          onChange={(e) => {
-            handleChange(e);
-          }}
-          onKeyPress={handleKeyPress}
-          onBlur={(e) => {
-            handleBlur(e);
-          }}
-          onClick={(e) => handleFocus(e)}
-          onFocus={() => globalUtils.scrollOnClick("mobileNumber")}
-          error={!_get(loginForm, "mobileNumber.isValid")}
-          helperText={
-            !_get(loginForm, "mobileNumber.isValid") &&
-            _get(loginForm, "mobileNumber.errorText")
-          }
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-      </div>
-      <Button
-        type="submit"
-        variant="contained"
-        color="primary"
-        size="large"
-        aria-label="log in"
-        disabled={isLoginFormValid()}
-        key={`${isLoginFormValid()}`}
-        onClick={(e) => handleSubmit(e)}
-        className="continue-button"
-      >
-        Continue
+      <div className="auth-header">
+        <div className="auth-wrapper">
+          <div className="body-section">
+            <div className="godhan-title">Godhan</div>
+            <h2
+              style={{ marginTop: 5, marginBottom: 10 }}
+              className="godhan-sub-title"
+            >
+              Login
+          </h2>
+          </div>
+          {/* <AuthBanner title="Login" /> */}
+          <Notification />
+          <div className="select-title">Select an option to proceed</div>
+          <TextField
+            style={{ marginTop: 15 }}
+            className={_get(loginForm, "mobileNumber.value") && "disabled-view"}
+            name="emailAddress"
+            label=""
+            placeholder="E-Mail"
+            variant="outlined"
+            color="primary"
+            margin="normal"
+            value={_get(loginForm, "emailAddress.value")}
+            defaultValue={_get(loginForm, "emailAddress.value")}
+            onChange={(e) => {
+              handleChange(e);
+            }}
+            onClick={(e) => handleFocus(e)}
+            onKeyPress={handleKeyPress}
+            onBlur={(e) => {
+              handleBlur(e);
+            }}
+            onFocus={() => globalUtils.scrollOnClick("emailAddress")}
+            error={!_get(loginForm, "emailAddress.isValid")}
+            helperText={
+              !_get(loginForm, "emailAddress.isValid") &&
+              _get(loginForm, "emailAddress.errorText")
+            }
+            InputLabelProps={{
+              shrink: true,
+            }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <EmailIcon />
+                </InputAdornment>
+              ),
+            }}
+          />
+          <div className="select-title or-title">Or</div>
+          <div
+            style={{ maxHeight: 46 }}
+            className="display-flex MuiFormControl-marginNormal"
+          >
+            <TextField
+              name={_get(loginForm, "mobileNumber.name")}
+              className={_get(loginForm, "emailAddress.value") && "disabled-view"}
+              placeholder="Mobile number"
+              variant="outlined"
+              color="primary"
+              type="tel"
+              fullWidth
+              style={{ marginTop: 0, height: "100%" }}
+              value={_get(loginForm, "mobileNumber.value")}
+              defaultValue={_get(loginForm, "mobileNumber.value")}
+              onChange={(e) => {
+                handleChange(e);
+              }}
+              onKeyPress={handleKeyPress}
+              onBlur={(e) => {
+                handleBlur(e);
+              }}
+              onClick={(e) => handleFocus(e)}
+              onFocus={() => globalUtils.scrollOnClick("mobileNumber")}
+              error={!_get(loginForm, "mobileNumber.isValid")}
+              helperText={
+                !_get(loginForm, "mobileNumber.isValid") &&
+                _get(loginForm, "mobileNumber.errorText")
+              }
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <PhoneIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </div>
+          <div className="button-wrapper">
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              aria-label="log in"
+              disabled={isLoginFormValid()}
+              key={`${isLoginFormValid()}`}
+              onClick={(e) => handleSubmit(e)}
+              className="continue-button"
+              fullWidth
+            >
+              Continue
       </Button>
-      <div className="select-title-small justify-content">Or</div>
-      <div className="login-with-label justify-content">Login with</div>
-      <Divider variant="middle" className="divider-login-with" />
-      <div style={{ marginTop: 10 }} className="oauth-section">
-        <div className="row">
-          <a href={globalConstants.oauthConstants.FACEBOOK_AUTH_URL}>
-            <img
-              src="/assets/images/fb-icon.svg"
-              alt="fb-icon"
-              className="fb-icon"
-            />
-          </a>
-          <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL}>
-            <img
-              src="/assets/images/google-icon.svg"
-              alt="google-icon"
-              className="fb-icon"
-            />
-          </a>
-        </div>
-        <div className="row">
-          <div className="oauth-label">
-            <a href={globalConstants.oauthConstants.FACEBOOK_AUTH_URL}>
-              Facebook
-            </a>
+            <div className="select-title-small justify-content">Alternately, you can</div>
+            <br />
+
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
+              Continue with
+          </Button>
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              fullWidth
+              className="oauth-button"
+              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              Continue with
+          </Button>
           </div>
-          <div className="oauth-label">
-            <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL}>Google</a>
+          <div className="justify-content new-user-label">
+            Are you a new user? &nbsp;<Link to="/signup" className="underline-text">Signup</Link> &nbsp; or &nbsp;
+            <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
+            </Link>
           </div>
         </div>
-        <Divider variant="middle" className="divider-login-with post-login" />
       </div>
-      <div className="justify-content new-user-label">
-        New User? &nbsp;<Link to="/signup">Signup</Link>
-      </div>
-      <Link to="/">
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          size="large"
-          aria-label="log in"
-          className="continue-button"
-          style={{
-            width: 100,
-            height: 30,
-            padding: 0,
-            paddingLeft: 13,
-          }}
-        >
-          Skip <ChevronRightIcon className="righ-arrow" />
-        </Button>
-      </Link>
     </StyledWidget>
   );
 };

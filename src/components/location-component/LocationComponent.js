@@ -70,7 +70,7 @@ export const LocationComponent = ({
   const classes = useStyles();
 
   // these options will bias the autocomplete predictions toward a particular country,
-  const countryCode = _.get(userDetails,"countryCode") || localStorage.getItem("godhan-location");
+  const countryCode = "IN";
   let searchOptions = {
     type: ['geocode']
   };

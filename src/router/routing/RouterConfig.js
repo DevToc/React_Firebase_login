@@ -30,12 +30,7 @@ export const MobileRouterConfig = [
   {
     id: 1,
     path: "/",
-    component: _.includes(
-      ["CA", "AU", "IN"],
-      localStorage.getItem("godhan-location")
-    )
-      ? HomeWidget
-      : LaunchWidget,
+    component: HomeWidget
   },
   {
     id: 2,

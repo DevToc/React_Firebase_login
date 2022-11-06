@@ -20,7 +20,7 @@ const fetchLocationFromCoords = (payload) => {
         const data = await res.json();
         if (_get(data, 'results[0].address_components.length', 0) > 2) {
           const countryShortName = data?.results[0]?.address_components[data.results[0].address_components.length - 2]?.short_name;
-          const userSelectedCountry = _get(getState(), 'user.userData.countryCode') || localStorage.getItem("godhan-location");
+          const userSelectedCountry = "IN";
           if (countryShortName !== userSelectedCountry) {
             return alert(`You're trying to access Godhan from a different region. Please retry after choosing the correct country from Profile section`)
           }
@@ -114,7 +114,7 @@ const fetchLocationFromCoordsHome = (payload) => {
         const data = await res.json();
         if (_get(data, 'results[0].address_components.length', 0) > 2) {
           const countryShortName = data?.results[0]?.address_components[data.results[0].address_components.length - 2]?.short_name;
-          const userSelectedCountry = _get(getState(), 'user.userData.countryCode') || localStorage.getItem("godhan-location");
+          const userSelectedCountry = "IN";
           if (countryShortName !== userSelectedCountry) {
             return alert(`You're trying to access Godhan from a different region. Please retry after choosing the correct country from Profile section`)
           }

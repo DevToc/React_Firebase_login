@@ -1,6 +1,6 @@
 body {
   background-color: #fffafa !important;
-  font-family: "Ubuntu", Roboto, '"Helvetica Neue"', Arial, sans-serif !important;
+  font-family: "Merriweather-Italic", Roboto, '"Helvetica Neue"', Arial, sans-serif !important;
   font-size: 14px;
   line-height: 1.43;
   color: #0e0c0c;
@@ -125,7 +125,7 @@ h2{
 
   body {
     background-color: #fffafa !important;
-    font-family: Lato !important;
+    font-family: Merriweather-Regular !important;
     font-size: 13px;
     line-height: 1.43;
     color: #0e0c0c;
@@ -158,7 +158,7 @@ h2{
 
   .MuiTypography-body1 {
     font-size: 13px !important;
-    font-family: Ubuntu, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Merriweather-Italic", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     line-height: 1.5 !important;
   }
@@ -230,7 +230,7 @@ h2{
     font-size: 1rem;
     box-sizing: border-box;
     min-height: 48px;
-    font-family: Ubuntu, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Merriweather-Italic", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     padding-top: 1px;
@@ -277,7 +277,7 @@ a {
 }
 
 .ribbon-content {
-  font-family: Lato;
+  font-family: Merriweather-Regular;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -350,4 +350,17 @@ h1 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "Merriweather-Regular";
+  src:  url("/fonts/Merriweather-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather-Italic";
+  src:  url("/fonts/Merriweather-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather-Bold-Italic";
+  src:  url("/fonts/Merriweather-BoldItalic.ttf") format("truetype");
 }

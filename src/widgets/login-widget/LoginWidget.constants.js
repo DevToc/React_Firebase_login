@@ -9,16 +9,11 @@ export const formConstants = {
     loginForm: {
         mobileNumber: {
             name: 'mobileNumber',
-            rules: localStorage.getItem("godhan-location") === "AU" ? ['ISNUMBER', 'MINLENGTH-9', 'MAXLENGTH-10'] : ['ISNUMBER', 'MINLENGTH-10', 'MAXLENGTH-10'],
-            placeholder: 'Mobile Number',
+            rules: ['ISNUMBER', 'MINLENGTH-10', 'MAXLENGTH-10'],
+            placeholder: 'Mobile number',
             value: '',
             isValid: true,
             errorText: 'Invalid mobile number'
-        },
-        mobileNumberPrefix: {
-            name: 'mobileNumberPrefix',
-            placeholder: 'Mobile Number',
-            value: mobileNumberPrefixConstants[localStorage.getItem("godhan-location")]
         },
         emailAddress: {
             name: 'emailAddress',

@@ -99,67 +99,71 @@ const Otp = (props) => {
 
   return (
     <StyledWidget theme={useTheme()}>
-      <AuthBanner
-        title={
-          globalUtils.getCurrentPage() === "otp-confirmation"
-            ? "Signup"
-            : "Forgot Password"
-        }
-      />
-      <span className="otp-container-box">
-      <Notification />
-      </span>
-      <div className="otp-container margin-left-right-auto">
-        <div className="display-flex justify-flex-end">
-          <div onClick={handleChangeButtonClick}>
-            <div className="mar-1">X</div>
-          </div>
-        </div>
-        <div className="otp-sub-title justify-content margin-subtitle">
-          OTP sent on your{" "}
-          {_get(loginForm, "emailAddress.value") ? "Email" : "Mobile"}
-        </div>
-        <div className="otp-sub-title justify-content">
-          <span className="otp-label">{_get(loginForm, "emailAddress.value") ||
-            _get(loginForm, "mobileNumber.value")}{" "}</span>
-          &nbsp;<div className="display-link" onClick={handleChangeButtonClick}>Change</div>
-        </div>
-        <br />
-        <div className="otp-sub-title justify-content">Enter OTP</div>
-        <br />
-        <div onKeyPress={handleKeyPress} className="otp-input">
-          <Input
-            name="OTP"
-            placeholder={"Enter OTP"}
-            value={_get(otp, "value")}
-            autoFocus
-            style={{ fontSize: '18px' }}
-            type="number"
-            onChange={handleChange}
-            error={!_get(otp, "isValid")}
-            helperText={!_get(otp, "isValid") && _get(otp, "errorText")}
-            onKeyDown={(e) => e.keyCode === 69}
+      <div className="auth-header">
+        <div className="auth-wrapper">
+          <AuthBanner
+            title={
+              globalUtils.getCurrentPage() === "otp-confirmation"
+                ? "Signup"
+                : "Forgot Password"
+            }
           />
-        </div>
-        <Button
-          style={{ borderRadius: 5 }}
-          type="submit"
-          variant="contained"
-          color="primary"
-          size="large"
-          aria-label="submit-otp"
-          disableElevation
-          className="confirm-button"
-          onClick={() => postOtp()}
-          disabled={isOtpButtonDisabled()}
-          key={`${isOtpButtonDisabled()}`}
-        >
-          Confirm
+          <span className="otp-container-box">
+            <Notification />
+          </span>
+          <div className="otp-container margin-left-right-auto">
+            <div className="display-flex justify-flex-end">
+              <div onClick={handleChangeButtonClick}>
+                <div className="mar-1">X</div>
+              </div>
+            </div>
+            <div className="otp-sub-title justify-content margin-subtitle">
+              OTP sent on your{" "}
+              {_get(loginForm, "emailAddress.value") ? "Email" : "Mobile"}
+            </div>
+            <div className="otp-sub-title justify-content">
+              <span className="otp-label">{_get(loginForm, "emailAddress.value") ||
+                _get(loginForm, "mobileNumber.value")}{" "}</span>
+              &nbsp;<div className="display-link underline-text" onClick={handleChangeButtonClick}>Change</div>
+            </div>
+            <br />
+            <div className="otp-sub-title justify-content">Enter OTP</div>
+            <br />
+            <div onKeyPress={handleKeyPress} className="otp-input">
+              <Input
+                name="OTP"
+                placeholder={"Enter OTP"}
+                value={_get(otp, "value")}
+                autoFocus
+                style={{ fontSize: '18px' }}
+                type="number"
+                onChange={handleChange}
+                error={!_get(otp, "isValid")}
+                helperText={!_get(otp, "isValid") && _get(otp, "errorText")}
+                onKeyDown={(e) => e.keyCode === 69}
+              />
+            </div>
+            <Button
+              style={{ borderRadius: 5 }}
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              aria-label="submit-otp"
+              disableElevation
+              fullWidth
+              className="confirm-button"
+              onClick={() => postOtp()}
+              disabled={isOtpButtonDisabled()}
+              key={`${isOtpButtonDisabled()}`}
+            >
+              Confirm
         </Button>
-        <div className='otp-sub-title justify-content margin-alignment'>
-          <p>Did not receive it? <span className="display-link" onClick={() => resendOtpToNumber()}> Resend OTP</span></p>
-        </div>
-      </div>
+            <div className='otp-sub-title justify-content margin-alignment'>
+              <p>Did not receive it? <span className="display-link underline-text" onClick={() => resendOtpToNumber()}> Resend OTP</span></p>
+            </div>
+          </div>
+        </div></div>
     </StyledWidget>
   );
 };

@@ -11,7 +11,9 @@ import _get from "lodash/get";
 import { updateFormStore, validateField, globalConstants, updateFormProperty, globalUtils } from "../../utils";
 import EmailIcon from "@material-ui/icons/Email";
 import { Link, withRouter } from "react-router-dom";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GoogleIcon from '@material-ui/icons/Mail';
+import PhoneIcon from "@material-ui/icons/Phone"
 
 const SignupComponent = (props) => {
   const {
@@ -27,7 +29,6 @@ const SignupComponent = (props) => {
   useEffect(() => {
     clearNotification();
     clearAuthStore();
-    updateFormStore({ form: "loginForm", field: 'mobileNumberPrefix', value: localStorage.getItem('godhan-location') || 'CA' });
     if (globalUtils.isTokenAvailable()) {
       history.push("/")
     }
@@ -115,9 +116,6 @@ const SignupComponent = (props) => {
   const handleKeyPress = () => { };
 
   const handleSubmit = () => {
-    if (_get(loginForm, 'mobileNumberPrefix.value')) {
-      localStorage.setItem('godhan-location', _get(loginForm, 'mobileNumberPrefix.value'))
-    }
     if (_get(loginForm, 'emailAddress.value') && _get(loginForm, 'mobileNumber.value')) {
       setNotification({
         message: 'Please enter either email or mobile.',
@@ -148,132 +146,123 @@ const SignupComponent = (props) => {
         isCancelAvailable
         handleCancel={handleCancel}
       />
-      <AuthBanner title="Signup" />
-      <Notification />
-      <div className="select-title">Select an option to proceed</div>
-      <TextField
-        name="emailAddress"
-        label=""
-        placeholder="E-Mail"
-        variant="outlined"
-        color="primary"
-        className={_get(loginForm, "mobileNumber.value") && "disabled-view"}
-        margin="normal"
-        value={_get(loginForm, "emailAddress.value")}
-        defaultValue={_get(loginForm, "emailAddress.value")}
-        onChange={(e) => { handleChange(e); }}
-        onClick={(e) => handleFocus(e)}
-        onBlur={(e) => { handleBlur(e) }}
-        onKeyPress={handleKeyPress}
-        onFocus={() => globalUtils.scrollOnClick("emailAddress")}
-        error={!_get(loginForm, "emailAddress.isValid")}
-        helperText={
-          !_get(loginForm, "emailAddress.isValid") &&
-          _get(loginForm, "emailAddress.errorText")
-        }
-        InputLabelProps={{
-          shrink: true,
-        }}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <EmailIcon />
-            </InputAdornment>
-          ),
-        }}
-      />
-      <div style={{ marginTop: 8, marginBottom: 6 }} className="select-title">
-        Or
-      </div>
-      <div className="display-flex MuiFormControl-marginNormal">
-        <TextField
-          name={_get(loginForm, "mobileNumberPrefix.name")}
-          className="disabled-view"
-          placeholder={_get(loginForm, "mobileNumberPrefix.placeholder")}
-          variant="outlined"
-          color="primary"
-          style={{ marginTop: 0, height: "100%", marginRight: 10, width: '25%' }}
-          value="+91"
-          defaultValue="+91"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          InputProps={{
-            readOnly: true,
-          }}
-        />
+      <div className="auth-header">
+        <div className="auth-wrapper">
+          <AuthBanner title="Sign up" />
+          <Notification />
+          <div className="select-title">Select an option to proceed</div>
+          <TextField
+            name="emailAddress"
+            label=""
+            placeholder="E-Mail"
+            variant="outlined"
+            color="primary"
+            className={_get(loginForm, "mobileNumber.value") && "disabled-view"}
+            margin="normal"
+            value={_get(loginForm, "emailAddress.value")}
+            defaultValue={_get(loginForm, "emailAddress.value")}
+            onChange={(e) => { handleChange(e); }}
+            onClick={(e) => handleFocus(e)}
+            onBlur={(e) => { handleBlur(e) }}
+            onKeyPress={handleKeyPress}
+            onFocus={() => globalUtils.scrollOnClick("emailAddress")}
+            error={!_get(loginForm, "emailAddress.isValid")}
+            helperText={
+              !_get(loginForm, "emailAddress.isValid") &&
+              _get(loginForm, "emailAddress.errorText")
+            }
+            InputLabelProps={{
+              shrink: true,
+            }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <EmailIcon />
+                </InputAdornment>
+              ),
+            }}
+          />
+          <div className="select-title">
+            Or
+          </div>
+          <div className="display-flex MuiFormControl-marginNormal">
 
-        <TextField
-          name={_get(loginForm, "mobileNumber.name")}
-          placeholder="Mobile Number"
-          variant="outlined"
-          color="primary"
-          type="tel"
-          fullWidth
-          className={_get(loginForm, "emailAddress.value") && "disabled-view"}
-          style={{ marginTop: 0 }}
-          value={_get(loginForm, "mobileNumber.value")}
-          defaultValue={_get(loginForm, "mobileNumber.value")}
-          onChange={(e) => { handleChange(e); }}
-          onClick={(e) => handleFocus(e)}
-          onFocus={() => globalUtils.scrollOnClick("mobileNumber")}
-          onKeyPress={handleKeyPress}
-          error={!_get(loginForm, "mobileNumber.isValid")}
-          helperText={
-            !_get(loginForm, "mobileNumber.isValid") &&
-            _get(loginForm, "mobileNumber.errorText")
-          }
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-      </div>
-      <Button
-        type="submit"
-        variant="contained"
-        color="primary"
-        size="large"
-        aria-label="log in"
-        disabled={isLoginFormValid()}
-        key={`${isLoginFormValid()}`}
-        onClick={() => handleSubmit()}
-        className="continue-button"
-      >
-        Get OTP
+            <TextField
+              name={_get(loginForm, "mobileNumber.name")}
+              placeholder="Mobile Number"
+              variant="outlined"
+              color="primary"
+              type="tel"
+              fullWidth
+              className={_get(loginForm, "emailAddress.value") && "disabled-view"}
+              style={{ marginTop: 0 }}
+              value={_get(loginForm, "mobileNumber.value")}
+              defaultValue={_get(loginForm, "mobileNumber.value")}
+              onChange={(e) => { handleChange(e); }}
+              onClick={(e) => handleFocus(e)}
+              onFocus={() => globalUtils.scrollOnClick("mobileNumber")}
+              onKeyPress={handleKeyPress}
+              error={!_get(loginForm, "mobileNumber.isValid")}
+              helperText={
+                !_get(loginForm, "mobileNumber.isValid") &&
+                _get(loginForm, "mobileNumber.errorText")
+              }
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <PhoneIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </div>
+          <div className="button-wrapper">
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              aria-label="log in"
+              fullWidth
+              disabled={isLoginFormValid()}
+              key={`${isLoginFormValid()}`}
+              onClick={() => handleSubmit()}
+              className="continue-button"
+            >
+              Get OTP
       </Button>
-      <div className="select-title-small justify-content">Or</div>
-      <div className="login-with-label justify-content">Signup with</div>
-      <Divider variant="middle" className="divider-login-with" />
-      <div className="oauth-section">
-        <div className="row">
-          <a href={globalConstants.oauthConstants.FACEBOOK_AUTH_URL}>
-            <img
-              src="/assets/images/fb-icon.svg"
-              alt="fb-icon"
-              className="fb-icon"
-            />
-          </a>
-          <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL}>
-            <img
-              src="/assets/images/google-icon.svg"
-              alt="google-icon"
-              className="fb-icon"
-            />
-          </a>
-        </div>
-        <div className="row">
-          <div className="oauth-label">
-            <a href={globalConstants.oauthConstants.FACEBOOK_AUTH_URL}>
-              Facebook
-            </a>
+            <div className="select-title-small justify-content">Alternately, you can</div>
+            <br />
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
+              Signup with
+</Button>
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              Signup with
+</Button>
           </div>
-          <div className="oauth-label">
-            <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL}>Google</a>
+          <div className="justify-content new-user-label">
+            Existing User? &nbsp;<Link to="/login" className="underline-text">Login</Link> &nbsp; or &nbsp;
+  <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
+  </Link>
           </div>
         </div>
-        <Divider variant="middle" className="divider-login-with post-login" />
       </div>
-      <div style={{ marginTop: 8 }} className="justify-content new-user-label">
+      {/* <div style={{ marginTop: 8 }} className="justify-content new-user-label">
         Already a member? &nbsp;<Link to="/login">Login</Link>
       </div>
       <Link to="/">
@@ -293,7 +282,7 @@ const SignupComponent = (props) => {
         >
           Skip <ChevronRightIcon className="righ-arrow" />
         </Button>
-      </Link>
+      </Link> */}
     </StyledWidget>
   );
 };

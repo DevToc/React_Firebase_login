@@ -1,12 +1,11 @@
 .body-section{
-    margin-top: -2.5rem;
-    margin-bottom: auto;
+    // margin-bottom: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .godhan-title{
-        font-family: Ubuntu;
+        font-family: "Merriweather-Bold-Italic";
         font-style: normal;
         font-weight: normal;
         font-size: 50px !important;
@@ -14,7 +13,7 @@
         letter-spacing: 0.01em;
     }
     .godhan-sub-title{
-        font-family: Ubuntu;
+        font-family: "Merriweather-Italic";
         font-style: normal;
         font-weight: normal;
         font-size: 25px;
@@ -61,7 +60,7 @@ hr{
 }
 .contact-label{
     .MuiTypography-root{
-        font-family: "Lato";
+        font-family: "Merriweather-Regular";
         font-weight: bold;
         font-size: 18px;
     }

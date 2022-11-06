@@ -493,7 +493,7 @@ const SubmitListingComponent = ({
                 style={{
                     marginTop: 20,
                     padding: '0 6px 0 9px',
-                    fontFamily: 'Lato',
+                    fontFamily: 'Merriweather-Regular',
                     fontStyle: 'normal',
                     fontWeight: 500,
                     fontSize: '18px',

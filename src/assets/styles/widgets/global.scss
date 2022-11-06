@@ -1,9 +1,12 @@
 body {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     overflow-x: hidden !important;
 }
 .primary{
   color: '#224214';
+}
+.underline-text{
+  text-decoration: underline !important;
 }
 @media only screen and (min-width: 301px){
   .contact-label{
@@ -74,7 +77,7 @@ body {
   margin-top: env(safe-area-inset-top)  !important;
 }
 .form-label {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: bold !important;
     font-size: 18px;

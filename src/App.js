@@ -45,8 +45,8 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      "Ubuntu",
-      "Lato",
+      "Merriweather-Italic",
+      "Merriweather-Regular",
       "Inter",
       '"Helvetica Neue"',
       "Arial",

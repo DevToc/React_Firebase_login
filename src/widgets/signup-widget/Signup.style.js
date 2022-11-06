@@ -1,6 +1,49 @@
 import styled from "styled-components";
 
 export const signupWidgetStyle = styled.div`
+.button-wrapper{
+  width: 70%;
+  margin: auto;
+}
+.oauth-button{
+  margin: auto;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  span {
+    font-size: 18px;
+    font-family: Merriweather-Regular;
+  }
+}
+.auth-header{
+  background-image: url("/assets/images/cattle-header.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 95vh;
+  display: flex;
+  .auth-wrapper{
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 800px){
+  .auth-header{
+    background-size: 60%;
+    height: 100vh;
+    background-position: left bottom !important;
+    background-image: url("/assets/images/cattle-header-transparent.png");
+  }
+  .auth-wrapper{
+    padding: 10px;
+    height: 80%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .auth-wrapper{
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  }
+}
   .select-title {
     font-size: 20px;
     justify-content: center;
@@ -14,15 +57,14 @@ export const signupWidgetStyle = styled.div`
   }
   .continue-button {
     margin-top: 25px;
-    width: 150px;
     height: 45px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     span {
       font-size: 18px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
     }
   }
@@ -31,7 +73,7 @@ export const signupWidgetStyle = styled.div`
     margin-top: 10px;
   }
   .login-with-label {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -71,7 +113,7 @@ export const signupWidgetStyle = styled.div`
     color: white !important;
   }
   .MuiInputBase-root {
-    border-radius: 5px;
+    border-radius: 25px;
   }
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px !important;

@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   textarea: {
     width: "100%",
     padding: "15px 9px",
-    fontFamily: "Lato",
+    fontFamily: "Merriweather-Regular",
     fontStyle: "normal",
     fontWeight: "600",
     fontSize: 15,
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   textareaError: {
     width: "100%",
     padding: "15px 9px",
-    fontFamily: "Lato",
+    fontFamily: "Merriweather-Regular",
     fontStyle: "normal",
     fontWeight: "600",
     fontSize: 15,

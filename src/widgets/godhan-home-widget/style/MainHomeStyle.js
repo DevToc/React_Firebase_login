@@ -130,7 +130,7 @@ export const mainHomeStyle = styled.div`
   text-transform: uppercase;
 }
 .heading {
-  font-family: Lato;
+  font-family: Merriweather-Regular;
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -333,7 +333,7 @@ export const mainHomeStyle = styled.div`
     outline: none;
     height: 42px;
     width: 100%;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

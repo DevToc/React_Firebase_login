@@ -129,28 +129,17 @@ class GlobalUtils {
   };
 
   getCountryProperty = (property, countryCode = "") => {
-    if(countryCode){
-       const countryDomain =   globalConstants.getCountry[countryCode];
+    if (countryCode) {
+      const countryDomain = globalConstants.getCountry[countryCode];
       const val = globalConstants.godhanAddress[countryDomain];
       return val[property];
     } else {
-      const url = this.getHostName();
       let country = "";
-      if (
-          _includes(["CA", "AU", "IN"], localStorage.getItem("godhan-location"))
-      ) {
-        country =
-            globalConstants.getCountry[localStorage.getItem("godhan-location")];
-        const val = globalConstants.godhanAddress[country];
-        return val[property];
-      } else {
-        if (url in globalConstants.godhanAddress) {
-          country = globalConstants.godhanAddress[url];
-        } else {
-          country = globalConstants.godhanAddress["com"];
-        }
-      }
-      return country[property];
+      country =
+        globalConstants.getCountry["IN"];
+      const val = globalConstants.godhanAddress[country];
+      return val[property];
+
     }
   };
 

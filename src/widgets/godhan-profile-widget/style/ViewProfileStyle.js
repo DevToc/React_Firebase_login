@@ -35,7 +35,7 @@ input[name="mobileNumberPrefix"] {
   }
 
   .infoHeading {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 20px !important;
@@ -87,7 +87,7 @@ input[name="mobileNumberPrefix"] {
   }
   .userName {
     text-align: center;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -99,7 +99,7 @@ input[name="mobileNumberPrefix"] {
     padding: 0 10px;
 
     h2 {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: normal;
       color: #000000;
@@ -115,7 +115,7 @@ input[name="mobileNumberPrefix"] {
     }
 
     .infoLabel {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: 600 !important;
       font-size: 14px;
@@ -124,7 +124,7 @@ input[name="mobileNumberPrefix"] {
     }
 
     .infoValue {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -141,7 +141,7 @@ input[name="mobileNumberPrefix"] {
     width: 100%;
 
     .feedbackText {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.8);
@@ -150,7 +150,7 @@ input[name="mobileNumberPrefix"] {
     }
   }
   .footerLink {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -212,7 +212,7 @@ input[name="mobileNumberPrefix"] {
 
   .contactButton {
     padding: 0 6px 0 9px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -234,7 +234,7 @@ input[name="mobileNumberPrefix"] {
   }
 
   .deleteModalText {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 24px !important;

@@ -227,7 +227,7 @@ const RaiseTicketComponent = (props) => {
                     className="cancel-button"
                     style={{
                         padding: '0 6px 0 9px',
-                        fontFamily: 'Lato',
+                        fontFamily: 'Merriweather-Regular',
                         fontStyle: 'normal',
                         fontWeight: 500,
                         fontSize: '18px',
@@ -254,7 +254,7 @@ const RaiseTicketComponent = (props) => {
                     onClick={handleSubmit}
                     style={{
                         padding: '0 6px 0 9px',
-                        fontFamily: 'Lato',
+                        fontFamily: 'Merriweather-Regular',
                         fontStyle: 'normal',
                         fontWeight: 500,
                         fontSize: '18px',

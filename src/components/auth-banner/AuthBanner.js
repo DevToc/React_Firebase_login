@@ -4,11 +4,6 @@ export const AuthBanner = (props) => {
   const { title } = props;
   return (
     <>
-      <img
-        src="/assets/images/auth-header.svg"
-        alt="auth-header"
-        className="auth-banner"
-      />
       <div className="body-section">
         <div className="godhan-title">Godhan</div>
         <h2
@@ -16,7 +11,7 @@ export const AuthBanner = (props) => {
           className="godhan-sub-title"
         >
           {title}
-        </h2>
+          </h2>
       </div>
     </>
   );
