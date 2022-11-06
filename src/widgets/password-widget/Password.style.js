@@ -47,11 +47,11 @@ export const passwordWidgetStyle = styled.div`
     display: flex;
     margin-top: 43px;
     text-align: center;
-    font-family: Ubuntu;
+    font-family: "Merriweather-Italic";
   }
   .title-font {
     font-size: 20px;
-    font-family: Ubuntu;
+    font-family: "Merriweather-Italic";
   }
   .MuiFormControl-marginNormal {
     padding-left: 30px;

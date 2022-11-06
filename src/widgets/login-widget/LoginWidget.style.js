@@ -50,7 +50,7 @@ export const loginWidgetStyle = styled.div`
     justify-content: center;
     display: flex;
     margin-bottom: 6px;
-    font-family: Ubuntu;
+    font-family: "Merriweather-Italic";
     letter-spacing: 0.01em;
     font-weight: normal;
     line-height: 23px;
@@ -123,7 +123,7 @@ export const loginWidgetStyle = styled.div`
   .new-user-label {
     font-size: 18px;
     color: #001d48;
-    font-family: Ubuntu;
+    font-family: "Merriweather-Italic";
     margin-top: 11px;
   }
   .righ-arrow {

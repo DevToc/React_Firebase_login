@@ -17,7 +17,7 @@ export const mainPostWidgetStyle = styled.div`
 }
 .MuiTypography-h6 {
     font-size: 1.25rem;
-    font-family: Ubuntu,Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: "Merriweather-Italic",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-weight: 500;
     line-height: 1.6;
     padding-top: 3px;
