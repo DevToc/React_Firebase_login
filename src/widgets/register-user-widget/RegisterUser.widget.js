@@ -83,129 +83,132 @@ const RegisterUser = (props) => {
     }
     return (
         <StyledWidget>
-            <AuthBanner title="Signup" />
-            <Notification />
-            <div className="select-title">Select an option to proceed</div>
-            <div className="register-user-body">
-                <TextField
-                    name={_get(signupForm, 'name.name')}
-                    placeholder={_get(signupForm, 'name.placeholder')}
-                    variant="outlined"
-                    color="primary"
-                    type="text"
-                    margin="normal"
-                    value={_get(signupForm, 'name.value')}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    error={!_get(signupForm, "name.isValid")}
-                    helperText={!_get(signupForm, "name.isValid") && _get(signupForm, 'name.errorText')}
-                    InputLabelProps={{
-                        shrink: true,
-                    }}
-                />
-                <TextField
-                    name={_get(signupForm, 'password.name')}
-                    placeholder={_get(signupForm, 'password.placeholder')}
-                    variant="outlined"
-                    color="primary"
-                    type={showPassword ? "text" : "password"}
-                    margin="normal"
-                    value={_get(signupForm, 'password.value')}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    error={!_get(signupForm, "password.isValid")}
-                    helperText={!_get(signupForm, "password.isValid") && _get(signupForm, 'password.errorText')}
-                    InputLabelProps={{
-                        shrink: true,
-                    }}
-                    InputProps={{
-                        startAdornment: (
-                            <InputAdornment position='end'>
-                                <LockIcon />
-                            </InputAdornment>
-                        ),
-                        endAdornment: (
-                            <InputAdornment position="end">
-                                <IconButton
-                                    aria-label="toggle password visibility"
-                                    onClick={handleClickShowPassword}
-                                    edge="end"
-                                >
-                                    {showPassword ? <Visibility /> : <VisibilityOff />}
-                                </IconButton>
-                            </InputAdornment>
-                        ),
-                    }}
-                />
-                <TextField
-                    name={_get(signupForm, 'confirmpassword.name')}
-                    placeholder={_get(signupForm, 'confirmpassword.placeholder')}
-                    variant="outlined"
-                    color="primary"
-                    type={showConfirmPassword ? "text" : "password"}
-                    margin="normal"
-                    value={_get(signupForm, 'confirmpassword.value')}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    error={!_get(signupForm, "confirmpassword.isValid")}
-                    helperText={!_get(signupForm, "confirmpassword.isValid") && _get(signupForm, 'confirmpassword.errorText')}
-                    InputLabelProps={{
-                        shrink: true,
-                    }}
-                    InputProps={{
-                        startAdornment: (
-                            <InputAdornment position='end'>
-                                <LockIcon />
-                            </InputAdornment>
-                        ),
-                        endAdornment: (
-                            <InputAdornment position="end">
-                                <IconButton
-                                    aria-label="toggle password visibility"
-                                    onClick={handleClickShowConfirmPassword}
-                                    edge="end"
-                                >
-                                    {showConfirmPassword ? <Visibility /> : <VisibilityOff />}
-                                </IconButton>
-                            </InputAdornment>
-                        ),
-                    }}
-                />
-                <FormControlLabel
-                    name="acceptTermsAndConditions"
-                    control={<Checkbox
-                        color="primary"
-                        required
-                        value={checkBoxChecked}
-                        onChange={() => {
-                            setCheckBoxChecked(!checkBoxChecked)
-                            clearNotification()
-                        }}
-                    />}
-                    label={
-                        <span>
-                            I agree with all the{" "}
-                            <Link to="/terms-of-use" className="primary">terms &amp; conditions</Link>
-                        </span>
-                    }
-                />
-                <Button
-                    type="submit"
-                    variant="contained"
-                    color="primary"
-                    className="signup-button"
-                    size="large"
-                    aria-label="log in"
-                    disableElevation
-                    onClick={() => handleSubmit()}
-                    disabled={isSignupDisabled()}
-                    key={`${isSignupDisabled()}`}
-                >
-                    Sign up
+            <div className="auth-header">
+                <div className="auth-wrapper">
+                    <AuthBanner title="Signup" />
+                    <Notification />
+                    <div className="select-title">Select an option to proceed</div>
+                    <div className="register-user-body">
+                        <TextField
+                            name={_get(signupForm, 'name.name')}
+                            placeholder={_get(signupForm, 'name.placeholder')}
+                            variant="outlined"
+                            color="primary"
+                            type="text"
+                            margin="normal"
+                            value={_get(signupForm, 'name.value')}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            error={!_get(signupForm, "name.isValid")}
+                            helperText={!_get(signupForm, "name.isValid") && _get(signupForm, 'name.errorText')}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                        />
+                        <TextField
+                            name={_get(signupForm, 'password.name')}
+                            placeholder={_get(signupForm, 'password.placeholder')}
+                            variant="outlined"
+                            color="primary"
+                            type={showPassword ? "text" : "password"}
+                            margin="normal"
+                            value={_get(signupForm, 'password.value')}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            error={!_get(signupForm, "password.isValid")}
+                            helperText={!_get(signupForm, "password.isValid") && _get(signupForm, 'password.errorText')}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position='end'>
+                                        <LockIcon />
+                                    </InputAdornment>
+                                ),
+                                endAdornment: (
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            edge="end"
+                                        >
+                                            {showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                ),
+                            }}
+                        />
+                        <TextField
+                            name={_get(signupForm, 'confirmpassword.name')}
+                            placeholder={_get(signupForm, 'confirmpassword.placeholder')}
+                            variant="outlined"
+                            color="primary"
+                            type={showConfirmPassword ? "text" : "password"}
+                            margin="normal"
+                            value={_get(signupForm, 'confirmpassword.value')}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            error={!_get(signupForm, "confirmpassword.isValid")}
+                            helperText={!_get(signupForm, "confirmpassword.isValid") && _get(signupForm, 'confirmpassword.errorText')}
+                            InputLabelProps={{
+                                shrink: true,
+                            }}
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position='end'>
+                                        <LockIcon />
+                                    </InputAdornment>
+                                ),
+                                endAdornment: (
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowConfirmPassword}
+                                            edge="end"
+                                        >
+                                            {showConfirmPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                ),
+                            }}
+                        />
+                        <FormControlLabel
+                            name="acceptTermsAndConditions"
+                            control={<Checkbox
+                                color="primary"
+                                required
+                                value={checkBoxChecked}
+                                onChange={() => {
+                                    setCheckBoxChecked(!checkBoxChecked)
+                                    clearNotification()
+                                }}
+                            />}
+                            label={
+                                <span>
+                                    I agree with all the{" "}
+                                    <Link to="/terms-of-use" className="primary">terms &amp; conditions</Link>
+                                </span>
+                            }
+                        />
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            color="primary"
+                            className="signup-button"
+                            size="large"
+                            aria-label="log in"
+                            disableElevation
+                            onClick={() => handleSubmit()}
+                            disabled={isSignupDisabled()}
+                            key={`${isSignupDisabled()}`}
+                        >
+                            Sign up
                 </Button>
-            </div>
-            <div className="justify-content new-user-label">Already a member? &nbsp;<Link to="/login">Login</Link></div>
 
+                    </div>
+                    <div className="justify-content new-user-label">Already a member? &nbsp;<Link to="/login">Login</Link></div>
+                </div></div>
         </StyledWidget>
     )
 }

@@ -22,7 +22,7 @@ export const loginWidgetStyle = styled.div`
     margin: auto;
   }
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 800px){
   .auth-header{
     background-size: 60%;
     height: 100vh;
@@ -34,7 +34,7 @@ export const loginWidgetStyle = styled.div`
     height: 80%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .auth-wrapper{
     width: 30%;
     padding: 20px;
