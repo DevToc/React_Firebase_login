@@ -182,9 +182,9 @@ const SignupComponent = (props) => {
               ),
             }}
           />
-          <div style={{ marginTop: 8, marginBottom: 6 }} className="select-title">
+          <div className="select-title">
             Or
-      </div>
+          </div>
           <div className="display-flex MuiFormControl-marginNormal">
 
             <TextField
@@ -219,38 +219,42 @@ const SignupComponent = (props) => {
               }}
             />
           </div>
-          <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            size="large"
-            aria-label="log in"
-            disabled={isLoginFormValid()}
-            key={`${isLoginFormValid()}`}
-            onClick={() => handleSubmit()}
-            className="continue-button"
-          >
-            Get OTP
+          <div className="button-wrapper">
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              aria-label="log in"
+              fullWidth
+              disabled={isLoginFormValid()}
+              key={`${isLoginFormValid()}`}
+              onClick={() => handleSubmit()}
+              className="continue-button"
+            >
+              Get OTP
       </Button>
-      <div className="select-title-small justify-content">Or</div>
-
-          <Button
-            variant="outlined"
-            color="primary"
-            type="submit"
-            className="oauth-button"
-            endIcon={<FacebookIcon />}>
-            Signup with
+            <div className="select-title-small justify-content">Alternately, you can</div>
+            <br />
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
+              Signup with
 </Button>
-          <Button
-            variant="outlined"
-            color="primary"
-            type="submit"
-            className="oauth-button"
-            endIcon={<GoogleIcon />}>
-            Signup with
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              Signup with
 </Button>
-
+          </div>
           <div className="justify-content new-user-label">
             Existing User? &nbsp;<Link to="/login" className="underline-text">Login</Link> &nbsp; or &nbsp;
   <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip

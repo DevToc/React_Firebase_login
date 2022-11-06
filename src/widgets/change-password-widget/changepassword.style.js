@@ -6,7 +6,7 @@ export const changePasswordWidgetStyle = styled.div`
     width: 150px;
     display: flex;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     span {
       font-size: 18px;
       font-family: Merriweather-Regular;
@@ -41,6 +41,9 @@ export const changePasswordWidgetStyle = styled.div`
       box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     }
   }
+  .MuiInputBase-root {
+    border-radius: 25px;
+  }
 .change-password-body{
     width: 85%;
     margin-left: auto;
@@ -48,12 +51,12 @@ export const changePasswordWidgetStyle = styled.div`
     margin-top: 15%;
     .change-password-button{
         margin-top: 25px;
-        width: 150px;
+        width: 70%;
         height: 45px;
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 10px;
+        border-radius: 25px;
         span{
             font-size: 18px;
             font-family: Merriweather-Regular;

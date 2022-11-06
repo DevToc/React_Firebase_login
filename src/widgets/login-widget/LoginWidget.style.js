@@ -143,9 +143,9 @@ export const loginWidgetStyle = styled.div`
     color: #344654;
     font-family: Merriweather-Regular;
   }
-  .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
-    border: 2px solid rgba(43, 87, 154, 0.7);
-  }
+  // .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  //   border: 2px solid rgba(43, 87, 154, 0.7);
+  // }
   .disabled-view{
     .MuiInputBase-root{
       background-color: #dde6f3;

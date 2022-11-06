@@ -124,7 +124,7 @@ const Otp = (props) => {
             <div className="otp-sub-title justify-content">
               <span className="otp-label">{_get(loginForm, "emailAddress.value") ||
                 _get(loginForm, "mobileNumber.value")}{" "}</span>
-              &nbsp;<div className="display-link" onClick={handleChangeButtonClick}>Change</div>
+              &nbsp;<div className="display-link underline-text" onClick={handleChangeButtonClick}>Change</div>
             </div>
             <br />
             <div className="otp-sub-title justify-content">Enter OTP</div>
@@ -151,6 +151,7 @@ const Otp = (props) => {
               size="large"
               aria-label="submit-otp"
               disableElevation
+              fullWidth
               className="confirm-button"
               onClick={() => postOtp()}
               disabled={isOtpButtonDisabled()}
@@ -159,7 +160,7 @@ const Otp = (props) => {
               Confirm
         </Button>
             <div className='otp-sub-title justify-content margin-alignment'>
-              <p>Did not receive it? <span className="display-link" onClick={() => resendOtpToNumber()}> Resend OTP</span></p>
+              <p>Did not receive it? <span className="display-link underline-text" onClick={() => resendOtpToNumber()}> Resend OTP</span></p>
             </div>
           </div>
         </div></div>

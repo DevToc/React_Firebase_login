@@ -146,6 +146,7 @@ const ChangePassword = (props) => {
                                 className="change-password-button"
                                 aria-label='forgot-password'
                                 disableElevation
+                                fullWidth
                                 onClick={updatePasswordClick}
                                 disabled={isForgotPasswordButtonDisabled()}
                                 key={`${isForgotPasswordButtonDisabled()}`}

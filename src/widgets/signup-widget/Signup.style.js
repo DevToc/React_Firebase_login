@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const signupWidgetStyle = styled.div`
+.button-wrapper{
+  width: 70%;
+  margin: auto;
+}
 .oauth-button{
   margin: auto;
   display: flex;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 25px;
   span {
     font-size: 18px;
     font-family: Merriweather-Regular;
@@ -53,12 +57,11 @@ export const signupWidgetStyle = styled.div`
   }
   .continue-button {
     margin-top: 25px;
-    width: 150px;
     height: 45px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     span {
       font-size: 18px;
       font-family: Merriweather-Regular;

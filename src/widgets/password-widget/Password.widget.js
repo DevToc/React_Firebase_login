@@ -87,79 +87,82 @@ const PasswordComponent = (props) => {
   };
   return (
     <StyledWidget>
-      <AuthBanner title="Login" />
-      <Notification />
-      <div className="select-title">Signing in as {getLoginCred()}</div>
-      <Link to="login" className="justify-content title-font">
-        Change it here!
+      <div className="auth-header">
+        <div className="auth-wrapper">
+          <AuthBanner title="Login" />
+          <Notification />
+          <div className="select-title">Signing in as {getLoginCred()}</div>
+          <Link to="login" className="justify-content title-font">
+            Change it here!
       </Link>
-      <TextField
-        style={{ marginTop: 30 }}
-        name="password"
-        type={showPassword ? "text" : "password"}
-        placeholder="Password"
-        variant="outlined"
-        color="primary"
-        // autoFocus
-        margin="normal"
-        value={_get(loginForm, "password.value")}
-        error={!_get(loginForm, "password.isValid")}
-        helperText={
-          !_get(loginForm, "password.isValid") &&
-          _get(loginForm, "password.errorText")
-        }
-        onFocus={() => globalUtils.scrollOnClick("password")}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        InputLabelProps={{
-          shrink: true,
-        }}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="end">
-              <LockIcon />
-            </InputAdornment>
-          ),
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton
-                aria-label="toggle password visibility"
-                onClick={handleClickShowPassword}
-                edge="end"
-              >
-                {showPassword ? <Visibility /> : <VisibilityOff />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
-      />
-      <Link
-        to="forgot-password"
-        className="justify-flex-end forgot-link"
-        onClick={handleForgotClick}
-        style={{ fontWeight: 600 }}
-      >
-        Forgot Password?
+          <TextField
+            style={{ marginTop: 30 }}
+            name="password"
+            type={showPassword ? "text" : "password"}
+            placeholder="Password"
+            variant="outlined"
+            color="primary"
+            // autoFocus
+            margin="normal"
+            value={_get(loginForm, "password.value")}
+            error={!_get(loginForm, "password.isValid")}
+            helperText={
+              !_get(loginForm, "password.isValid") &&
+              _get(loginForm, "password.errorText")
+            }
+            onFocus={() => globalUtils.scrollOnClick("password")}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            InputLabelProps={{
+              shrink: true,
+            }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="end">
+                  <LockIcon />
+                </InputAdornment>
+              ),
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleClickShowPassword}
+                    edge="end"
+                  >
+                    {showPassword ? <Visibility /> : <VisibilityOff />}
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
+          />
+          <Link
+            to="forgot-password"
+            className="justify-flex-end forgot-link"
+            onClick={handleForgotClick}
+            style={{ fontWeight: 600 }}
+          >
+            Forgot Password?
       </Link>
 
-      <Button
-        style={{ marginTop: 12 }}
-        type="submit"
-        variant="contained"
-        color="primary"
-        size="large"
-        aria-label="log in"
-        className="login-button"
-        disableElevation
-        onClick={() => handleSubmit()}
-        disabled={isPasswordValid()}
-        key={`${isPasswordValid()}`}
-      >
-        Login
+          <Button
+            style={{ marginTop: 12 }}
+            type="submit"
+            variant="contained"
+            color="primary"
+            size="large"
+            aria-label="log in"
+            className="login-button"
+            disableElevation
+            fullWidth
+            onClick={() => handleSubmit()}
+            disabled={isPasswordValid()}
+            key={`${isPasswordValid()}`}
+          >
+            Login
       </Button>
-      <div className="justify-content new-user-label">
-        New User? &nbsp;<Link to="/signup">Signup</Link>
-      </div>
+          <div className="justify-content new-user-label">
+            Are you a new User? &nbsp;<Link to="/signup" className="underline-text">Signup</Link>
+          </div></div></div>
     </StyledWidget>
   );
 };

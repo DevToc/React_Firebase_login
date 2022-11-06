@@ -69,12 +69,11 @@ export const passwordWidgetStyle = styled.div`
   }
   .login-button {
     margin-top: 25px;
-    width: 150px;
     height: 45px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 25px;
     span {
       font-size: 20px;
       font-family: Merriweather-Regular;

@@ -94,12 +94,12 @@ export const otpWidgetStyle = styled.div`
   }
   .confirm-button {
     margin-top: 25px;
-    width: 150px;
+    width: 70%;
     height: 45px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 25px !important;
     span {
       font-size: 18px;
       font-family: Merriweather-Regular;
