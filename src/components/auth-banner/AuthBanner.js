@@ -5,7 +5,7 @@ export const AuthBanner = (props) => {
   return (
     <>
       <img
-        src="/assets/images/auth-header.svg"
+        src="/assets/images/cattle-header.png"
         alt="auth-header"
         className="auth-banner"
       />

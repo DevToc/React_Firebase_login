@@ -10,7 +10,7 @@ export const formConstants = {
         mobileNumber: {
             name: 'mobileNumber',
             rules: localStorage.getItem("godhan-location") === "AU" ? ['ISNUMBER', 'MINLENGTH-9', 'MAXLENGTH-10'] : ['ISNUMBER', 'MINLENGTH-10', 'MAXLENGTH-10'],
-            placeholder: 'Mobile Number',
+            placeholder: 'Enter 10 digit mobile number',
             value: '',
             isValid: true,
             errorText: 'Invalid mobile number'
