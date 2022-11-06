@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 const useFormControlStyles = makeStyles({
   label: {
     color: "#001D48",
-    fontFamily: "Lato",
+    fontFamily: "Merriweather-Regular",
     fontWeight: "500",
     fontSize: "16px !important",
   },

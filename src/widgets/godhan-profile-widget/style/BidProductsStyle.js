@@ -17,7 +17,7 @@ export const bidProductsStyle = styled.div`
     }
 
     .tab {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;

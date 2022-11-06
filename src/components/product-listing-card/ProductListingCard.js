@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 5,
   },
   featureValue: {
-    fontFamily: "Lato",
+    fontFamily: "Merriweather-Regular",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 14,
@@ -307,7 +307,7 @@ export const ProductListingCard = (props) => {
         <div className="product-extra-details">
           <div
             style={{
-              fontFamily: "Lato",
+              fontFamily: "Merriweather-Regular",
               fontStyle: "normal",
               fontWeight: "normal",
               fontSize: 14,
@@ -319,7 +319,7 @@ export const ProductListingCard = (props) => {
           </div>
           <div
             style={{
-              fontFamily: "Lato",
+              fontFamily: "Merriweather-Regular",
               fontStyle: "normal",
               fontWeight: "normal",
               fontSize: 14,

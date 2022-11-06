@@ -8,7 +8,7 @@ export const signupWidgetStyle = styled.div`
   border-radius: 5px;
   span {
     font-size: 18px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
   }
 }
 .auth-header{
@@ -61,7 +61,7 @@ export const signupWidgetStyle = styled.div`
     border-radius: 10px;
     span {
       font-size: 18px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
     }
   }
@@ -70,7 +70,7 @@ export const signupWidgetStyle = styled.div`
     margin-top: 10px;
   }
   .login-with-label {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -110,7 +110,7 @@ export const signupWidgetStyle = styled.div`
     color: white !important;
   }
   .MuiInputBase-root {
-    border-radius: 5px;
+    border-radius: 25px;
   }
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px !important;

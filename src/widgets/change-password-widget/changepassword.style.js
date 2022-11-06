@@ -9,7 +9,7 @@ export const changePasswordWidgetStyle = styled.div`
     border-radius: 5px;
     span {
       font-size: 18px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
     }
   }
   .auth-header{
@@ -56,7 +56,7 @@ export const changePasswordWidgetStyle = styled.div`
         border-radius: 10px;
         span{
             font-size: 18px;
-            font-family: Lato;
+            font-family: Merriweather-Regular;
             line-height: 24px;
         }
     }

@@ -251,7 +251,7 @@ const LoginComponent = (props) => {
             <TextField
               name={_get(loginForm, "mobileNumber.name")}
               className={_get(loginForm, "emailAddress.value") && "disabled-view"}
-              placeholder="Enter 10 digit mobile number"
+              placeholder="Mobile number"
               variant="outlined"
               color="primary"
               type="tel"
@@ -285,41 +285,45 @@ const LoginComponent = (props) => {
               }}
             />
           </div>
-          <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            size="large"
-            aria-label="log in"
-            disabled={isLoginFormValid()}
-            key={`${isLoginFormValid()}`}
-            onClick={(e) => handleSubmit(e)}
-            className="continue-button"
-          >
-            Continue
+          <div className="button-wrapper">
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              aria-label="log in"
+              disabled={isLoginFormValid()}
+              key={`${isLoginFormValid()}`}
+              onClick={(e) => handleSubmit(e)}
+              className="continue-button"
+              fullWidth
+            >
+              Continue
       </Button>
-          <div className="select-title-small justify-content">Or</div>
-          <br />
+            <div className="select-title-small justify-content">Alternately, you can</div>
+            <br />
 
-          <Button
-            variant="outlined"
-            color="primary"
-            type="submit"
-            className="oauth-button"
-            endIcon={<FacebookIcon />}>
-            Login with
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              className="oauth-button"
+              fullWidth
+              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
+              Continue with
           </Button>
-          <Button
-            variant="outlined"
-            color="primary"
-            type="submit"
-            className="oauth-button"
-            endIcon={<GoogleIcon />}>
-            Login with
+            <Button
+              variant="outlined"
+              color="primary"
+              type="submit"
+              fullWidth
+              className="oauth-button"
+              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              Continue with
           </Button>
-
+          </div>
           <div className="justify-content new-user-label">
-            New User? &nbsp;<Link to="/signup" className="underline-text">Signup</Link> &nbsp; or &nbsp;
+            Are you a new user? &nbsp;<Link to="/signup" className="underline-text">Signup</Link> &nbsp; or &nbsp;
             <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
             </Link>
           </div>

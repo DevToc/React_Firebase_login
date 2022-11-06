@@ -9,7 +9,7 @@ export const passwordWidgetStyle = styled.div`
   border-radius: 5px;
   span {
     font-size: 18px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
   }
 }
 .auth-header{
@@ -59,7 +59,7 @@ export const passwordWidgetStyle = styled.div`
     margin-bottom: 0px;
     display: flex;
     .MuiInputBase-root {
-      border-radius: 5px;
+      border-radius: 25px;
     }
   }
   .forgot-link {
@@ -77,14 +77,14 @@ export const passwordWidgetStyle = styled.div`
     border-radius: 10px;
     span {
       font-size: 20px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
     }
   }
   .new-user-label {
     margin-top: 30%;
     font-size: 18px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
   }
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px !important;

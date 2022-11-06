@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const otpWidgetStyle = styled.div`
 .otp-sub-title{
     font-size: 20px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     line-height: 24px;
 }
 .MuiFormControl-marginNormal{
@@ -47,7 +47,7 @@ export const otpWidgetStyle = styled.div`
   .resend-otp{
       color: #224214;
       font-size: 20px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
   }
   .confirm-button{
@@ -60,7 +60,7 @@ export const otpWidgetStyle = styled.div`
     border-radius: 10px;
     span{
         font-size: 20px;
-        font-family: Lato;
+        font-family: Merriweather-Regular;
         line-height: 24px;
     }
 }

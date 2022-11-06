@@ -16,7 +16,7 @@ export const slickStyle = styled.div`
   }
 
   .category-name {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -34,7 +34,7 @@ export const slickStyle = styled.div`
   }
 
   .heading {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;

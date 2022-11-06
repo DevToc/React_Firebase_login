@@ -434,7 +434,7 @@ const EditProfileComponent = ({
                 marginBottom: 50,
                 borderWidth: 2,
                 padding: '0 6px 0 9px',
-                fontFamily: 'Lato',
+                fontFamily: 'Merriweather-Regular',
                 fontStyle: 'normal',
                 fontWeight: 500,
                 fontSize: '18px',
@@ -461,7 +461,7 @@ const EditProfileComponent = ({
                 marginTop: 65,
                 borderWidth: 2,
                 padding: '0 6px 0 9px',
-                fontFamily: 'Lato',
+                fontFamily: 'Merriweather-Regular',
                 fontStyle: 'normal',
                 fontWeight: 500,
                 fontSize: '18px',
@@ -496,7 +496,7 @@ const EditProfileComponent = ({
                     width: '40%',
                     fontSize: 24,
                     color: "white",
-                    fontFamily: "Lato",
+                    fontFamily: "Merriweather-Regular",
                     padding: 0,
                   }}
                   onClick={() => {
@@ -513,7 +513,7 @@ const EditProfileComponent = ({
                     backgroundColor: "white",
                     width: '40%',
                     padding: 0,
-                    fontFamily: "Lato",
+                    fontFamily: "Merriweather-Regular",
                     fontSize: 20,
                   }}
                   onClick={() => setDeleteModalVisible(false)}

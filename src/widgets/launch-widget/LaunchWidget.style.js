@@ -58,7 +58,7 @@ export const launchWidgetStyle = styled.div`
         border-radius: 5px;
         .MuiSelect-root {
           display: flex;
-          font-family: Lato;
+          font-family: Merriweather-Regular;
           font-style: normal;
           font-weight: normal;
           font-size: 17px !important;

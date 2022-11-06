@@ -10,7 +10,7 @@ export const formConstants = {
         mobileNumber: {
             name: 'mobileNumber',
             rules: ['ISNUMBER', 'MINLENGTH-10', 'MAXLENGTH-10'],
-            placeholder: 'Enter 10 digit mobile number',
+            placeholder: 'Mobile number',
             value: '',
             isValid: true,
             errorText: 'Invalid mobile number'

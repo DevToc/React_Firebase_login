@@ -9,7 +9,7 @@ export const otpWidgetStyle = styled.div`
   border-radius: 5px;
   span {
     font-size: 18px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
   }
 }
 .auth-header{
@@ -43,7 +43,7 @@ export const otpWidgetStyle = styled.div`
 }
   .otp-sub-title {
     font-size: 20px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     line-height: 24px;
     padding-left: 10px;
     padding-right: 10px;
@@ -89,7 +89,7 @@ export const otpWidgetStyle = styled.div`
   .resend-otp {
     color: ${(props) => props.theme.palette.primary.main} !important;
     font-size: 20px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     line-height: 24px;
   }
   .confirm-button {
@@ -102,7 +102,7 @@ export const otpWidgetStyle = styled.div`
     border-radius: 10px;
     span {
       font-size: 18px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
     }
   }

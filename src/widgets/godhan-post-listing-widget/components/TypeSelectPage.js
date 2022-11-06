@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
     continueButton:{
         padding: '0 6px 0 9px',
-        fontFamily: 'Lato',
+        fontFamily: 'Merriweather-Regular',
         fontStyle: 'normal',
         fontWeight: 500,
         fontSize: '18px',
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
     },
     cancelButton:{
         padding: '0 6px 0 9px',
-        fontFamily: 'Lato',
+        fontFamily: 'Merriweather-Regular',
         fontStyle: 'normal',
         fontWeight: 500,
         fontSize: '18px',

@@ -11,7 +11,7 @@ export const raiseTicketStyle = styled.div`
     width: 100%;
 
     .feedbackText {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.8);
@@ -20,7 +20,7 @@ export const raiseTicketStyle = styled.div`
     }
 
     .footerLink {
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -51,7 +51,7 @@ export const raiseTicketStyle = styled.div`
             white-space: nowrap;
             opacity: unset;
             .MuiTab-wrapper {
-              font-family: Lato;
+              font-family: Merriweather-Regular;
               font-size: 18px;
               color: #001d48;
               font-weight: 500;

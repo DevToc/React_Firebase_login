@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const loginWidgetStyle = styled.div`
+.button-wrapper{
+  width: 70%;
+  margin: auto;
+}
 .oauth-button{
   margin: auto;
-  width: 150px;
   display: flex;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 25px;
   span {
     font-size: 18px;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
+    text-transform: none !important;
   }
 }
 .auth-header{
@@ -62,15 +66,15 @@ export const loginWidgetStyle = styled.div`
   }
   .continue-button {
     margin-top: 34px;
-    width: 150px;
+    // width: 150px;
     height: 45px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    border-radius: 25px;
     span {
       font-size: 18px;
-      font-family: Lato;
+      font-family: Merriweather-Regular;
       line-height: 24px;
     }
   }
@@ -81,7 +85,7 @@ export const loginWidgetStyle = styled.div`
     color: #001D48;
   }
   .login-with-label {
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -126,18 +130,18 @@ export const loginWidgetStyle = styled.div`
     color: white !important;
   }
   .MuiInputBase-root {
-    border-radius: 5px;
+    border-radius: 25px;
   }
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px;
     color: black;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
     height:46px;
     padding: 0;
   }
   .MuiOutlinedInput-inputAdornedStart::placeholder {
     color: #344654;
-    font-family: Lato;
+    font-family: Merriweather-Regular;
   }
   .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
     border: 2px solid rgba(43, 87, 154, 0.7);

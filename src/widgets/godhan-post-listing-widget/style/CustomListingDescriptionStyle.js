@@ -7,7 +7,7 @@ export const customListingDescriptionStyle = styled.div`
 
   .MuiFormControlLabel-label {
     font-size: 16px !important;
-    font-family: Lato !important;
+    font-family: Merriweather-Regular !important;
     color: #001d48 !important;
   }
   .listing-category-label{
