@@ -29,7 +29,6 @@ const SignupComponent = (props) => {
   useEffect(() => {
     clearNotification();
     clearAuthStore();
-    updateFormStore({ form: "loginForm", field: 'mobileNumberPrefix', value: localStorage.getItem('godhan-location') || 'CA' });
     if (globalUtils.isTokenAvailable()) {
       history.push("/")
     }
@@ -117,9 +116,6 @@ const SignupComponent = (props) => {
   const handleKeyPress = () => { };
 
   const handleSubmit = () => {
-    if (_get(loginForm, 'mobileNumberPrefix.value')) {
-      localStorage.setItem('godhan-location', _get(loginForm, 'mobileNumberPrefix.value'))
-    }
     if (_get(loginForm, 'emailAddress.value') && _get(loginForm, 'mobileNumber.value')) {
       setNotification({
         message: 'Please enter either email or mobile.',

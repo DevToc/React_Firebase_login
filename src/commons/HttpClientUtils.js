@@ -17,7 +17,6 @@ export const getHeaders = () => {
         "Access-Control-Allow-Origin": "localhost:3000",
         "accept": "application/json",
         "Access-Control-Allow-Credentials": 'true',
-        "Country": globalUtils.getCountryProperty('countryCode')
     }
     if (globalUtils.getToken()) {
         headers.Authorization = `Bearer ${globalUtils.getToken()}`

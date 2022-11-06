@@ -7,7 +7,7 @@ import {
 } from "react-google-maps";
 import { globalUtils } from "../../../utils";
 
-const Map = ({ longitude = -97.137123, latitude = 49.88446, radius = 0, countryCode = localStorage.getItem("godhan-location") }) => {
+const Map = ({ longitude = -97.137123, latitude = 49.88446, radius = 0, countryCode = 'IN' }) => {
   if (longitude === "") longitude = globalUtils.getCountryProperty('longitude', countryCode);
   if (latitude === "") latitude = globalUtils.getCountryProperty('latitude', countryCode);
   if (radius === "") radius = 0;

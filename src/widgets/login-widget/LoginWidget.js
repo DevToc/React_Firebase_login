@@ -44,11 +44,6 @@ const LoginComponent = (props) => {
     if (_isEmpty(loginForm) || _isEmpty(signupForm)) {
       setFormData(formConstants);
     }
-    updateFormStore({
-      form: "loginForm",
-      field: "mobileNumberPrefix",
-      value: localStorage.getItem("godhan-location") || "CA",
-    });
     if (globalUtils.isTokenAvailable()) {
       history.push("/")
     }
@@ -113,12 +108,6 @@ const LoginComponent = (props) => {
         });
       }
       if (_get(loginForm, "mobileNumber.value")) {
-        if (_get(loginForm, "mobileNumberPrefix.value")) {
-          localStorage.setItem(
-            "godhan-location",
-            _get(loginForm, "mobileNumberPrefix.value")
-          );
-        }
         checkUserAvailability({
           mobileNumber: _get(loginForm, "mobileNumber.value"),
           prefix: _get(loginForm, "mobileNumberPrefix.value"),

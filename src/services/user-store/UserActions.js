@@ -13,8 +13,7 @@ const getUserData = () => {
         return new HttpClient()
             .get('/user/profile/getUserDetails', '/user/getUserDetails', globalConstants.MICROSERVICES)
             .then((res) => {
-                if (globalUtils.getCountryFromLocalStorage() !== res.data.countryCode)
-                    globalUtils.setLocalStorageValue("godhan-location", res.data.countryCode);
+                // if (globalUtils.getCountryFromLocalStorage() !== res.data.countryCode)
                 dispatch(userDispatchActions.fetchUserData(mapResponse(res.data)))
             })
             .catch((err) => err)
@@ -114,7 +113,6 @@ const handleSignOut = payload => {
                 if (globalUtils.getToken()) {
                     dispatch(userDispatchActions.clearSession());
                     dispatch(formActions.clearAllForms());
-                    globalUtils.removeToken("godhan-location")
                     globalUtils.removeToken();
                     globalUtils.removeSessionStorageItem("godhan-flow");
                     clearAuthStore();

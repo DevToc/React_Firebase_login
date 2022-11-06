@@ -282,7 +282,6 @@ const EditProfileComponent = ({
     handleDeleteConfirmation({ handleClose });
   }
   const handleClose = () => {
-    globalUtils.removeToken("godhan-location")
     handleSignOut();
     history.push("/launch")
   }
