@@ -1,6 +1,5 @@
 {
     "hosting" : {
-        "site" : "godhan-df2b2",
         "public" : "build",
         "ignore" : [
             "firebase.json",
