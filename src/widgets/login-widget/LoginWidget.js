@@ -21,8 +21,6 @@ import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone"
 import { Link, withRouter } from "react-router-dom";
 import FacebookIcon from '@material-ui/icons/Facebook';
-import GoogleIcon from '@material-ui/icons/Mail';
-
 const LoginComponent = (props) => {
   const {
     loginForm,
@@ -206,7 +204,7 @@ const LoginComponent = (props) => {
           </div>
           {/* <AuthBanner title="Login" /> */}
           <Notification />
-          <div className="select-title">Select an option to proceed</div>
+            <div className="select-title">Select an option to proceed</div>
           <TextField
             style={{ marginTop: 15 }}
             className={_get(loginForm, "mobileNumber.value") && "disabled-view"}
@@ -320,7 +318,7 @@ const LoginComponent = (props) => {
               type="submit"
               fullWidth
               className="oauth-button"
-              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}}/>}>
               <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL} className="black-color">
                 Continue with
               </a>

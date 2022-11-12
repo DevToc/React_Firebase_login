@@ -10,6 +10,8 @@ export const passwordWidgetStyle = styled.div`
   span {
     font-size: 18px;
     font-family: Dejavu-Sans;
+    text-transform: none !important;
+    color: #001D48 !important;
   }
 }
 .auth-header{
@@ -20,6 +22,7 @@ export const passwordWidgetStyle = styled.div`
   display: flex;
   .auth-wrapper{
     margin: auto;
+    background: ghostwhite !important;
   }
 }
 @media only screen and (max-width: 800px){
@@ -39,15 +42,13 @@ export const passwordWidgetStyle = styled.div`
     width: 30%;
     padding: 20px;
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    background: ghostwhite !important;
   }
 }
   .select-title {
     font-size: 16px;
     justify-content: center;
     display: flex;
-    margin-top: 43px;
-    text-align: center;
-    font-family: "DejaVuSansMono-Oblique";
   }
   .title-font {
     font-size: 20px;

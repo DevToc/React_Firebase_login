@@ -20,6 +20,7 @@ export const registerWidgetStyle = styled.div`
     display: flex;
     .auth-wrapper{
       margin: auto;
+      background: ghostwhite !important;
     }
   }
   @media only screen and (max-width: 800px){
@@ -39,6 +40,7 @@ export const registerWidgetStyle = styled.div`
       width: 30%;
       padding: 20px;
       box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+      background: ghostwhite !important;
     }
   }
 .select-title{

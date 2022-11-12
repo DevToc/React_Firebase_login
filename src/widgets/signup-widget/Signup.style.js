@@ -13,16 +13,25 @@ export const signupWidgetStyle = styled.div`
   span {
     font-size: 18px;
     font-family: Dejavu-Sans;
+    text-transform: none !important;
+    color: #001D48 !important;
   }
 }
+.MuiOutlinedInput-inputAdornedStart::placeholder {
+    color: #344654;
+    font-family: Dejavu-Sans;
+}
+.or-title{
+    margin-top: 8px;
+}
 .auth-header{
-  //background-image: url("/assets/images/cattle-header.png");
   background-repeat: no-repeat;
   background-position: left;
   height: 95vh;
   display: flex;
   .auth-wrapper{
     margin: auto;
+    background: ghostwhite !important;
   }
 }
 @media only screen and (max-width: 800px){
@@ -30,7 +39,6 @@ export const signupWidgetStyle = styled.div`
     background-size: 60%;
     height: 100vh;
     background-position: left bottom !important;
-    //background-image: url("/assets/images/cattle-header-transparent.png");
   }
   .auth-wrapper{
     padding: 10px;

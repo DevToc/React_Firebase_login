@@ -47,9 +47,9 @@ body {
 }
 .fixed-white-background{
   position: sticky;
-  background-color: 'white';
+  background-color: white;
   height: env(safe-area-inset-top);
-  top: 0px;
+  top: 0;
   z-index: 999909;
 }
 .header{

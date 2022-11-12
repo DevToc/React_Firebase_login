@@ -12,7 +12,6 @@ import { updateFormStore, validateField, globalConstants, updateFormProperty, gl
 import EmailIcon from "@material-ui/icons/Email";
 import { Link, withRouter } from "react-router-dom";
 import FacebookIcon from '@material-ui/icons/Facebook';
-import GoogleIcon from '@material-ui/icons/Mail';
 import PhoneIcon from "@material-ui/icons/Phone"
 
 const SignupComponent = (props) => {
@@ -182,9 +181,7 @@ const SignupComponent = (props) => {
               ),
             }}
           />
-          <div className="select-title">
-            Or
-          </div>
+            <div className="select-title or-title">Or</div>
           <div className="display-flex MuiFormControl-marginNormal">
 
             <TextField
@@ -251,7 +248,7 @@ const SignupComponent = (props) => {
               type="submit"
               className="oauth-button"
               fullWidth
-              endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
+              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}}/>}>
               Signup with
 </Button>
           </div>

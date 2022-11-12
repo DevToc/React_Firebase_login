@@ -20,6 +20,7 @@ export const changePasswordWidgetStyle = styled.div`
     display: flex;
     .auth-wrapper{
       margin: auto;
+      background-color:ghostwhite !important;
     }
   }
   @media only screen and (max-width: 800px){
@@ -32,6 +33,7 @@ export const changePasswordWidgetStyle = styled.div`
     .auth-wrapper{
       padding: 10px;
       height: 80%;
+      background-color:ghostwhite;
     }
   }
   @media only screen and (min-width: 800px) {
@@ -39,6 +41,7 @@ export const changePasswordWidgetStyle = styled.div`
       width: 30%;
       padding: 20px;
       box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+      background-color:ghostwhite;
     }
   }
   .MuiInputBase-root {

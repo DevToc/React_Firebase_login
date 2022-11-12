@@ -18,13 +18,13 @@ export const loginWidgetStyle = styled.div`
   }
 }
 .auth-header{
-  //background-image: url("/assets/images/cattle-header.png");
   background-repeat: no-repeat;
   background-position: left;
   height: 95vh;
   display: flex;
   .auth-wrapper{
     margin: auto;
+    background: ghostwhite !important;
   }
 }
 @media only screen and (max-width: 800px){
@@ -50,11 +50,6 @@ export const loginWidgetStyle = styled.div`
     font-size: 16px;
     justify-content: center;
     display: flex;
-    margin-bottom: 6px;
-    font-family: "DejaVuSansMono-Oblique";
-    letter-spacing: 0.01em;
-    font-weight: normal;
-    line-height: 23px;
   }
   .or-title{
     margin-top: 8px;
@@ -66,8 +61,7 @@ export const loginWidgetStyle = styled.div`
     display: flex;
   }
   .continue-button {
-    margin-top: 34px;
-    // width: 150px;
+    margin-top: 25px;
     height: 45px;
     display: flex;
     margin-left: auto;
@@ -144,9 +138,6 @@ export const loginWidgetStyle = styled.div`
     color: #344654;
     font-family: Dejavu-Sans;
   }
-  // .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
-  //   border: 2px solid rgba(43, 87, 154, 0.7);
-  // }
   .disabled-view{
     .MuiInputBase-root{
       background-color: #dde6f3;
