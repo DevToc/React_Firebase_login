@@ -13,7 +13,7 @@ export const otpWidgetStyle = styled.div`
   }
 }
 .auth-header{
-  background-image: url("/assets/images/cattle-header.png");
+  //background-image: url("/assets/images/cattle-header.png");
   background-repeat: no-repeat;
   background-position: left;
   height: 95vh;
@@ -27,7 +27,7 @@ export const otpWidgetStyle = styled.div`
     background-size: 60%;
     height: 100vh;
     background-position: left bottom !important;
-    background-image: url("/assets/images/cattle-header-transparent.png");
+    //background-image: url("/assets/images/cattle-header-transparent.png");
   }
   .auth-wrapper{
     padding: 10px;
