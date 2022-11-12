@@ -318,7 +318,7 @@ const LoginComponent = (props) => {
               type="submit"
               fullWidth
               className="oauth-button"
-              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}}/>}>
+              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}} alt="Godhan"/>}>
               <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL} className="black-color">
                 Continue with
               </a>

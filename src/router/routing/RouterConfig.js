@@ -1,9 +1,3 @@
-// import {
-//   Home, TermsAndConditions, PrivacyPolicyPage, CancellationPolicy,
-//   ProfilePage, Auth, ViewProductPage, OAuth2RedirectHandler, SearchPage, PostListing,
-//   AboutUs
-// } from '../pages';
-import * as _ from "lodash";
 import {
   LaunchWidget,
   LoginWidget,

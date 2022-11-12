@@ -3,7 +3,6 @@ import { Box, makeStyles, IconButton } from "@material-ui/core";
 import GpsIcon from "@material-ui/icons/GpsFixed";
 
 import PlacesAutocomplete from "react-places-autocomplete";
-import * as _ from "lodash";
 
 const useStyles = makeStyles(() => ({
   container: {

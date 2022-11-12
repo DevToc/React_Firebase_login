@@ -2,7 +2,6 @@ import moment from "moment";
 import { globalConstants } from "./GlobalConstants";
 import { Geolocation } from "@ionic-native/geolocation";
 import _get from "lodash/get";
-import _includes from "lodash/includes";
 import icons from "../../assets/icons/categories";
 import CategoryIcon from "@material-ui/icons/Category";
 import { updateFormStore } from "../index";

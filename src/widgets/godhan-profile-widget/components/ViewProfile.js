@@ -18,7 +18,6 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import handWithPen from "../../../assets/icons/profile/handWithPen.png";
 import { useHistory } from "react-router-dom";
 import EditIcon from "@material-ui/icons/Edit";
-import { globalUtils } from "../../../utils";
 import FormLabelInfo from "../../../components/FormLabelInfo";
 
 const ViewProfileComponent = ({

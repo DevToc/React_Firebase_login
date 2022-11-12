@@ -6,7 +6,7 @@ import {
   signupMapStateToProps,
 } from "./Signup.model";
 import { AuthBanner, Notification, ModalComponent, } from "../../components";
-import { TextField, InputAdornment, Button, Divider } from "@material-ui/core";
+import { TextField, InputAdornment, Button } from "@material-ui/core";
 import _get from "lodash/get";
 import { updateFormStore, validateField, globalConstants, updateFormProperty, globalUtils } from "../../utils";
 import EmailIcon from "@material-ui/icons/Email";
@@ -248,7 +248,7 @@ const SignupComponent = (props) => {
               type="submit"
               className="oauth-button"
               fullWidth
-              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}}/>}>
+              endIcon={<img src="/assets/google-icon.jpg" style={{width:'20px',height:'20px'}} alt="Godhan"/>}>
               Signup with
 </Button>
           </div>
