@@ -242,7 +242,7 @@ const SignupComponent = (props) => {
               type="submit"
               className="oauth-button"
               fullWidth
-              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
+              endIcon={<FacebookIcon style={{ color: "#3b5998" }} />}>
               Signup with
 </Button>
             <Button
@@ -256,8 +256,7 @@ const SignupComponent = (props) => {
 </Button>
           </div>
           <div className="justify-content new-user-label">
-            Existing User? &nbsp;<Link to="/login" className="underline-text">Login</Link> &nbsp; or &nbsp;
-  <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
+            Existing User?&nbsp;<Link to="/login" className="underline-text">Login</Link>&nbsp;or&nbsp;<Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}>Skip
   </Link>
           </div>
         </div>

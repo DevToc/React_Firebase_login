@@ -35,7 +35,7 @@ input[name="mobileNumberPrefix"] {
   }
 
   .infoHeading {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px !important;
@@ -87,7 +87,7 @@ input[name="mobileNumberPrefix"] {
   }
   .userName {
     text-align: center;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -99,7 +99,7 @@ input[name="mobileNumberPrefix"] {
     padding: 0 10px;
 
     h2 {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: normal;
       color: #000000;
@@ -115,7 +115,7 @@ input[name="mobileNumberPrefix"] {
     }
 
     .infoLabel {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: 600 !important;
       font-size: 14px;
@@ -124,7 +124,7 @@ input[name="mobileNumberPrefix"] {
     }
 
     .infoValue {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -141,7 +141,7 @@ input[name="mobileNumberPrefix"] {
     width: 100%;
 
     .feedbackText {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.8);
@@ -150,12 +150,12 @@ input[name="mobileNumberPrefix"] {
     }
   }
   .footerLink {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       text-decoration-line: underline !important;
-      color: #224214;
+      color: #8c450b;
     }
     .footer-link-wrapper{
       flex-direction: row;
@@ -180,7 +180,7 @@ input[name="mobileNumberPrefix"] {
 
     .input-edit-button {
       font-size: 18px;
-      color: #224214;
+      color: #8c450b;
       text-decoration: underline;
       margin-right: 15px;
     }
@@ -212,13 +212,13 @@ input[name="mobileNumberPrefix"] {
 
   .contactButton {
     padding: 0 6px 0 9px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #224214;
+    color: #8c450b;
     background-color: transparent;
-    border: 2px solid #224214;
+    border: 2px solid #8c450b;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -226,7 +226,7 @@ input[name="mobileNumberPrefix"] {
 
   .deleteModal {
     background-color: white;
-    border: 2px solid #224214;
+    border: 2px solid #8c450b;
     border-radius: 5px;
     position: fixed;
     top: calc(50% - 125px);
@@ -234,7 +234,7 @@ input[name="mobileNumberPrefix"] {
   }
 
   .deleteModalText {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 24px !important;

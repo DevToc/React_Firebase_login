@@ -99,7 +99,7 @@ export const mainProfileStyle = styled.div`
   margin-bottom: 2px;
 }
 .eLVZzJ .user-icon {
-    background-color: #224214;
+    background-color: #8c450b;
     border-radius: 50%;
     font-size: 18px;
     color: white;

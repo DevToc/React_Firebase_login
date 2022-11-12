@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     // zIndex: 2,
     color: "#001D48",
     justifyContent: "space-between",
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
   },
 
   backContainer: {

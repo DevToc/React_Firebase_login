@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     cursor: "pointer",
-    color: "#224214",
+    color: "#8c450b",
     textDecoration: "underline",
     margin: "1rem",
     textAlign: "center",
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     outline: "none",
     height: 42,
     width: "100%",
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 18,
@@ -80,14 +80,14 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 10,
   },
   itemText: {
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: 16,
     color: "#001D48",
   },
   drawerHeading: {
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: 22,
@@ -207,11 +207,11 @@ export const Search = ({
                   height: 20,
                   marginRight: 20,
                 }}
-                color={isSelected ? "#224214" : "#001D48"}
+                color={isSelected ? "#8c450b" : "#001D48"}
               />
             )}
             <div
-              style={isSelected ? { color: "#224214" } : null}
+              style={isSelected ? { color: "#8c450b" } : null}
               className={classes.itemText}
             >
               {labelText}
@@ -222,7 +222,7 @@ export const Search = ({
                 style={{
                   marginLeft: "auto",
                   width: 17,
-                  color: isSelected ? "#224214" : "#001D48",
+                  color: isSelected ? "#8c450b" : "#001D48",
                 }}
               />
             )}

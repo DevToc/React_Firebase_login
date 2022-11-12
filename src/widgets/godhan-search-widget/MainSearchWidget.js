@@ -289,7 +289,7 @@ const SearchWidget = ({
           <div className="filters">
             <div
               onClick={() => setOpen(true)}
-              style={{ backgroundColor: "#224214", marginRight: 4 }}
+              style={{ backgroundColor: "#8c450b", marginRight: 4 }}
               className="filter"
               id="filterIcon"
             >

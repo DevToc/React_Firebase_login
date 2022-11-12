@@ -12,8 +12,9 @@ export const loginWidgetStyle = styled.div`
   border-radius: 25px;
   span {
     font-size: 18px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     text-transform: none !important;
+    color: #001D48 !important;
   }
 }
 .auth-header{
@@ -46,11 +47,11 @@ export const loginWidgetStyle = styled.div`
   }
 }
   .select-title {
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     display: flex;
     margin-bottom: 6px;
-    font-family: "Merriweather-Italic";
+    font-family: "DejaVuSansMono-Oblique";
     letter-spacing: 0.01em;
     font-weight: normal;
     line-height: 23px;
@@ -74,7 +75,7 @@ export const loginWidgetStyle = styled.div`
     border-radius: 25px;
     span {
       font-size: 18px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       line-height: 24px;
     }
   }
@@ -85,7 +86,7 @@ export const loginWidgetStyle = styled.div`
     color: #001D48;
   }
   .login-with-label {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -123,7 +124,7 @@ export const loginWidgetStyle = styled.div`
   .new-user-label {
     font-size: 18px;
     color: #001d48;
-    font-family: "Merriweather-Italic";
+    font-family: "DejaVuSansMono-Oblique";
     margin-top: 11px;
   }
   .righ-arrow {
@@ -135,13 +136,13 @@ export const loginWidgetStyle = styled.div`
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px;
     color: black;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     height:46px;
     padding: 0;
   }
   .MuiOutlinedInput-inputAdornedStart::placeholder {
     color: #344654;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
   }
   // .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
   //   border: 2px solid rgba(43, 87, 154, 0.7);

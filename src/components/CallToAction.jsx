@@ -15,7 +15,7 @@ const CallToAction = () => {
         <span
           style={{
             textAlign: "center",
-            fontFamily: "Merriweather-Regular",
+            fontFamily: "Dejavu-Sans",
             fontStyle: "normal",
             fontWeight: "500",
             fontSize: 17,
@@ -28,7 +28,7 @@ const CallToAction = () => {
         <span
           style={{
             textAlign: "center",
-            fontFamily: "Merriweather-Regular",
+            fontFamily: "Dejavu-Sans",
             fontStyle: "normal",
             fontWeight: "500",
             fontSize: 20,

@@ -12,7 +12,7 @@ export const signupWidgetStyle = styled.div`
   border-radius: 25px;
   span {
     font-size: 18px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
   }
 }
 .auth-header{
@@ -45,7 +45,7 @@ export const signupWidgetStyle = styled.div`
   }
 }
   .select-title {
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     display: flex;
   }
@@ -64,7 +64,7 @@ export const signupWidgetStyle = styled.div`
     border-radius: 25px;
     span {
       font-size: 18px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       line-height: 24px;
     }
   }
@@ -73,7 +73,7 @@ export const signupWidgetStyle = styled.div`
     margin-top: 10px;
   }
   .login-with-label {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;

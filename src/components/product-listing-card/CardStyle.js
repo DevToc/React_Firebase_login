@@ -25,7 +25,7 @@ const cardStyle = styled.div`
     height: initial !important;
   }
   .card-currency-tag {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -59,7 +59,7 @@ const cardStyle = styled.div`
     border-top: 1px solid #c4c4c4;
     padding-top: 2px;
     margin: 0 9px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -105,7 +105,7 @@ const cardStyle = styled.div`
   }
 
   .rentDuration {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -114,7 +114,7 @@ const cardStyle = styled.div`
   }
 
   .description {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -137,7 +137,7 @@ const cardStyle = styled.div`
           display: flex;
         }
         .display-title {
-          font-family: Merriweather-Regular;
+          font-family: Dejavu-Sans;
           font-style: normal;
           font-weight: 600;
           font-size: 16px;

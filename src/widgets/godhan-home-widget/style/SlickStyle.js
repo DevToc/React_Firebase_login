@@ -16,7 +16,7 @@ export const slickStyle = styled.div`
   }
 
   .category-name {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -34,7 +34,7 @@ export const slickStyle = styled.div`
   }
 
   .heading {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -42,6 +42,6 @@ export const slickStyle = styled.div`
     text-align: center;
   }
   .slick-prev:before, .slick-next:before{
-    color:#224214 !important;
+    color:#8c450b !important;
   }
 `;

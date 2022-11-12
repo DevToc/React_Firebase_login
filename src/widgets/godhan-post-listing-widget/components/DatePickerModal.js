@@ -32,7 +32,7 @@ const DatePickerModal = ({ onClose }) => {
         <CloseIcon />
       </IconButton>
       <Calendar
-        colorPrimary="#224214"
+        colorPrimary="#8c450b"
         value={selectedDay}
         onChange={setSelectedDay}
         shouldHighlightWeekends
@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     top: 10,
   },
   button: {
-    backgroundColor: "#224214",
+    backgroundColor: "#8c450b",
     color: "white !important",
     marginTop: 20,
   },

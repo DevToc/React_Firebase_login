@@ -11,7 +11,7 @@ export const raiseTicketStyle = styled.div`
     width: 100%;
 
     .feedbackText {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.8);
@@ -20,12 +20,12 @@ export const raiseTicketStyle = styled.div`
     }
 
     .footerLink {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       text-decoration-line: underline !important;
-      color: #224214;
+      color: #8c450b;
     }
   }
   .tabs-header {
@@ -51,14 +51,14 @@ export const raiseTicketStyle = styled.div`
             white-space: nowrap;
             opacity: unset;
             .MuiTab-wrapper {
-              font-family: Merriweather-Regular;
+              font-family: Dejavu-Sans;
               font-size: 18px;
               color: #001d48;
               font-weight: 500;
             }
           }
           .Mui-selected {
-            background: #224214;
+            background: #8c450b;
             border-radius: 5px;
             .MuiTab-wrapper {
               color: white;

@@ -22,7 +22,7 @@ export const launchWidgetStyle = styled.div`
 
       .godhan-title {
         color: #ffffff;
-        font-family: "Merriweather-Italic";
+        font-family: "DejaVuSansMono-Oblique";
         font-style: normal;
         font-weight: normal;
         font-size: 56px;
@@ -31,7 +31,7 @@ export const launchWidgetStyle = styled.div`
       }
       .godhan-sub-title {
         color: #ffffff;
-        font-family: "Merriweather-Italic";
+        font-family: "DejaVuSansMono-Oblique";
         font-style: normal;
         font-weight: normal;
         font-size: 26px;
@@ -58,7 +58,7 @@ export const launchWidgetStyle = styled.div`
         border-radius: 5px;
         .MuiSelect-root {
           display: flex;
-          font-family: Merriweather-Regular;
+          font-family: Dejavu-Sans;
           font-style: normal;
           font-weight: normal;
           font-size: 17px !important;
@@ -92,7 +92,7 @@ export const launchWidgetStyle = styled.div`
         padding: 0;
         .MuiButton-label {
           font-size: 20px;
-          font-family: "Merriweather-Italic";
+          font-family: "DejaVuSansMono-Oblique";
           font-style: normal;
           font-weight: normal;
           letter-spacing: 0.01em;

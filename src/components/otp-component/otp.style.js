@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const otpWidgetStyle = styled.div`
 .otp-sub-title{
     font-size: 20px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     line-height: 24px;
 }
 .MuiFormControl-marginNormal{
@@ -14,7 +14,7 @@ export const otpWidgetStyle = styled.div`
 }
 .otp-container{
     background: #FFFFFF;
-    border: 2px solid #224214;
+    border: 2px solid #8c450b;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 10px;
     width: 350px;
@@ -45,9 +45,9 @@ export const otpWidgetStyle = styled.div`
     display: flex;
   }
   .resend-otp{
-      color: #224214;
+      color: #8c450b;
       font-size: 20px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       line-height: 24px;
   }
   .confirm-button{
@@ -60,7 +60,7 @@ export const otpWidgetStyle = styled.div`
     border-radius: 10px;
     span{
         font-size: 20px;
-        font-family: Merriweather-Regular;
+        font-family: Dejavu-Sans;
         line-height: 24px;
     }
 }

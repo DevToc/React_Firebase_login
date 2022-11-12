@@ -225,11 +225,11 @@ const ChangePasswordComponent = ({
           style={{
             borderWidth: 2,
             padding: '0 6px 0 9px',
-            fontFamily: 'Merriweather-Regular',
+            fontFamily: 'Dejavu-Sans',
             fontStyle: 'normal',
             fontWeight: 500,
             fontSize: '18px',
-            border: '2px solid #224214',
+            border: '2px solid #8c450b',
             borderRadius: '5px',
             alignItems: 'center',
             width: 150,

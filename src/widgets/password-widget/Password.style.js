@@ -9,7 +9,7 @@ export const passwordWidgetStyle = styled.div`
   border-radius: 5px;
   span {
     font-size: 18px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
   }
 }
 .auth-header{
@@ -42,16 +42,16 @@ export const passwordWidgetStyle = styled.div`
   }
 }
   .select-title {
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     display: flex;
     margin-top: 43px;
     text-align: center;
-    font-family: "Merriweather-Italic";
+    font-family: "DejaVuSansMono-Oblique";
   }
   .title-font {
     font-size: 20px;
-    font-family: "Merriweather-Italic";
+    font-family: "DejaVuSansMono-Oblique";
   }
   .MuiFormControl-marginNormal {
     padding-left: 30px;
@@ -76,14 +76,14 @@ export const passwordWidgetStyle = styled.div`
     border-radius: 25px;
     span {
       font-size: 20px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       line-height: 24px;
     }
   }
   .new-user-label {
     margin-top: 30%;
     font-size: 18px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
   }
   .MuiOutlinedInput-inputAdornedStart {
     font-size: 17px !important;

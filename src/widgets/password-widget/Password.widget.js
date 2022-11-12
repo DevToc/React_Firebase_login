@@ -160,8 +160,8 @@ const PasswordComponent = (props) => {
           >
             Login
       </Button>
-          <div className="justify-content new-user-label">
-            Are you a new User? &nbsp;<Link to="/signup" className="underline-text">Signup</Link>
+          <div className="new-user-label">
+            New User? &nbsp;<Link to="/signup" className="underline-text">Signup</Link>
           </div></div></div>
     </StyledWidget>
   );

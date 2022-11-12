@@ -9,8 +9,8 @@ export const wantedSlickStyle = styled.div `
   margin-right:10px;
   border-radius:30px;
   height:auto !important;
-  border-top: 5px solid #224214;
-  border-bottom: 5px solid #224214;
+  border-top: 5px solid #8c450b;
+  border-bottom: 5px solid #8c450b;
 }
 .slick-slider{
     width: 94%;

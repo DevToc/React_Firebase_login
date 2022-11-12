@@ -13,7 +13,7 @@ h2{
 
 
 .heading {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: bold ;
     font-size: 20px !important;
@@ -22,7 +22,7 @@ h2{
 }
 
 .heading-sm {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: bold ;
     color: #001D48;
@@ -31,7 +31,7 @@ h2{
     font-weight: 600 !important
 }
 .estate-text { 
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 15px !important;
@@ -45,7 +45,7 @@ h2{
     align-items: center;
 
     span {
-        font-family: Merriweather-Regular;
+        font-family: Dejavu-Sans;
         font-style: normal;
         font-weight: 600;
         font-size: 15px;
@@ -54,13 +54,13 @@ h2{
     }
 }
 .real-estate-text{
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-style: normal !important;
     font-weight: 300 !important;
     font-size: 16px;
 }
 p.text {
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 18px !important;
@@ -70,7 +70,7 @@ p.text {
 
 }
 p.text-small{
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 22px !important;
@@ -80,7 +80,7 @@ p.text-small{
     padding-right: 17px;
 }
 p.text-small-with-font-weight{
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-style: normal !important;
     font-weight: 600 !important;
     line-height: 22px !important;
@@ -89,7 +89,7 @@ p.text-small-with-font-weight{
 .tab {
     text-align: center;
     padding: 10px 0;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -100,12 +100,12 @@ p.text-small-with-font-weight{
 .tabActive {
     text-align: center;
     padding: 10px 0;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     color: white;
-    background: #224214;
+    background: #8c450b;
 }
 
 .userInfo {
@@ -127,7 +127,7 @@ p.text-small-with-font-weight{
         margin-left: 20px;
 
         .name {
-            font-family: Merriweather-Regular;
+            font-family: Dejavu-Sans;
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -135,7 +135,7 @@ p.text-small-with-font-weight{
         }
 
         .contact {
-            font-family: Merriweather-Regular;
+            font-family: Dejavu-Sans;
             font-style: normal;
             font-weight: 500;
             font-size: 17px;
@@ -146,7 +146,7 @@ p.text-small-with-font-weight{
 }
 
 .price {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -154,7 +154,7 @@ p.text-small-with-font-weight{
 }
 
 .location {
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -181,7 +181,7 @@ p.text-small-with-font-weight{
 .display-features {
     padding-left: 0;
     padding-left: 0 !important;
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-style: normal !important;
     font-weight: 300 !important;
 }
@@ -216,7 +216,7 @@ p.text-small-with-font-weight{
 }
 .MuiCardHeader-title
 {
-    color: #224214;
+    color: #8c450b;
     font-size: 20px;
     font-weight: 750;
 }
@@ -412,11 +412,11 @@ p.text-small-with-font-weight{
     border-bottom: 1px solid #C4C4C4;
     align-items: center;
     margin-right: 15px;
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-size: 14px;
     font-weight: 900;
     line-height: 1.43;
-    color: #224214;
+    color: #8c450b;
     font-style: normal;
     font-feature-settings: normal;
     font-variant: normal;
@@ -436,7 +436,7 @@ p.text-small-with-font-weight{
     border: 1px solid #C4C4C4;
     margin-right: 15px;
     margin-top: 25px;
-    font-family: Merriweather-Regular !important;
+    font-family: Dejavu-Sans !important;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.43;

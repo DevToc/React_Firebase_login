@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 const useFormControlStyles = makeStyles({
   label: {
     color: "#001D48",
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontWeight: "500",
     fontSize: "16px !important",
   },
@@ -78,9 +78,9 @@ const useFormControlStyles = makeStyles({
 
 const CustomCheckbox = withStyles({
   root: {
-    color: "#224214",
+    color: "#8c450b",
     "&$checked": {
-      color: "#224214",
+      color: "#8c450b",
     },
   },
   checked: {},

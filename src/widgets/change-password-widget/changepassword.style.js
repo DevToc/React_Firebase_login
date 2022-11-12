@@ -9,7 +9,7 @@ export const changePasswordWidgetStyle = styled.div`
     border-radius: 25px;
     span {
       font-size: 18px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
     }
   }
   .auth-header{
@@ -59,7 +59,7 @@ export const changePasswordWidgetStyle = styled.div`
         border-radius: 25px;
         span{
             font-size: 18px;
-            font-family: Merriweather-Regular;
+            font-family: Dejavu-Sans;
             line-height: 24px;
         }
     }

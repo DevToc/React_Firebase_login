@@ -9,7 +9,7 @@ export const registerWidgetStyle = styled.div`
     border-radius: 5px;
     span {
       font-size: 18px;
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
     }
   }
   .auth-header{
@@ -42,7 +42,7 @@ export const registerWidgetStyle = styled.div`
     }
   }
 .select-title{
-    font-size: 20px;
+    font-size: 16px;
     justify-content: center;
     display: flex;
     margin-top: 10px; 
@@ -70,7 +70,7 @@ export const registerWidgetStyle = styled.div`
 }
 .new-user-label{
     font-size: 18px;
-    font-family: Merriweather-Regular;
+    font-family: Dejavu-Sans;
     padding-bottom: 20px;
 }
 .signup-button{
@@ -83,7 +83,7 @@ export const registerWidgetStyle = styled.div`
     border-radius: 10px;
     span{
         font-size: 18px;
-        font-family: Merriweather-Regular;
+        font-family: Dejavu-Sans;
         line-height: 24px;
     }
 }

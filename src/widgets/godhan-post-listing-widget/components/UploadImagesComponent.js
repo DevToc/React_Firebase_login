@@ -6,7 +6,7 @@ import { isPlatform } from "@ionic/react";
 
 const useStyles = makeStyles({
   box: {
-    border: "2px solid #224214",
+    border: "2px solid #8c450b",
     borderRadius: 5,
     width: "100%",
     padding: 10,
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     },
   },
   button: {
-    border: "2px solid #224214",
+    border: "2px solid #8c450b",
     borderRadius: 5,
     padding: "3px 13px",
     fontWeight: 600,

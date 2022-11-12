@@ -110,11 +110,11 @@ const StyledNav = styled.nav`
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: 2px solid #224214;
+    border-top: 2px solid #8c450b;
     z-index: 1 !important;
     max-height: 50px;
     align-items: center;
-    background-color: #224214;
+    background-color: #8c450b;
   }
 
   .navbar li {
@@ -123,7 +123,7 @@ const StyledNav = styled.nav`
 
   .navbar li:hover {
     .nav-icon {
-      color: #224214;
+      color: #8c450b;
     }
   }
 
@@ -156,7 +156,7 @@ const StyledNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #224214;
+    background-color: #8c450b;
     border-radius: 50%;
   }
 

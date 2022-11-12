@@ -238,7 +238,7 @@ const LoginComponent = (props) => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <EmailIcon />
+                  <EmailIcon color="primary" />
                 </InputAdornment>
               ),
             }}
@@ -279,7 +279,7 @@ const LoginComponent = (props) => {
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <PhoneIcon />
+                    <PhoneIcon color="primary" />
                   </InputAdornment>
                 ),
               }}
@@ -309,9 +309,11 @@ const LoginComponent = (props) => {
               type="submit"
               className="oauth-button"
               fullWidth
-              endIcon={<FacebookIcon style={{ color: "#3b5998"}} />}>
-              Continue with
-          </Button>
+              endIcon={<FacebookIcon style={{ color: "#3b5998" }} />}>
+              <a href={globalConstants.oauthConstants.FACEBOOK_AUTH_URL} className="black-color">
+                Continue with
+              </a>
+            </Button>
             <Button
               variant="outlined"
               color="primary"
@@ -319,12 +321,13 @@ const LoginComponent = (props) => {
               fullWidth
               className="oauth-button"
               endIcon={<GoogleIcon style={{ color: '#c71610' }} />}>
-              Continue with
-          </Button>
+              <a href={globalConstants.oauthConstants.GOOGLE_AUTH_URL} className="black-color">
+                Continue with
+              </a>
+            </Button>
           </div>
           <div className="justify-content new-user-label">
-            Are you a new user? &nbsp;<Link to="/signup" className="underline-text">Signup</Link> &nbsp; or &nbsp;
-            <Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
+            New user?&nbsp;<Link to="/signup" className="underline-text">Signup</Link>&nbsp;or&nbsp;<Link to="/" className="underline-text" style={{ textDecoration: 'underline' }}> Skip
             </Link>
           </div>
         </div>

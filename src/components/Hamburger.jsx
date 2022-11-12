@@ -144,7 +144,7 @@ a:active {
   width: 3rem;
   height: 3rem;
   padding: 0.5em 1em;
-  background: #a9a9a9;
+  background: #f5f7f7f7;
   border-radius: 0 0.12em 0.12em 0;
   cursor: pointer;
   -webkit-transition: box-shadow 0.4s ease;
@@ -201,7 +201,7 @@ a:active {
  overflow: auto;
     height: -webkit-fill-available;
   color: #FEFEFE;
-  background: #224214;
+  background: #8c450b;
   transition: all 0.4s ease;
   display: -webkit-box;
   webkit-transition: all 0.4s ease;

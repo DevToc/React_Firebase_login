@@ -42,7 +42,7 @@ const ErrorHandler = (props) => {
                 handleCloseClick={handleCloseClick}
                 buttonLabel={isSuccessful? "OK": "Go Back"}
                 background={isSuccessful ? "rgb(43, 87, 154, 0.2)": "rgba(211, 35, 35, 0.2)"}
-                buttonColor={isSuccessful ? "#224214" : "#D32323"}
+                buttonColor={isSuccessful ? "#8c450b" : "#D32323"}
                 isCancelAvailable={isCancelAvailable}
                 handleCancel={handleCancelClick}
             >

@@ -17,7 +17,7 @@ export const bidProductsStyle = styled.div`
     }
 
     .tab {
-      font-family: Merriweather-Regular;
+      font-family: Dejavu-Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -28,7 +28,7 @@ export const bidProductsStyle = styled.div`
 
       &.active {
         background-color: white;
-        color: #224214;
+        color: #8c450b;
         border-radius: 30px;
       }
     }

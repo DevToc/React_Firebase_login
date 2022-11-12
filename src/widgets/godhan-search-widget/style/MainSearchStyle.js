@@ -11,7 +11,7 @@ export const mainSearchStyle = styled.div`
 
 
 .Mui-selected{
-  background:#224214;
+  background:#8c450b;
   color:#fff;
 }
 .filters-box{
@@ -218,7 +218,7 @@ export const mainSearchStyle = styled.div`
      box-shadow:  3px 3px 5px 2px rgb(51 99 171 / 40%), 0 0 0px 0px rgb(40 43 181 / 12%), 0 0 0px 0px rgb(45 24 8 / 94%);
   }
   .MuiPaper-root:hover{
-        box-shadow: 3px 3px 15px 4px #224214, 0 0 0px 0px rgb(40 43 181 / 12%), 0 0 0px 0px rgb(8 23 45 / 94%);
+        box-shadow: 3px 3px 15px 4px #8c450b, 0 0 0px 0px rgb(40 43 181 / 12%), 0 0 0px 0px rgb(8 23 45 / 94%);
   }
   .product-extra-details{
     display:flex;
@@ -479,7 +479,7 @@ width: 100%;
 .search-button{
     height: 94%;
     width:100%;
-    background: #224214;
+    background: #8c450b;
     color: white;   
     border-radius:4px;
     margin-left: 1px;

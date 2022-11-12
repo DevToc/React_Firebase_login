@@ -206,13 +206,13 @@ const MainProduct = (props) => {
                                                 height: 20,
                                                 width: 20,
                                             }}
-                                            stroke="#224214"
+                                            stroke="#8c450b"
                                             fill={
                                                 _includes(
                                                     favouriteItemIds,
                                                     _get(product, "productID", _get(product, "wantedID"))
                                                 )
-                                                    ? "#224214"
+                                                    ? "#8c450b"
                                                     : "white"
                                             }
                                         />

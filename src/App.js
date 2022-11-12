@@ -34,10 +34,10 @@ import * as configs from "./configs/appsettings.json";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#224214", 
+      main: "#8c450b", 
     },
     secondary: {
-      main: "#a9a9a9",
+      main: "#f5f7f7f7",
     },
     action: {
       main: "#B22222",
@@ -45,8 +45,8 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      "Merriweather-Italic",
-      "Merriweather-Regular",
+      "DejaVuSansMono-Oblique",
+      "Dejavu-Sans",
       "Inter",
       '"Helvetica Neue"',
       "Arial",

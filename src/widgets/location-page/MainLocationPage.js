@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     marginTop: '46px'
   },
   label: {
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontStyle: "normal",
     fontWeight: "600",
     fontSize: 17,
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
     margin: 0,
   },
   labelValue: {
-    fontFamily: "Merriweather-Regular",
+    fontFamily: "Dejavu-Sans",
     fontStyle: "normal",
     fontWeight: "400 !important",
     fontSize: 17,
@@ -76,12 +76,12 @@ const useStyles = makeStyles({
   },
   button: {
       padding: '0 6px 0 9px',
-      fontFamily: 'Merriweather-Regular',
+      fontFamily: 'Dejavu-Sans',
       fontStyle: 'normal',
       fontWeight: 500,
       fontSize: '18px',
-      backgroundColor: '#224214',
-      border: '2px solid #224214',
+      backgroundColor: '#8c450b',
+      border: '2px solid #8c450b',
       borderRadius: '5px',
       alignItems: 'center',
       marginTop: 15,
@@ -371,7 +371,7 @@ const LocationPage = ({
         </div>
         {/* <div className={classes.confirmButtonContainer}>
           <Button
-            style={{ fontFamily: "Merriweather-Regular", fontSize: 17 }}
+            style={{ fontFamily: "Dejavu-Sans", fontSize: 17 }}
             onClick={() => handleConfirm()}
             variant="contained"
             size="large"
