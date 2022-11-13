@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "godhaan",
-    "staging": "godhan-df2b2"
+    "default": "godhan-df2b2"
   },
   "targets": {}
 }
