@@ -11,7 +11,7 @@ import {
   MainProductWidget,
   MainProfileWidget,
   MainNotificationWidget,
-  MainPostListingWidget,
+  MainCreateCattleAdWidget,
   MainLocationPage,
     MainContactWidget
 } from "../../widgets";
@@ -89,7 +89,7 @@ export const MobileRouterConfig = [
   {
     id: 14,
     path: "listing",
-    component: MainPostListingWidget,
+    component: MainCreateCattleAdWidget,
   },
   {
     id: 15,
@@ -99,7 +99,7 @@ export const MobileRouterConfig = [
   {
     id: 16,
     path: "editListing",
-    component: MainPostListingWidget,
+    component: MainCreateCattleAdWidget,
   },
   {
     id: 17,

@@ -66,6 +66,7 @@ const AppComponent = (props) => {
     loginSuccess,
     clearNotification,
     getSellCategories,
+    getWantedCategories,
     getNotifications,
     loader, sellData, rentData, wantedData
   } = props;
@@ -77,8 +78,7 @@ const AppComponent = (props) => {
       document.body.scrollTop === 0;
     }
     getSellCategories();
-    // getRentCategories();
-    // getWantedCategories();
+    getWantedCategories();
     if (globalUtils.isTokenAvailable()) {
       getNotifications();
     }
