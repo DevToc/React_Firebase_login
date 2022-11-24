@@ -53,7 +53,7 @@ export const formConstants = {
     contactNumber: {
       name: "contactNumber",
       rules: ["MINLENGTH-10", "MAXLENGTH-10", "ISNUMBER"],
-      placeholder: "Enter your contact number",
+      placeholder: "Phone number",
       value: "",
       isValid: true,
       errorText: "Invalid contact number",
@@ -61,7 +61,7 @@ export const formConstants = {
     contactEmail: {
       name: "contactEmail",
       rules: [ "ISEMAIL"],
-      placeholder: "Enter your email address",
+      placeholder: "Email address",
       value: "",
       isValid: true,
       errorText: "Invalid email address",

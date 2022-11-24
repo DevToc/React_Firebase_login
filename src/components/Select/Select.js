@@ -6,9 +6,9 @@ import ClickAwayListener from "react-click-away-listener";
 
 const useStyles = makeStyles({
   select: {
-    padding: "0 20px 8px 20px",
+    padding: "0 20px 8px 10px",
     background: "#FFFFFF",
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     borderRadius: 5,
     display: "flex",
     justifyContent: "space-between",
@@ -16,7 +16,6 @@ const useStyles = makeStyles({
     cursor: "pointer",
   },
   label: {
-    fontSize: 18,
     color: "#344654",
     fontWeight: "500",
     marginTop: 8,
@@ -29,7 +28,7 @@ const useStyles = makeStyles({
     paddingLeft: 20,
     paddingBottom: 12,
     background: "white",
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     borderRadius: "0px 0px 5px 5px",
     position: "absolute",
     width: "100%",
@@ -53,7 +52,7 @@ const useStyles = makeStyles({
 const Select = ({
   value,
   onChange,
-  options,
+  options = [],
   style = {},
   optionsContainerStyle = {},
   defaultValueIndex = 0,
@@ -74,16 +73,16 @@ const Select = ({
           style={selectStyle}
         >
           <span style={placeholderStyle} className={classes.label}>
-            {options.find((option) => option.value === value)?.label ||
-              options.find((option) => option.value === value)?.value ||
-              defaultPlaceholder ||
-              options[defaultValueIndex].label}
+            {options?.find((option) => option.value === value)?.label ||
+              options?.find((option) => option.value === value)?.value ||
+              defaultPlaceholder}
+            {/* // options[defaultValueIndex].label} */}
           </span>
           {isOpened ? (
             <ExpandLessIcon className={classes.icon} />
           ) : (
-            <ExpandMoreIcon className={classes.icon} />
-          )}
+              <ExpandMoreIcon className={classes.icon} />
+            )}
         </div>
         {isOpened && (
           <div

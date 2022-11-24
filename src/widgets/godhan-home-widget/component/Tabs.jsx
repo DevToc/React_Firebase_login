@@ -8,7 +8,7 @@ import * as _get from "lodash/get";
 const useStyles = makeStyles(() => ({
   tabs: {
     background: "#FFFFFF",
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     borderRadius: 5,
     display: "flex",
     padding: 3,
@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
   },
   divider: {
     width: 2,
-    backgroundColor: "rgba(43, 87, 154, 0.7)",
+    backgroundColor: "rgba(140, 69, 11, 0.7)",
     height: "80%",
   },
   dividerHidden: {

@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
   previewBox: {
     width: 80,
     height: 80,
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

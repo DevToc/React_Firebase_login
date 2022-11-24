@@ -4,6 +4,9 @@ import { headerAndStepperStyle } from '../style';
 import { ListingTypeSelectComponent } from './ListingTypeSelect';
 import { SelectCategoryAndBreedComponent } from './SelectCategoryAndBreed';
 import _get from 'lodash/get';
+import { ListingInformationComponent } from './ListingInformationComponent';
+import { ContactInformationComponent } from './ContactInformationComponent';
+import { CattleInformationComponent } from './CattleInformationComponent';
 
 export const HeaderAndStepperComponent = (props) => {
   const { activeStep, setActiveStep, listingForm } = props;
@@ -11,7 +14,7 @@ export const HeaderAndStepperComponent = (props) => {
   const handleNext = () => {
     if (activeStep === 0 && !_get(listingForm, "selectedListingType.value")) return;
     if (activeStep === 1 &&
-      (!_get(listingForm, "selectedCattle.value.value") || !_get(listingForm, "selectedBreed.value.value")))
+      (!_get(listingForm, "selectedCattle.value") || !_get(listingForm, "selectedBreed.value")))
       return;
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -36,15 +39,18 @@ export const HeaderAndStepperComponent = (props) => {
     },
     {
       label: "Listing Information",
-      description: "Add the basic information on the {cattle name selected in step 2} you would like to list"
+      description: `Add the basic information on the ${_get(listingForm, "selectedCattle.value.name")} - ${_get(listingForm, "selectedBreed.value.name")} you would like to list`,
+      component: <ListingInformationComponent />
     },
     {
       label: "Cattle Information",
-      description: "Add relevant information on the  {cattle name & breed selected in step 2} you would like to list"
+      description: `Add relevant information on the ${_get(listingForm, "selectedCattle.value.name")} - ${_get(listingForm, "selectedBreed.value.name")} you would like to list`,
+      component: <CattleInformationComponent />
     },
     {
       label: "Contact Information",
-      description: "Supply your contact information that a buyer can reach you on to proceed."
+      description: "Supply your contact information that a buyer can reach you on to proceed.",
+      component: <ContactInformationComponent />
     }
   ];
   return (

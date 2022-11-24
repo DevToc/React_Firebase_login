@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const bidProductsStyle = styled.div`
   .top-tabs {
-    background-color: rgba(43, 87, 154, 1);
+    background-color: rgba(140, 69, 11, 1);
     padding-bottom: 9px;
     position: sticky;
     display: flex;

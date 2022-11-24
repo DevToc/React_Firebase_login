@@ -5,7 +5,7 @@ import CloseIcon from "@material-ui/icons/Close";
 const useStyles = makeStyles({
   box: {
     padding: 6,
-    border: "1px solid rgba(43, 87, 154, 0.7)",
+    border: "1px solid rgba(140, 69, 11, 0.7)",
     borderRadius: 3,
     color: "#001D48",
     fontSize: 16,
