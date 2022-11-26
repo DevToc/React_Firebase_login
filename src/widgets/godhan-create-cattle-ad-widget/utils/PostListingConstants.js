@@ -36,7 +36,7 @@ export const formConstants = {
       name: "listedPrice",
       value: "",
       placeholder: `Price INR (*)`,
-      rules: ["ISNUMBER"],
+      rules: ["ISAMOUNT"],
       isValid: true,
       errorText: "Invalid Amount",
       type: "number",

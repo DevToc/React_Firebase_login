@@ -3,10 +3,11 @@ import { connect } from 'react-redux'
 import { cattleInformationMapStateToProps, cattleInformationMapDispatchToProps } from '../models';
 import { FormLabel, FormControl } from '@material-ui/core';
 import _get from 'lodash/get';
-import { updateFormStore, validateField } from '../../../utils';
+import { updateFormStore, validateField, updateFormProperty } from '../../../utils';
 import Input from '../../../components/Input-component/InputComponent';
 import Select from "../../../components/Select/Select";
 import { femaleCattle } from '../utils';
+import { validationExp } from '../../../utils/form-validators/FormValidations';
 
 const CattleInformation = (props) => {
     const { listingForm } = props;
@@ -25,6 +26,10 @@ const CattleInformation = (props) => {
 
     const handleBlur = (e) => {
         const { value, name } = e.target;
+        if (value && !new RegExp(validationExp.ISAMOUNT).test(value)) {
+            updateFormProperty({ form: "listingForm", field: name, property: "isValid", value: false, });
+            return;
+        }
         validateField({ form: "listingForm", field: name, data: value });
     };
 
@@ -34,7 +39,6 @@ const CattleInformation = (props) => {
 
     return (
         <>
-            <br />
             <div>
                 <div>
                     <FormLabel className="form-label">{_get(listingForm, `averageWeight.placeholder`)}</FormLabel>
@@ -85,7 +89,7 @@ const CattleInformation = (props) => {
                     isCattleFemale && (
                         <div>
                             <FormLabel className="form-label">{_get(listingForm, `babiesCount.placeholder`)}</FormLabel>
-                            <FormControl sx={{ m: 1, minWidth: 200 }}>
+                            <FormControl className="w-100">
                                 <Select
                                     optionsContainerStyle={{ zIndex: 7 }}
                                     placeholderStyle={{ width: 200 }}
@@ -136,6 +140,7 @@ const CattleInformation = (props) => {
                         </div>
                     )
                 }
+                <br />
             </div>
         </>
     )

@@ -16,6 +16,10 @@ export const HeaderAndStepperComponent = (props) => {
     if (activeStep === 1 &&
       (!_get(listingForm, "selectedCattle.value") || !_get(listingForm, "selectedBreed.value")))
       return;
+    if (activeStep === 2) {
+      if (!_get(listingForm, "productTitle.value") || !_get(listingForm, `listedPrice.value`) || !_get(listingForm, 'productDescription.value'))
+        return;
+    }
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
@@ -39,17 +43,17 @@ export const HeaderAndStepperComponent = (props) => {
     },
     {
       label: "Listing Information",
-      description: `Add the basic information on the ${_get(listingForm, "selectedCattle.value.name")} - ${_get(listingForm, "selectedBreed.value.name")} you would like to list`,
+      description: `Give an overview on the ${_get(listingForm, "selectedCattleObject.value.name")} - ${_get(listingForm, "selectedBreedObject.value.name")}`,
       component: <ListingInformationComponent />
     },
     {
       label: "Cattle Information",
-      description: `Add relevant information on the ${_get(listingForm, "selectedCattle.value.name")} - ${_get(listingForm, "selectedBreed.value.name")} you would like to list`,
+      description: `Add some more cattle specific information`,
       component: <CattleInformationComponent />
     },
     {
       label: "Contact Information",
-      description: "Supply your contact information that a buyer can reach you on to proceed.",
+      description: "Adding your contact information will boost your chances of your sale.",
       component: <ContactInformationComponent />
     }
   ];
@@ -81,7 +85,7 @@ export const HeaderAndStepperComponent = (props) => {
                     {index === steps.length - 1 ? 'Finish' : 'Continue'}
                   </Button>
                   <Button
-                    disabled={index === 0}
+                    disabled={[0, 1].includes(index)}
                     onClick={handleBack}
                     sx={{ mt: 1, mr: 1 }}
                   >

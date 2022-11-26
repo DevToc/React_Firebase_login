@@ -20,10 +20,6 @@ const MainCreateCattleAd = (props) => {
       setFormData({
         listingForm: {
           ...formConstants.listingForm,
-          listedPrice: {
-            ...formConstants.listingForm.listedPrice,
-            placeholder: `Price in ${globalUtils.getCountryProperty("currency")} *`
-          },
           selectedLocation: {
             ...formConstants.listingForm.selectedLocation,
             value: _get(listingForm, "selectedLocation.value") || _get(loc, "selectedLocation"),

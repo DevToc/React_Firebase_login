@@ -47,11 +47,10 @@ const SelectCategoryAndBreed = (props) => {
         <>
             <FormLabel className="form-label">Choose the type of your cattle (*)</FormLabel>
             <br />
-            <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <FormControl className="w-100">
                 {categoryOptions?.children &&
                     <Select
                         optionsContainerStyle={{ zIndex: 7 }}
-                        placeholderStyle={{ width: 200 }}
                         style={{ marginBottom: 18 }}
                         value={_get(listingForm, 'selectedCattle.value', '')}
                         onChange={handleCattleSelection}
@@ -67,13 +66,11 @@ const SelectCategoryAndBreed = (props) => {
                     />}
             </FormControl>
             <br />
-            <br />
             <FormLabel className="form-label">Select Breed of {_get(listingForm, 'selectedCattle.value.name')} (*)</FormLabel>
             <br />
-            <FormControl sx={{ m: 1, minWidth: 200 }}>
+            <FormControl className="w-100">
                 <Select
                     optionsContainerStyle={{ zIndex: 7 }}
-                    placeholderStyle={{ width: 200 }}
                     style={{ marginBottom: 18 }}
                     value={_get(listingForm, 'selectedBreed.value', '')}
                     onChange={handleBreedSelection}
