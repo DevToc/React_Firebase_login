@@ -99,7 +99,7 @@ const ListingInformation = (props) => {
                 alignItems="center"
                 spacing={1}
             >
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12}>
                     <div>
                         <FormLabel className="form-label">{_get(listingForm, `productTitle.placeholder`)}</FormLabel>
                         <Input
@@ -116,7 +116,7 @@ const ListingInformation = (props) => {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12}>
                     <div className="display-flex flex-row">
                         <div>
                             <FormLabel className="form-label">{_get(listingForm, `listedPrice.placeholder`)}</FormLabel>
@@ -153,7 +153,7 @@ const ListingInformation = (props) => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12}>
                     <div className="display-flex flex-row">
                         <FormControl component='fieldset' className='dynamic-form-radio-group' color='primary'>
                             <FormLabel className="form-label">{_get(listingForm, `offeredBy.placeholder`)}</FormLabel>
@@ -172,7 +172,7 @@ const ListingInformation = (props) => {
                         </FormControl >
                     </div>
                 </Grid>
-                <Grid item xs={12} md={6} xl={6}>
+                <Grid item xs={12}>
                     <div>
                         <FormLabel className="form-label">{_get(listingForm, `productDescription.placeholder`)}</FormLabel>
                         <TextArea
@@ -190,7 +190,7 @@ const ListingInformation = (props) => {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={12} md={6} xl={6}>
+                <Grid item xs={12}>
                     <div>
                         <span><FormLabel className="form-label">Add images of your cattle</FormLabel></span>
                         <div>

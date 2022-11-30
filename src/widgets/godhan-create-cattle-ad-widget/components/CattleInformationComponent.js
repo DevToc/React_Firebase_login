@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux'
 import { cattleInformationMapStateToProps, cattleInformationMapDispatchToProps } from '../models';
-import { FormLabel, FormControl } from '@material-ui/core';
+import { FormLabel, FormControl, Grid } from '@material-ui/core';
 import _get from 'lodash/get';
 import { updateFormStore, validateField, updateFormProperty } from '../../../utils';
 import Input from '../../../components/Input-component/InputComponent';
@@ -39,8 +39,12 @@ const CattleInformation = (props) => {
 
     return (
         <>
-            <div>
-                <div>
+            <Grid
+                container
+                alignItems="center"
+                spacing={1}
+            >
+                <Grid item xs={12}>
                     <FormLabel className="form-label">{_get(listingForm, `averageWeight.placeholder`)}</FormLabel>
                     <Input
                         name={_get(listingForm, `averageWeight.name`)}
@@ -54,8 +58,8 @@ const CattleInformation = (props) => {
                             _get(listingForm, `averageWeight.errorText`)
                         }
                     />
-                </div>
-                <div>
+                </Grid>
+                <Grid item xs={12}>
                     <FormLabel className="form-label">{_get(listingForm, `averageAge.placeholder`)}</FormLabel>
                     <Input
                         name={_get(listingForm, `averageAge.name`)}
@@ -69,8 +73,8 @@ const CattleInformation = (props) => {
                             _get(listingForm, `averageAge.errorText`)
                         }
                     />
-                </div>
-                <div>
+                </Grid>
+                <Grid item xs={12}>
                     <FormLabel className="form-label">{_get(listingForm, `averageBirthWeight.placeholder`)}</FormLabel>
                     <Input
                         name={_get(listingForm, `averageBirthWeight.name`)}
@@ -84,30 +88,11 @@ const CattleInformation = (props) => {
                             _get(listingForm, `averageBirthWeight.errorText`)
                         }
                     />
-                </div>
+                </Grid>
                 {
                     isCattleFemale && (
-                        <div>
-                            <FormLabel className="form-label">{_get(listingForm, `babiesCount.placeholder`)}</FormLabel>
-                            <FormControl className="w-100">
-                                <Select
-                                    optionsContainerStyle={{ zIndex: 7 }}
-                                    placeholderStyle={{ width: 200 }}
-                                    style={{ marginBottom: 18 }}
-                                    value={_get(listingForm, 'babiesCount.value', '')}
-                                    onChange={handleSelectChange}
-                                    options={[
-                                        { label: "Select Breed", value: '' },
-                                        ..._get(listingForm, 'babiesCount.options', '').map((option) => ({
-                                            label: option,
-                                            value: option,
-                                        })),
-                                    ]}
-                                    defaultPlaceholder="Select"
-                                    selectStyle={{ height: 40 }}
-                                />
-                            </FormControl>
-                            <div>
+                        <>
+                            <Grid item xs={12}>
                                 <FormLabel className="form-label">{_get(listingForm, `milkStatus.placeholder`)}</FormLabel>
                                 <Input
                                     name={_get(listingForm, `milkStatus.name`)}
@@ -121,8 +106,8 @@ const CattleInformation = (props) => {
                                         _get(listingForm, `milkStatus.errorText`)
                                     }
                                 />
-                            </div>
-                            <div>
+                            </Grid>
+                            <Grid item xs={12}>
                                 <FormLabel className="form-label">{_get(listingForm, `dailyMilkCapacity.placeholder`)}</FormLabel>
                                 <Input
                                     name={_get(listingForm, `dailyMilkCapacity.name`)}
@@ -136,12 +121,33 @@ const CattleInformation = (props) => {
                                         _get(listingForm, `dailyMilkCapacity.errorText`)
                                     }
                                 />
-                            </div>
-                        </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <FormLabel className="form-label">{_get(listingForm, `babiesCount.placeholder`)}</FormLabel>
+                                <FormControl className="w-100">
+                                    <Select
+                                        optionsContainerStyle={{ zIndex: 7 }}
+                                        placeholderStyle={{ width: 200 }}
+                                        style={{ marginBottom: 18 }}
+                                        value={_get(listingForm, 'babiesCount.value', '')}
+                                        onChange={handleSelectChange}
+                                        options={[
+                                            { label: "Select Breed", value: '' },
+                                            ..._get(listingForm, 'babiesCount.options', '').map((option) => ({
+                                                label: option,
+                                                value: option,
+                                            })),
+                                        ]}
+                                        defaultPlaceholder="Select"
+                                        selectStyle={{ height: 40 }}
+                                    />
+                                </FormControl>
+                            </Grid>
+                        </>
                     )
                 }
-                <br />
-            </div>
+            </Grid>
+            <br />
         </>
     )
 }

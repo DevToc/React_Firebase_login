@@ -7,6 +7,9 @@ import { globalUtils } from '../../utils';
 import { formConstants } from './utils/PostListingConstants';
 import { formConstants as profileFormConstants } from '../godhan-profile-widget/utils'
 import _get from 'lodash/get';
+import { isPlatform } from '@ionic/react';
+import { HorizontalStepperComponent } from './components/HorizontalStepperComponent';
+import { Header } from '../../components';
 
 const MainCreateCattleAd = (props) => {
   const [activeStep, setActiveStep] = useState(0);
@@ -49,16 +52,21 @@ const MainCreateCattleAd = (props) => {
         profileForm: profileFormConstants.profileForm
       });
     }
-    }, []);
+  }, []);
 
-  return (
+  return isPlatform('desktop') ? (
     <>
-      <BackHeader
-        title={globalUtils.getCurrentPage() === 'listing' ? "List your Cattle" : "Editing a Listing"}
-      />
-      <HeaderAndStepperComponent activeStep={activeStep} setActiveStep={setActiveStep} listingForm={listingForm} />
+      <Header title="List your Cattle" />
+      <HorizontalStepperComponent activeStep={activeStep} setActiveStep={setActiveStep} listingForm={listingForm} />
     </>
-  )
+  ) : (
+      <>
+        <BackHeader
+          title={globalUtils.getCurrentPage() === 'listing' ? "List your Cattle" : "Editing a Listing"}
+        />
+        <HeaderAndStepperComponent activeStep={activeStep} setActiveStep={setActiveStep} listingForm={listingForm} />
+      </>
+    )
 };
 
 

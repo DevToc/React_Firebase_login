@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { contactInformationMapStateToProps, contactInformationMapDispatchToProps } from '../models';
-import { Typography, Container, makeStyles, TextField, Box, Grid, Switch } from '@material-ui/core';
+import { Typography, Container, makeStyles, TextField, Box, Grid, Switch, FormLabel, FormControl, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
 import { updateFormStore, validateField } from '../../../utils';
 import * as _ from 'lodash';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { LocationComponent } from '../../../components';
 import { isGoogleMapsEnabled } from "../../../configs/appsettings.json";
 import { Geolocation } from '@capacitor/core';
 import { geocodeByAddress, getLatLng } from "react-places-autocomplete";
+import Input from '../../../components/Input-component/InputComponent';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -140,119 +141,121 @@ const ContactInformation = (props) => {
 
     return (
         <>
-            <div>
-                <LocationComponent
-                    userDetails={getUserDetails}
-                    fetchLocation={fetchLocation}
-                    formSearchByFieldValue={_.get(listingForm, "searchBy.value")}
-                    handleChange={handleLocationChange}
-                    handleSelect={handleLocationSelect}
-                    placeholder="Set Location (*)"
-                    useCurrentLocation
-                    handleCurrentLocationClick={handleCurrentLocationClick}
-                    style={{ marginBottom: 8 }}
-                    inputStyle={{
-                        paddingTop: 7,
-                        paddingBottom: 7,
-                    }}
-                    containerStyle={classes.locationContainer}
-                />
-                <TextField
-                    name={_.get(listingForm, `contactNumber.name`)}
-                    label={_.get(listingForm, `contactNumber.placeholder`)}
-                    variant='outlined'
-                    color='primary'
-                    margin='normal'
-                    fullWidth
-                    disabled
-                    value={_.get(listingForm, `contactNumber.value`)}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    type={_.get(listingForm, `contactNumber.type`, 'text')}
-                    error={!_.get(listingForm, `contactNumber.isValid`)}
-                    helperText={!_.get(listingForm, `contactNumber.isValid`) && _.get(listingForm, `contactNumber.errorText`)}
-                />
-                <Typography variant='body2' color='textSecondary' component='span' >
-                    <Box fontWeight={500}>
-                        {_.get(listingForm, `contactNumber.helperText`)}
-                    </Box>
-                </Typography>
-                {
-                    _.get(listingForm, 'contactNumber.value') ? (
-                        <>
-                            <Typography component='h6' variant="h6">
-                                {_.get(listingForm, 'isNumberDisplayed.placeholder')}
-                            </Typography>
-                            <Grid component='label' container alignItems='center'>
-                                <Grid item>No</Grid>
-                                <Grid item>
-                                    <Switch
-                                        checked={_.get(listingForm, 'isNumberDisplayed.value')}
-                                        onChange={handleToggleChange}
+            <Grid
+                container
+                alignItems="center"
+                spacing={1}
+            >
+                <Grid item xs={12}>
+                    <FormLabel className="form-label">Add a location for your listing</FormLabel>
+                    <LocationComponent
+                        userDetails={getUserDetails}
+                        fetchLocation={fetchLocation}
+                        formSearchByFieldValue={_.get(listingForm, "searchBy.value")}
+                        handleChange={handleLocationChange}
+                        handleSelect={handleLocationSelect}
+                        placeholder="Set Location (*)"
+                        useCurrentLocation
+                        handleCurrentLocationClick={handleCurrentLocationClick}
+                        style={{ marginBottom: 8 }}
+                        inputStyle={{
+                            paddingTop: 7,
+                            paddingBottom: 7,
+                        }}
+                        containerStyle={classes.locationContainer}
+                    />
+                </Grid>
+                <Grid item xs={12}>
+                    <FormLabel className="form-label">Contact number</FormLabel>
+                    <Input
+                        name={_.get(listingForm, `contactNumber.name`)}
+                        label={_.get(listingForm, `contactNumber.placeholder`)}
+                        variant='outlined'
+                        color='primary'
+                        margin='normal'
+                        fullWidth
+                        disabled
+                        value={_.get(listingForm, `contactNumber.value`)}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        type={_.get(listingForm, `contactNumber.type`, 'text')}
+                        error={!_.get(listingForm, `contactNumber.isValid`)}
+                        helperText={!_.get(listingForm, `contactNumber.isValid`) && _.get(listingForm, `contactNumber.errorText`)}
+                    />
+                    <br />
+                    {
+                        _.get(listingForm, 'contactNumber.value') ? (
+                            <>
+                                <FormControl component='fieldset' className='dynamic-form-radio-group' color='primary'>
+                                    <FormLabel className="form-label">{_.get(listingForm, `isNumberDisplayed.placeholder`)}</FormLabel>
+                                    <RadioGroup
+                                        aria-label="isNumberDisplayed"
+                                        row={true}
                                         name={_.get(listingForm, 'isNumberDisplayed.name')}
-                                        color='primary'
-                                    />
-                                </Grid>
-                                <Grid item>Yes</Grid>
-                            </Grid>
-                        </>
-                    ) : (
-                            <Typography component='div' variant="div">
-                                Your phone number is not available.
+                                        value={_.get(listingForm, 'isNumberDisplayed.value')}
+                                        defaultValue={_.get(listingForm, 'isNumberDisplayed.value')}
+                                        onChange={handleChange}>
+                                        <div>
+                                            <FormControlLabel value="false" control={<Radio color="primary" />} label="No" />
+                                            <FormControlLabel value="true" control={<Radio color="primary" />} label="Yes" />
+                                        </div>
+                                    </RadioGroup>
+                                </FormControl >
+                            </>
+                        ) : (
+                                <Typography component='div' variant="div">
+                                    Your phone number is not available.
                                         Update it <Link to="/profile"> here.</Link>
-                            </Typography>
-                        )
-                }
-                <TextField
-                    name={_.get(listingForm, `contactEmail.name`)}
-                    label={_.get(listingForm, `contactEmail.placeholder`)}
-                    variant='outlined'
-                    color='primary'
-                    margin='normal'
-                    fullWidth
-                    disabled
-                    value={_.get(listingForm, `contactEmail.value`)}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    type={_.get(listingForm, `contactEmail.type`, 'text')}
-                    error={!_.get(listingForm, `contactEmail.isValid`)}
-                    helperText={!_.get(listingForm, `contactEmail.isValid`) && _.get(listingForm, `contactEmail.errorText`)}
-                />
-
-                <Typography variant='body2' color='textSecondary' component='span' >
-                    <Box fontWeight={500}>
-                        {_.get(listingForm, `contactEmail.helperText`)}
-                    </Box>
-                </Typography>
-                {
-                    _.get(listingForm, 'contactEmail.value') ? (
-                        <>
-
-                            <Typography component='h6' variant="h6">
-                                {_.get(listingForm, 'isEmailDisplayed.placeholder')}
-                            </Typography>
-
-                            <Grid component='label' container alignItems='center'>
-                                <Grid item>No</Grid>
-                                <Grid item>
-                                    <Switch
-                                        checked={_.get(listingForm, 'isEmailDisplayed.value')}
-                                        onChange={handleToggleChange}
+                                </Typography>
+                            )
+                    }
+                </Grid>
+                <Grid item xs={12}>
+                    <FormLabel className="form-label">Email address</FormLabel>
+                    <Input
+                        name={_.get(listingForm, `contactEmail.name`)}
+                        label={_.get(listingForm, `contactEmail.placeholder`)}
+                        variant='outlined'
+                        color='primary'
+                        margin='normal'
+                        fullWidth
+                        disabled
+                        value={_.get(listingForm, `contactEmail.value`)}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        type={_.get(listingForm, `contactEmail.type`, 'text')}
+                        error={!_.get(listingForm, `contactEmail.isValid`)}
+                        helperText={!_.get(listingForm, `contactEmail.isValid`) && _.get(listingForm, `contactEmail.errorText`)}
+                    />
+                    <br />
+                    {
+                        _.get(listingForm, 'contactEmail.value') ? (
+                            <>
+                                <FormControl component='fieldset' className='dynamic-form-radio-group' color='primary'>
+                                    <FormLabel className="form-label">{_.get(listingForm, `isEmailDisplayed.placeholder`)}</FormLabel>
+                                    <RadioGroup
+                                        aria-label="isEmailDisplayed"
+                                        row={true}
                                         name={_.get(listingForm, 'isEmailDisplayed.name')}
-                                        color='primary'
-                                    />
-                                </Grid>
-                                <Grid item>Yes</Grid>
-                            </Grid>
-                        </>
-                    ) : (
-                            <Typography component='div' variant="div">
-                                <p>Your email address is not available.
+                                        value={_.get(listingForm, 'isEmailDisplayed.value')}
+                                        defaultValue={_.get(listingForm, 'isEmailDisplayed.value')}
+                                        onChange={handleChange}>
+                                        <div>
+                                            <FormControlLabel value="false" control={<Radio color="primary" />} label="No" />
+                                            <FormControlLabel value="true" control={<Radio color="primary" />} label="Yes" />
+                                        </div>
+                                    </RadioGroup>
+                                </FormControl >
+                            </>
+                        ) : (
+                                <Typography component='div' variant="div">
+                                    <p>Your email address is not available.
                                         Update it <Link to="/profile"> here.</Link> </p>
-                            </Typography>
-                        )
-                }
-            </div>
+                                </Typography>
+                            )
+                    }
+                </Grid>
+            </Grid>
         </>
     )
 }

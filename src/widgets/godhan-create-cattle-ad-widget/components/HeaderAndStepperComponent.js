@@ -7,6 +7,7 @@ import _get from 'lodash/get';
 import { ListingInformationComponent } from './ListingInformationComponent';
 import { ContactInformationComponent } from './ContactInformationComponent';
 import { CattleInformationComponent } from './CattleInformationComponent';
+import { isPlatform } from '@ionic/react';
 
 export const HeaderAndStepperComponent = (props) => {
   const { activeStep, setActiveStep, listingForm } = props;
@@ -17,7 +18,12 @@ export const HeaderAndStepperComponent = (props) => {
       (!_get(listingForm, "selectedCattle.value") || !_get(listingForm, "selectedBreed.value")))
       return;
     if (activeStep === 2) {
-      if (!_get(listingForm, "productTitle.value") || !_get(listingForm, `listedPrice.value`) || !_get(listingForm, 'productDescription.value'))
+      if (!_get(listingForm, "productTitle.value")
+        || !_get(listingForm, `listedPrice.value`)
+        || !_get(listingForm, 'productDescription.value')
+        || !_get(listingForm, "productTitle.isValid")
+        || !_get(listingForm, `listedPrice.isValid`)
+        || !_get(listingForm, 'productDescription.isValid'))
         return;
     }
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -59,6 +65,7 @@ export const HeaderAndStepperComponent = (props) => {
   ];
   return (
     <StyledHeaderAndStepper>
+
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -73,6 +80,7 @@ export const HeaderAndStepperComponent = (props) => {
             </StepLabel>
             <StepContent>
               <Typography>{step.description}</Typography>
+              <br />
               {step.component}
               <Box sx={{ mb: 2 }}>
                 <div>

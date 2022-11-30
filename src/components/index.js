@@ -20,3 +20,4 @@ export { LocationAutoCompleteComponent } from "./location-auto-complete/Location
 export { AuthBanner } from "./auth-banner/AuthBanner";
 export { Search } from "./Search";
 export { ErrorComponent } from './error-component/ErrorComponent';
+export { Footer } from './footer-component/Footer'

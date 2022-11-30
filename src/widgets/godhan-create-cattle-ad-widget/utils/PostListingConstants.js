@@ -147,7 +147,7 @@ export const formConstants = {
     isEmailDisplayed: {
       name: "isEmailDisplayed",
       rules: [],
-      value: false,
+      value: "false",
       placeholder: "Display contact email in the ad?",
     },
   },
