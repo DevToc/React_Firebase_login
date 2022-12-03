@@ -51,7 +51,7 @@ const BidPrdouctsComponent = (props) => {
       <BackHeader
         title="Inbox"
         style={{
-          backgroundColor: "rgba(140, 69, 11, 1)",
+          backgroundColor: "rgba(43, 87, 154, 1)",
           color: "white",
           boxShadow: "none",
           paddingBottom: 5,

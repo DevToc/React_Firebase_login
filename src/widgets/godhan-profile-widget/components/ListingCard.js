@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   card: {
     display: "flex",
     marginTop: 15,
-    border: "1px solid rgba(140, 69, 11, 0.7)",
+    border: "1px solid rgba(43, 87, 154, 0.7)",
     alignItems: "center",
     position: "relative",
     maxWidth: 500,
@@ -76,7 +76,7 @@ const useStyles = makeStyles({
     padding: "0px 30px 10px 14px",
     position: "absolute",
     backgroundColor: "white",
-    border: "1px solid rgba(140, 69, 11, 0.7)",
+    border: "1px solid rgba(43, 87, 154, 0.7)",
     zIndex: 1,
     right: -1,
     bottom: -165,

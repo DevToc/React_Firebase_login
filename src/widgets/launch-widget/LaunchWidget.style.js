@@ -10,7 +10,7 @@ export const launchWidgetStyle = styled.div`
     background-image: url("/assets/images/auth-bg-image.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(140, 69, 11, 1);
+    background-color: rgba(43, 87, 154, 1);
     background-size: cover;
     background-blend-mode: soft-light;
     .body-section {

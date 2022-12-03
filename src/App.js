@@ -26,7 +26,7 @@ import "./assets/styles";
 import { RouterMapper } from "./router";
 import { createMuiTheme, Hidden, ThemeProvider } from "@material-ui/core";
 import { BrowserRouter } from "react-router-dom";
-import { BottomNav, ScrollToTopComponent, LoaderComponent, ErrorComponent, Footer } from "./components";
+import { BottomNav, ScrollToTopComponent, LoaderComponent, ErrorComponent } from "./components";
 import { appMapDispatchToProps, appMapStateToProps } from "./App.model";
 import { globalUtils } from "./utils";
 import * as configs from "./configs/appsettings.json";
@@ -34,7 +34,7 @@ import * as configs from "./configs/appsettings.json";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#8c450b",
+      main: "#8c450b", 
     },
     secondary: {
       main: "#f5f7f7f7",
@@ -66,7 +66,6 @@ const AppComponent = (props) => {
     loginSuccess,
     clearNotification,
     getSellCategories,
-    getWantedCategories,
     getNotifications,
     loader, sellData, rentData, wantedData
   } = props;
@@ -78,7 +77,8 @@ const AppComponent = (props) => {
       document.body.scrollTop === 0;
     }
     getSellCategories();
-    getWantedCategories();
+    // getRentCategories();
+    // getWantedCategories();
     if (globalUtils.isTokenAvailable()) {
       getNotifications();
     }
@@ -111,16 +111,13 @@ const AppComponent = (props) => {
       {
         isLoaded && (
           <BrowserRouter>
-            <div className="allButFooter">
-              <ScrollToTopComponent
-                clearNotification={clearNotification}
-                getNotifications={getNotifications}
-              />
-              <RouterMapper {...props} />
-              <LoaderComponent loader={loader} />
-              <ErrorComponent />
-            </div>
-            <Footer />
+            <ScrollToTopComponent
+              clearNotification={clearNotification}
+              getNotifications={getNotifications}
+            />
+            <RouterMapper {...props} />
+            <LoaderComponent loader={loader} />
+            <ErrorComponent />
           </BrowserRouter>
         )
       }

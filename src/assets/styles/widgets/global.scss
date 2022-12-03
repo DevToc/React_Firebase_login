@@ -224,12 +224,7 @@ body {
   .display-flex{
     display: flex;
   }
-  .flex-row{
-    flex-direction: row;
-  }
-  .justify-content-between{
-    justify-content: space-between;
-  }
+
   .margin-vertical-auto{
     margin-top: auto !important;
     margin-bottom: auto !important;
@@ -245,45 +240,4 @@ body {
     width: 95%;
     overflow: hidden;
     white-space: nowrap;
-  }
-
-  .w-100{
-    width: 100%;
-  }
-  .footer{
-    background: #8c450b;
-    clear: both;
-    position: relative;
-    height: 50px;
-    display: table;
-    width: 100%;
-  }
-  .copyright{
-    color: white;
-    height: 10px;
-    vertical-align: middle;
-    display: table-cell;
-  }
-  .header-container{
-    background: #8c450b;
-    clear: both;
-    position: relative;
-    width: 100%;
-  }
-  .header{
-    display: table !important;
-    height: 50px;
-  }
-  .header-title{
-    color: white;
-    height: 14px;
-    vertical-align: middle;
-    display: table-cell;
-  }
-  .icon-header{
-    vertical-align: middle;
-    display: table-cell;
-  }
-  .allButFooter{
-    min-height: calc(100vh - 50px);
   }
