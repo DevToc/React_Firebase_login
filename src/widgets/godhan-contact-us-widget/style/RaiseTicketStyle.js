@@ -42,7 +42,7 @@ export const raiseTicketStyle = styled.div`
       .MuiTabs-root {
         height: 42px;
         background: #ffffff;
-        border: 2px solid rgba(43, 87, 154, 0.7);
+        border: 2px solid rgba(140, 69, 11, 0.7);
         border-radius: 5px;
         .MuiTabs-fixed {
           border: unset;

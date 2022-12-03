@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   box: {
     backgroundColor: "white",
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     borderRadius: "50%",
     textAlign: "center",
     fontWeight: "500",
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 
   boxChecked: {
     backgroundColor: "#8c450b",
-    border: "2px solid rgba(43, 87, 154, 0.7)",
+    border: "2px solid rgba(140, 69, 11, 0.7)",
     borderRadius: "50%",
     textAlign: "center",
     fontWeight: "500",

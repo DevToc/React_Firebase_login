@@ -41,7 +41,7 @@ const ErrorHandler = (props) => {
                 message={errorMessage || `Something went wrong. Please try again later. If the issue persists, please email us at ${globalUtils.getCountryProperty("email")}`}
                 handleCloseClick={handleCloseClick}
                 buttonLabel={isSuccessful? "OK": "Go Back"}
-                background={isSuccessful ? "rgb(43, 87, 154, 0.2)": "rgba(211, 35, 35, 0.2)"}
+                background={isSuccessful ? "rgb(140, 69, 11, 0.2)": "rgba(211, 35, 35, 0.2)"}
                 buttonColor={isSuccessful ? "#8c450b" : "#D32323"}
                 isCancelAvailable={isCancelAvailable}
                 handleCancel={handleCancelClick}

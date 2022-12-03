@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "rgba(43, 87, 154, 1)",
+    backgroundColor: "rgba(140, 69, 11, 1)",
     color: "white",
     width: 45,
     height: 45,
@@ -166,7 +166,7 @@ const ConversationComponent = ({
         title={`${titleFirst} ${titleSecond}`}
         onGoBack={handleBackIcon}
         style={{
-          backgroundColor: "rgba(43, 87, 154, 1)",
+          backgroundColor: "rgba(140, 69, 11, 1)",
           color: "white",
         }}
         right={
@@ -219,7 +219,7 @@ const ConversationComponent = ({
 
           <IconButton
             style={{
-              backgroundColor: "rgba(43, 87, 154, 1)",
+              backgroundColor: "rgba(140, 69, 11, 1)",
               color: "white",
               marginLeft: 12,
             }}

@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   card: {
     display: "flex",
     marginTop: 15,
-    border: "1px solid rgba(43, 87, 154, 0.7)",
+    border: "1px solid rgba(140, 69, 11, 0.7)",
     alignItems: "center",
     position: "relative",
     maxWidth: 500,

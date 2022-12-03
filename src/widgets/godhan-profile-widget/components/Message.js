@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   },
   messageReverse: {
     padding: "7px 17px",
-    backgroundColor: "rgba(43, 87, 154, 1)",
+    backgroundColor: "rgba(140, 69, 11, 1)",
     maxWidth: "65%",
     fontSize: 20,
     color: "white",

@@ -25,8 +25,8 @@ const Map = ({ longitude = -97.137123, latitude = 49.88446, radius = 0, countryC
         defaultRadius={radius * 1000}
         radius={radius * 1000}
         options={{
-          strokeColor: "rgba(43, 87, 154, 1)",
-          fillColor: "rgba(43, 87, 154, 0.7)",
+          strokeColor: "rgba(140, 69, 11, 1)",
+          fillColor: "rgba(140, 69, 11, 0.7)",
           strokeWeight: 1,
         }}
       />

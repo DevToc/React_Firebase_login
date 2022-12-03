@@ -467,7 +467,7 @@ const AddListing = ({
                   value={selectedCategoryParrentId}
                   onChange={handleParentCategorySelect}
                   options={[
-                    { label: "All Categories", value: 1 },
+                    { label: "All Categories", value: '' },
                     ...categoryOptions.children.map((option) => ({
                       label: option.name,
                       value: option.id,

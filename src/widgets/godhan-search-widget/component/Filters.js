@@ -300,7 +300,7 @@ const Filters = ({
               paddingLeft: 20,
               paddingBottom: 12,
               background: "white",
-              border: "2px solid rgba(43, 87, 154, 0.7)",
+              border: "2px solid rgba(140, 69, 11, 0.7)",
               borderRadius: 5,
               position: "absolute",
               width: "100%",

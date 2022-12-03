@@ -10,6 +10,6 @@ export { MainSearchWidget } from "./godhan-search-widget/MainSearchWidget";
 export { MainProductWidget } from "./godhan-product-widget/MainProductWidget";
 export { MainProfileWidget } from "./godhan-profile-widget/MainProfileWidget";
 export { MainNotificationWidget } from "./notifications-widget/MainNotificationWidget";
-export { MainPostListingWidget } from "./godhan-post-listing-widget/MainPostListingWidget";
+export { MainCreateCattleAdWidget } from "./godhan-create-cattle-ad-widget/MainCreateCattleAdWidget";
 export { MainLocationPage } from "./location-page/MainLocationPage";
 export { MainContactWidget } from './godhan-contact-us-widget/MainContactWidget'
