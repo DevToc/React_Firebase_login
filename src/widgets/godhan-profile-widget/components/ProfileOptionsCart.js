@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
     width: "100%",
     justifyContent: "space-between",
     backgroundColor: "white",
-    border: "2px solid rgba(140, 69, 11, 0.7)",
+    border: "2px solid rgba(43, 87, 154, 0.7)",
     maxWidth: 500,
     borderRadius: 5,
   },

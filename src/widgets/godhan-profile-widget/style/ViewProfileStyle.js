@@ -19,7 +19,7 @@ input[name="mobileNumberPrefix"] {
   }
   .profileHeader {
     height: 210px;
-    background: rgba(140, 69, 11, 0.7);
+    background: rgba(43, 87, 154, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;

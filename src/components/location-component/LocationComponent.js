@@ -9,15 +9,17 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     alignItems: "center",
     backgroundColor: "white",
-    border: "2px solid rgba(140, 69, 11, 0.7)",
+    border: "2px solid rgba(43, 87, 154, 0.7)",
     borderRadius: 5,
     width: "100%",
   },
   input: {
     width: "100%",
     backgroundColor: "transparent",
+    marginLeft: 15,
     padding: "9px 0 9px 9px",
     color: "#344654",
+    fontSize: 19,
     border: 0,
     outline: 0,
   },
@@ -35,7 +37,7 @@ const useStyles = makeStyles(() => ({
   optionsContainer: {
     paddingLeft: 20,
     background: "white",
-    border: "2px solid rgba(140, 69, 11, 0.7)",
+    border: "2px solid rgba(43, 87, 154, 0.7)",
     borderRadius: "0px 0px 5px 5px",
     position: "absolute",
     width: "100%",
@@ -99,6 +101,7 @@ export const LocationComponent = ({
                 renderInsteadOfInput
               ) : (
                 <input
+                  style={{ marginLeft: left ? 0 : 15, ...inputStyle }}
                   type="text"
                   name={name}
                   placeholder={placeholder}

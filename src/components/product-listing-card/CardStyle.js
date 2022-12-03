@@ -13,7 +13,7 @@ const cardStyle = styled.div`
     position: absolute !important;
     background-color: #00000073 !important;
     right: 0 !important;
-    background: rgba(140, 69, 11, 0.8) !important;
+    background: rgba(43, 87, 154, 0.8) !important;
     border-radius: 5px 0px 0px 5px !important;
     min-width: 60px !important;
     min-height: 24px !important;
